@@ -1,9 +1,20 @@
-import { currentLanguage, load } from 'scrivito'
+import { ClientError, currentLanguage, load } from 'scrivito'
 import { provideLocalStorageDataClass } from '../../../utils/provideLocalStorageDataClass'
 import { DataClassSchema } from '../../types'
 
 async function attributes(): Promise<DataClassSchema> {
   const lang = await load(currentLanguage)
+
+  throw new ClientError(
+    'The configuration was not found',
+    'configuration.not_found',
+    {
+      path: 'portal/opportunity/schema',
+      method: 'GET',
+      direction: 'IN',
+    },
+    400,
+  )
 
   const mainStatus = [
     'enum',
