@@ -28,7 +28,7 @@ export const DataBatchContextProvider = connect(
     const configuredLimit = dataScope.limit() ?? 20
     const [limit, setLimit] = useState(configuredLimit)
     const [initialLimit, setInitialLimit] = useState(configuredLimit)
-    const [search, setSearch] = useState('')
+    const [search, setSearch] = useState('') // TODO: Reset limit on new search
 
     if (initialLimit !== configuredLimit) {
       setInitialLimit(configuredLimit)
