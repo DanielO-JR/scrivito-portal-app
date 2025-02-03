@@ -20,6 +20,7 @@ export function configureScrivito(options?: { priority?: 'background' }) {
         'http://localhost:8090',
         'https://*.scrivito-ui.pages.dev',
       ],
+      assetUrlBase: '/scrivito',
     },
     ...options,
   })
