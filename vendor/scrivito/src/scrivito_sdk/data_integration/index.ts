@@ -92,3 +92,4 @@ export {
 } from 'scrivito_sdk/data_integration/activate_data_integration';
 export { isReferenceAttributeConfig } from 'scrivito_sdk/data_integration/data_attribute';
 export type { DataConnectionIndexParams } from 'scrivito_sdk/data_integration/index_params';
+export { setCurrentLanguageHandler } from 'scrivito_sdk/data_integration/current_language';

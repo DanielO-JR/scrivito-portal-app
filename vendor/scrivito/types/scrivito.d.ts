@@ -333,7 +333,7 @@ declare interface Configuration_2 {
 export declare function configure(configuration: Configuration): void;
 
 /** @public */
-export declare function configureContentBrowser(configuration: Partial<Configuration_2>): void;
+export declare function configureContentBrowser(configuration: Readonly<Partial<Configuration_2>>): void;
 
 /** @public */
 export declare function configureObjClassForContentType(configuration: ObjClassForContentTypeMapping): void;
@@ -772,10 +772,8 @@ declare interface FilterContext {
 
 declare type FilterOperator = 'equals' | 'notEquals' | 'isGreaterThan' | 'isLessThan' | 'isGreaterThanOrEquals' | 'isLessThanOrEquals';
 
-declare interface FilterSpec {
-    operator: FilterOperator;
+declare interface FilterSpec extends OperatorSpec {
     opCode: OpCode;
-    value: FilterValue;
 }
 
 declare type FilterValue = string | number | boolean | null;
@@ -799,6 +797,9 @@ declare type GetCallback = (id: string) => Promise<unknown | null>;
 
 /** @public */
 export declare function getClass(name: string): AppClass | null;
+
+/** @public */
+export declare function getDataClass(dataClassName: string): DataClass | null;
 
 /** @public */
 export declare function getInstanceId(): string;
@@ -1197,7 +1198,7 @@ declare type ObjSystemAttributes = {
 
 declare type ObjUpdateAttributes<AttrDefs extends AttributeDefinitions> = Omit<ObjAttributes<AttrDefs>, '_id'>;
 
-declare type OpCode = NeqOpCode | EqOpCode | 'gt' | 'lt' | 'gte' | 'lte';
+declare type OpCode = NeqOpCode | EqOpCode | RelationalOpCode;
 
 /** @public */
 export declare function openDialog(name: string): void;
@@ -1397,6 +1398,8 @@ declare interface RegisteredComponentGroupDescription {
     enabled?: boolean;
     key?: string;
 }
+
+declare type RelationalOpCode = 'gt' | 'lt' | 'gte' | 'lte';
 
 declare type RenderChild = (child: Obj) => React_2.ReactElement<{
     child: Obj;
@@ -1617,7 +1620,7 @@ declare type ValidationResult = string | string[] | ValidationResultObject | fal
 
 declare interface ValidationResultObject {
     message: string;
-    severity?: ValidationSeverityLevel;
+    severity: ValidationSeverityLevel;
 }
 
 /** @public */

@@ -10,7 +10,7 @@
 /* harmony export */ });
 /* harmony import */ var urijs__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(4066);
 /* harmony import */ var urijs__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(urijs__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var scrivito_sdk_common__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(2838);
+/* harmony import */ var scrivito_sdk_common__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(5204);
 
 
 
@@ -31,24 +31,16 @@ function absoluteUrl(url) {
 /* harmony export */   E: () => (/* binding */ provideAuthGroups),
 /* harmony export */   N: () => (/* binding */ getAuthGroups)
 /* harmony export */ });
-/* harmony import */ var scrivito_sdk_common__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(2838);
-/* harmony import */ var scrivito_sdk_state__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(1946);
+/* harmony import */ var scrivito_sdk_state__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(1946);
 
 
-
-const authGroupsState = (0,scrivito_sdk_state__WEBPACK_IMPORTED_MODULE_1__/* .createStateContainer */ .Ld)();
-function provideAuthGroups(authGroups, ...excessArgs) {
-  checkProvideAuthGroups(authGroups, ...excessArgs);
+const authGroupsState = (0,scrivito_sdk_state__WEBPACK_IMPORTED_MODULE_0__/* .createStateContainer */ .Ld)();
+function provideAuthGroups(authGroups) {
   authGroupsState.set(authGroups);
 }
 function getAuthGroups() {
   return authGroupsState.get();
 }
-const checkProvideAuthGroups = (0,scrivito_sdk_common__WEBPACK_IMPORTED_MODULE_0__/* .checkArgumentsFor */ .eY)(
-  "provideAuthGroups",
-  [["authGroups", scrivito_sdk_common__WEBPACK_IMPORTED_MODULE_0__/* .tcomb.dict */ .Uw.dict(scrivito_sdk_common__WEBPACK_IMPORTED_MODULE_0__/* .tcomb.String */ .Uw.String, scrivito_sdk_common__WEBPACK_IMPORTED_MODULE_0__/* .tcomb.String */ .Uw.String)]],
-  { docPermalink: "js-sdk/provideAuthGroups" }
-);
 
 
 /***/ }),
@@ -67,10 +59,10 @@ const checkProvideAuthGroups = (0,scrivito_sdk_common__WEBPACK_IMPORTED_MODULE_0
 /* harmony import */ var scrivito_sdk_app_support_change_location__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(2354);
 /* harmony import */ var scrivito_sdk_app_support_destination_types__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(7550);
 /* harmony import */ var scrivito_sdk_app_support_routing__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(7183);
-/* harmony import */ var scrivito_sdk_common__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(2838);
+/* harmony import */ var scrivito_sdk_common__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(5204);
 /* harmony import */ var scrivito_sdk_loadable__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(5688);
-/* harmony import */ var scrivito_sdk_models__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(3781);
-/* harmony import */ var scrivito_sdk_realm__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(3340);
+/* harmony import */ var scrivito_sdk_models__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(4360);
+/* harmony import */ var scrivito_sdk_realm__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(7461);
 /* harmony import */ var scrivito_sdk_state__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(1946);
 
 
@@ -155,9 +147,9 @@ function destinationForUrl(url) {
 /* harmony export */   a: () => (/* binding */ basicUrlForObj)
 /* harmony export */ });
 /* harmony import */ var scrivito_sdk_app_support_routing__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(7183);
-/* harmony import */ var scrivito_sdk_common__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(2838);
-/* harmony import */ var scrivito_sdk_models__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(3781);
-/* harmony import */ var scrivito_sdk_realm__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(3340);
+/* harmony import */ var scrivito_sdk_common__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(5204);
+/* harmony import */ var scrivito_sdk_models__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(4360);
+/* harmony import */ var scrivito_sdk_realm__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(7461);
 
 var __defProp = Object.defineProperty;
 var __getOwnPropSymbols = Object.getOwnPropertySymbols;
@@ -259,8 +251,8 @@ __webpack_require__.d(__webpack_exports__, {
 const external_history_namespaceObject = require("history");
 // EXTERNAL MODULE: external "urijs"
 var external_urijs_ = __webpack_require__(4066);
-// EXTERNAL MODULE: ./scrivito_sdk/common/index.ts + 64 modules
-var common = __webpack_require__(2838);
+// EXTERNAL MODULE: ./scrivito_sdk/common/index.ts + 62 modules
+var common = __webpack_require__(5204);
 // EXTERNAL MODULE: ./scrivito_sdk/state/index.ts + 13 modules
 var state = __webpack_require__(1946);
 ;// CONCATENATED MODULE: ./scrivito_sdk/app_support/browser_location.ts
@@ -374,10 +366,10 @@ function isHistoryV4(historyToCheck) {
 /* harmony export */   p: () => (/* binding */ canEdit)
 /* harmony export */ });
 /* harmony import */ var scrivito_sdk_app_support_ui_adapter__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(5460);
-/* harmony import */ var scrivito_sdk_common__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(2838);
+/* harmony import */ var scrivito_sdk_common__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(5204);
 /* harmony import */ var scrivito_sdk_loadable__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(5688);
-/* harmony import */ var scrivito_sdk_models__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(3781);
-/* harmony import */ var scrivito_sdk_realm__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(3340);
+/* harmony import */ var scrivito_sdk_models__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(4360);
+/* harmony import */ var scrivito_sdk_realm__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(7461);
 
 
 
@@ -394,9 +386,15 @@ function canEditObjWithId(objId) {
     return false;
   return (0,scrivito_sdk_loadable__WEBPACK_IMPORTED_MODULE_2__/* .loadWithDefault */ .qt)(false, () => ui.canEdit((0,scrivito_sdk_models__WEBPACK_IMPORTED_MODULE_3__/* .currentWorkspaceId */ .o_)(), objId)) || false;
 }
-const checkCanEditArguments = (0,scrivito_sdk_common__WEBPACK_IMPORTED_MODULE_1__/* .checkArgumentsFor */ .eY)("canEdit", [["obj", scrivito_sdk_models__WEBPACK_IMPORTED_MODULE_3__/* .ObjType */ .aT]], {
-  docPermalink: "js-sdk/canEdit"
-});
+function checkCanEditArguments(obj) {
+  if (!(0,scrivito_sdk_models__WEBPACK_IMPORTED_MODULE_3__/* .isWrappingBasicObj */ .mD)(obj)) {
+    (0,scrivito_sdk_common__WEBPACK_IMPORTED_MODULE_1__/* .throwInvalidArgumentsError */ .Ht)(
+      "canEdit",
+      "'obj' must be an instance of 'Obj'.",
+      { docPermalink: "js-sdk/canEdit" }
+    );
+  }
+}
 
 
 /***/ }),
@@ -412,7 +410,7 @@ const checkCanEditArguments = (0,scrivito_sdk_common__WEBPACK_IMPORTED_MODULE_1_
 /* harmony import */ var urijs__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(4066);
 /* harmony import */ var urijs__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(urijs__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var scrivito_sdk_app_support_ui_adapter__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(5460);
-/* harmony import */ var scrivito_sdk_common__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(2838);
+/* harmony import */ var scrivito_sdk_common__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(5204);
 /* harmony import */ var _routing__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(7183);
 
 
@@ -456,13 +454,11 @@ function convertToAbsoluteLocalUrl(url) {
 /* harmony export */   _: () => (/* binding */ getContentBrowserConfiguration),
 /* harmony export */   w: () => (/* binding */ configureContentBrowser)
 /* harmony export */ });
-/* harmony import */ var lodash_es_intersection__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(8655);
-/* harmony import */ var lodash_es_mapValues__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(5796);
+/* harmony import */ var lodash_es_mapValues__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(5796);
 /* harmony import */ var scrivito_sdk_app_support_absolute_url__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(3617);
 /* harmony import */ var scrivito_sdk_app_support_ui_adapter__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(5460);
 /* harmony import */ var scrivito_sdk_app_support_ui_adapter_compatible_value__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(7283);
-/* harmony import */ var scrivito_sdk_common__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(2838);
-/* harmony import */ var scrivito_sdk_models__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(3781);
+/* harmony import */ var scrivito_sdk_common__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(5204);
 
 var __getOwnPropSymbols = Object.getOwnPropertySymbols;
 var __hasOwnProp = Object.prototype.hasOwnProperty;
@@ -484,8 +480,6 @@ var __objRest = (source, exclude) => {
 
 
 
-
-
 let filters;
 let filtersBuilder;
 function getContentBrowserConfiguration(validObjClasses) {
@@ -502,14 +496,9 @@ function getContentBrowserConfiguration(validObjClasses) {
     return { filters };
   }
 }
-function configureContentBrowser(configuration, ...excessArgs) {
+function configureContentBrowser(configuration) {
   if (!scrivito_sdk_app_support_ui_adapter__WEBPACK_IMPORTED_MODULE_1__/* .uiAdapter */ .B) {
     return;
-  }
-  try {
-    checkConfigure(configuration, ...excessArgs);
-  } catch (e) {
-    throw e instanceof Error ? new scrivito_sdk_common__WEBPACK_IMPORTED_MODULE_3__/* .ArgumentError */ .c1(removeUnionSubTypeIndexesFromKey(e.message)) : e;
   }
   if (configuration.filters) {
     if (isFilterBuilder(configuration.filters)) {
@@ -533,116 +522,8 @@ function configureContentBrowser(configuration, ...excessArgs) {
 function isFilterBuilder(maybeFilterBuilder) {
   return typeof maybeFilterBuilder === "function";
 }
-function removeUnionSubTypeIndexesFromKey(message) {
-  return message.replace(/key 'filters.\d/, "key 'filters");
-}
-const checkConfigure = (() => {
-  if (process.env.NODE_ENV !== "development")
-    return () => {
-    };
-  const SearchFieldType = scrivito_sdk_common__WEBPACK_IMPORTED_MODULE_3__/* .tcomb.union */ .Uw.union([scrivito_sdk_common__WEBPACK_IMPORTED_MODULE_3__/* .tcomb.String */ .Uw.String, scrivito_sdk_common__WEBPACK_IMPORTED_MODULE_3__/* .tcomb.list */ .Uw.list(scrivito_sdk_common__WEBPACK_IMPORTED_MODULE_3__/* .tcomb.String */ .Uw.String)]);
-  const SearchOperatorType = scrivito_sdk_common__WEBPACK_IMPORTED_MODULE_3__/* .tcomb.enums */ .Uw.enums.of(
-    (0,lodash_es_intersection__WEBPACK_IMPORTED_MODULE_5__/* ["default"] */ .A)(scrivito_sdk_models__WEBPACK_IMPORTED_MODULE_4__/* .OPERATORS */ .we, [
-      "contains",
-      "containsPrefix",
-      "equals",
-      "startsWith",
-      "isGreaterThan",
-      "isLessThan",
-      "matches"
-    ])
-  );
-  const SearchValueType = scrivito_sdk_common__WEBPACK_IMPORTED_MODULE_3__/* .tcomb.union */ .Uw.union(
-    [
-      scrivito_sdk_common__WEBPACK_IMPORTED_MODULE_3__/* .tcomb.String */ .Uw.String,
-      scrivito_sdk_common__WEBPACK_IMPORTED_MODULE_3__/* .tcomb.Date */ .Uw.Date,
-      scrivito_sdk_common__WEBPACK_IMPORTED_MODULE_3__/* .tcomb.Nil */ .Uw.Nil,
-      scrivito_sdk_common__WEBPACK_IMPORTED_MODULE_3__/* .tcomb.Number */ .Uw.Number,
-      scrivito_sdk_common__WEBPACK_IMPORTED_MODULE_3__/* .tcomb.list */ .Uw.list(scrivito_sdk_common__WEBPACK_IMPORTED_MODULE_3__/* .tcomb.union */ .Uw.union([scrivito_sdk_common__WEBPACK_IMPORTED_MODULE_3__/* .tcomb.String */ .Uw.String, scrivito_sdk_common__WEBPACK_IMPORTED_MODULE_3__/* .tcomb.Nil */ .Uw.Nil])),
-      scrivito_sdk_common__WEBPACK_IMPORTED_MODULE_3__/* .tcomb.list */ .Uw.list(scrivito_sdk_common__WEBPACK_IMPORTED_MODULE_3__/* .tcomb.union */ .Uw.union([scrivito_sdk_common__WEBPACK_IMPORTED_MODULE_3__/* .tcomb.Date */ .Uw.Date, scrivito_sdk_common__WEBPACK_IMPORTED_MODULE_3__/* .tcomb.Nil */ .Uw.Nil])),
-      scrivito_sdk_common__WEBPACK_IMPORTED_MODULE_3__/* .tcomb.list */ .Uw.list(scrivito_sdk_common__WEBPACK_IMPORTED_MODULE_3__/* .tcomb.union */ .Uw.union([scrivito_sdk_common__WEBPACK_IMPORTED_MODULE_3__/* .tcomb.Number */ .Uw.Number, scrivito_sdk_common__WEBPACK_IMPORTED_MODULE_3__/* .tcomb.Nil */ .Uw.Nil]))
-    ],
-    "SearchValue"
-  );
-  const FilterNodeType = scrivito_sdk_common__WEBPACK_IMPORTED_MODULE_3__/* .tcomb["interface"] */ .Uw["interface"]({
-    title: scrivito_sdk_common__WEBPACK_IMPORTED_MODULE_3__/* .tcomb.maybe */ .Uw.maybe(scrivito_sdk_common__WEBPACK_IMPORTED_MODULE_3__/* .tcomb.String */ .Uw.String)
-  });
-  const FilterCollectionNodeType = FilterNodeType.extend({
-    field: scrivito_sdk_common__WEBPACK_IMPORTED_MODULE_3__/* .tcomb.maybe */ .Uw.maybe(SearchFieldType),
-    operator: scrivito_sdk_common__WEBPACK_IMPORTED_MODULE_3__/* .tcomb.maybe */ .Uw.maybe(SearchOperatorType),
-    expanded: scrivito_sdk_common__WEBPACK_IMPORTED_MODULE_3__/* .tcomb.maybe */ .Uw.maybe(scrivito_sdk_common__WEBPACK_IMPORTED_MODULE_3__/* .tcomb.Boolean */ .Uw.Boolean)
-  });
-  const RadioOptionType = FilterNodeType.extend({
-    value: scrivito_sdk_common__WEBPACK_IMPORTED_MODULE_3__/* .tcomb.maybe */ .Uw.maybe(SearchValueType),
-    query: scrivito_sdk_common__WEBPACK_IMPORTED_MODULE_3__/* .tcomb.maybe */ .Uw.maybe(scrivito_sdk_models__WEBPACK_IMPORTED_MODULE_4__/* .ObjSearchType */ .iv),
-    selected: scrivito_sdk_common__WEBPACK_IMPORTED_MODULE_3__/* .tcomb.maybe */ .Uw.maybe(scrivito_sdk_common__WEBPACK_IMPORTED_MODULE_3__/* .tcomb.Boolean */ .Uw.Boolean)
-  });
-  const RadioFilterType = FilterCollectionNodeType.extend(
-    {
-      type: scrivito_sdk_common__WEBPACK_IMPORTED_MODULE_3__/* .tcomb.enums */ .Uw.enums.of(["radioButton"]),
-      options: scrivito_sdk_common__WEBPACK_IMPORTED_MODULE_3__/* .tcomb.dict */ .Uw.dict(scrivito_sdk_common__WEBPACK_IMPORTED_MODULE_3__/* .tcomb.String */ .Uw.String, RadioOptionType)
-    },
-    "RadioFilterDefinition"
-  );
-  const CheckboxOptionType = FilterNodeType.extend({
-    value: scrivito_sdk_common__WEBPACK_IMPORTED_MODULE_3__/* .tcomb.maybe */ .Uw.maybe(SearchValueType),
-    selected: scrivito_sdk_common__WEBPACK_IMPORTED_MODULE_3__/* .tcomb.maybe */ .Uw.maybe(scrivito_sdk_common__WEBPACK_IMPORTED_MODULE_3__/* .tcomb.Boolean */ .Uw.Boolean)
-  });
-  const CheckboxFilterType = FilterCollectionNodeType.extend(
-    {
-      type: scrivito_sdk_common__WEBPACK_IMPORTED_MODULE_3__/* .tcomb.enums */ .Uw.enums.of(["checkbox"]),
-      options: scrivito_sdk_common__WEBPACK_IMPORTED_MODULE_3__/* .tcomb.dict */ .Uw.dict(scrivito_sdk_common__WEBPACK_IMPORTED_MODULE_3__/* .tcomb.String */ .Uw.String, CheckboxOptionType)
-    },
-    "CheckboxFilterDefinition"
-  );
-  const TreeFilterType = scrivito_sdk_common__WEBPACK_IMPORTED_MODULE_3__/* .tcomb.declare */ .Uw.declare("TreeFilterDefinition");
-  TreeFilterType.define(
-    FilterNodeType.extend({
-      type: scrivito_sdk_common__WEBPACK_IMPORTED_MODULE_3__/* .tcomb.maybe */ .Uw.maybe(scrivito_sdk_common__WEBPACK_IMPORTED_MODULE_3__/* .tcomb.enums */ .Uw.enums.of(["tree"])),
-      icon: scrivito_sdk_common__WEBPACK_IMPORTED_MODULE_3__/* .tcomb.maybe */ .Uw.maybe(scrivito_sdk_common__WEBPACK_IMPORTED_MODULE_3__/* .tcomb.String */ .Uw.String),
-      query: scrivito_sdk_common__WEBPACK_IMPORTED_MODULE_3__/* .tcomb.maybe */ .Uw.maybe(scrivito_sdk_models__WEBPACK_IMPORTED_MODULE_4__/* .ObjSearchType */ .iv),
-      expanded: scrivito_sdk_common__WEBPACK_IMPORTED_MODULE_3__/* .tcomb.maybe */ .Uw.maybe(scrivito_sdk_common__WEBPACK_IMPORTED_MODULE_3__/* .tcomb.Boolean */ .Uw.Boolean),
-      value: scrivito_sdk_common__WEBPACK_IMPORTED_MODULE_3__/* .tcomb.maybe */ .Uw.maybe(SearchValueType),
-      field: scrivito_sdk_common__WEBPACK_IMPORTED_MODULE_3__/* .tcomb.maybe */ .Uw.maybe(SearchFieldType),
-      operator: scrivito_sdk_common__WEBPACK_IMPORTED_MODULE_3__/* .tcomb.maybe */ .Uw.maybe(SearchOperatorType),
-      selected: scrivito_sdk_common__WEBPACK_IMPORTED_MODULE_3__/* .tcomb.maybe */ .Uw.maybe(scrivito_sdk_common__WEBPACK_IMPORTED_MODULE_3__/* .tcomb.Boolean */ .Uw.Boolean),
-      options: scrivito_sdk_common__WEBPACK_IMPORTED_MODULE_3__/* .tcomb.maybe */ .Uw.maybe(scrivito_sdk_common__WEBPACK_IMPORTED_MODULE_3__/* .tcomb.dict */ .Uw.dict(scrivito_sdk_common__WEBPACK_IMPORTED_MODULE_3__/* .tcomb.String */ .Uw.String, TreeFilterType))
-    })
-  );
-  const FilterDefinitionTypeMapping = {
-    tree: TreeFilterType,
-    radioButton: RadioFilterType,
-    checkbox: CheckboxFilterType
-  };
-  const FilterDefinitionType = scrivito_sdk_common__WEBPACK_IMPORTED_MODULE_3__/* .tcomb.union */ .Uw.union([
-    FilterDefinitionTypeMapping.tree,
-    FilterDefinitionTypeMapping.checkbox,
-    FilterDefinitionTypeMapping.radioButton
-  ]);
-  FilterDefinitionType.dispatch = (definition) => FilterDefinitionTypeMapping[definition.type || "tree"];
-  const StaticFiltersType = scrivito_sdk_common__WEBPACK_IMPORTED_MODULE_3__/* .tcomb.dict */ .Uw.dict(scrivito_sdk_common__WEBPACK_IMPORTED_MODULE_3__/* .tcomb.String */ .Uw.String, FilterDefinitionType);
-  const DynamicOrStaticFiltersType = scrivito_sdk_common__WEBPACK_IMPORTED_MODULE_3__/* .tcomb.union */ .Uw.union([scrivito_sdk_common__WEBPACK_IMPORTED_MODULE_3__/* .tcomb.Function */ .Uw.Function, StaticFiltersType]);
-  DynamicOrStaticFiltersType.dispatch = (v) => scrivito_sdk_common__WEBPACK_IMPORTED_MODULE_3__/* .tcomb.Function */ .Uw.Function.is(v) ? DynamicOrStaticFiltersType.meta.types[0] : DynamicOrStaticFiltersType.meta.types[1];
-  const BaseFilterType = scrivito_sdk_common__WEBPACK_IMPORTED_MODULE_3__/* .tcomb["interface"] */ .Uw["interface"]({
-    query: scrivito_sdk_models__WEBPACK_IMPORTED_MODULE_4__/* .ObjSearchType */ .iv
-  });
-  const ConfigurationType = scrivito_sdk_common__WEBPACK_IMPORTED_MODULE_3__/* .tcomb["interface"] */ .Uw["interface"](
-    {
-      filters: scrivito_sdk_common__WEBPACK_IMPORTED_MODULE_3__/* .tcomb.maybe */ .Uw.maybe(DynamicOrStaticFiltersType),
-      baseFilter: scrivito_sdk_common__WEBPACK_IMPORTED_MODULE_3__/* .tcomb.maybe */ .Uw.maybe(BaseFilterType)
-    },
-    "Configuration"
-  );
-  return (0,scrivito_sdk_common__WEBPACK_IMPORTED_MODULE_3__/* .checkArgumentsFor */ .eY)(
-    "configureContentBrowser",
-    [["configuration", ConfigurationType]],
-    {
-      docPermalink: "js-sdk/configureContentBrowser"
-    }
-  );
-})();
 function copyWithAbsoluteUrls(contentBrowserFilters) {
-  return (0,lodash_es_mapValues__WEBPACK_IMPORTED_MODULE_6__/* ["default"] */ .A)(contentBrowserFilters, (_a) => {
+  return (0,lodash_es_mapValues__WEBPACK_IMPORTED_MODULE_4__/* ["default"] */ .A)(contentBrowserFilters, (_a) => {
     var item = __objRest(_a, []);
     const { icon, options } = item;
     const hasCustomIcon = icon && !icon.match(/^\w+$/);
@@ -668,7 +549,7 @@ function copyWithAbsoluteUrls(contentBrowserFilters) {
 /* harmony export */   I: () => (/* binding */ configureObjClassForContentType),
 /* harmony export */   p: () => (/* binding */ getObjClassForContentTypeMapping)
 /* harmony export */ });
-/* harmony import */ var scrivito_sdk_common__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(2838);
+/* harmony import */ var scrivito_sdk_common__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(5204);
 /* harmony import */ var scrivito_sdk_state__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(1946);
 
 
@@ -677,8 +558,8 @@ const state = (0,scrivito_sdk_state__WEBPACK_IMPORTED_MODULE_1__/* .createStateC
 function getObjClassForContentTypeMapping() {
   return state.get();
 }
-function configureObjClassForContentType(configuration, ...excessArgs) {
-  checkConfigureObjClassForContentType(configuration, ...excessArgs);
+function configureObjClassForContentType(configuration) {
+  checkConfigureObjClassForContentType(configuration);
   if (!configuration["*/*"]) {
     throw new scrivito_sdk_common__WEBPACK_IMPORTED_MODULE_0__/* .ArgumentError */ .c1(
       'No ObjClass has been configured for the contentType "*/*"'
@@ -691,21 +572,17 @@ function configureObjClassForContentType(configuration, ...excessArgs) {
   }
   state.set(configuration);
 }
-const ContentTypePattern = scrivito_sdk_common__WEBPACK_IMPORTED_MODULE_0__/* .tcomb.refinement */ .Uw.refinement(
-  scrivito_sdk_common__WEBPACK_IMPORTED_MODULE_0__/* .tcomb.String */ .Uw.String,
-  // either */*, or
-  // type/* (type without / and *), or
-  // type/subtype (subtype without ; and *)
-  // Note: Intentionally no */subtype
-  (s) => /^(\*\/\*|[^\/\*]+\/(\*|[^\*;]+))$/.test(s),
-  "Content Type"
-);
-const ConfigurationType = scrivito_sdk_common__WEBPACK_IMPORTED_MODULE_0__/* .tcomb.dict */ .Uw.dict(ContentTypePattern, scrivito_sdk_common__WEBPACK_IMPORTED_MODULE_0__/* .tcomb.String */ .Uw.String);
-const checkConfigureObjClassForContentType = (0,scrivito_sdk_common__WEBPACK_IMPORTED_MODULE_0__/* .checkArgumentsFor */ .eY)(
-  "configureObjClassForContentType",
-  [["configuration", ConfigurationType]],
-  { docPermalink: "js-sdk/configureObjClassForContentType" }
-);
+function checkConfigureObjClassForContentType(configuration) {
+  Object.keys(configuration).forEach((contentType) => {
+    if (!/^(\*\/\*|[^\/\*]+\/(\*|[^\*;]+))$/.test(contentType)) {
+      (0,scrivito_sdk_common__WEBPACK_IMPORTED_MODULE_0__/* .throwInvalidArgumentsError */ .Ht)(
+        "configureObjClassForContentType",
+        `Content type '${contentType}' is not valid.`,
+        { docPermalink: "js-sdk/configureObjClassForContentType" }
+      );
+    }
+  });
+}
 
 
 /***/ }),
@@ -717,7 +594,7 @@ const checkConfigureObjClassForContentType = (0,scrivito_sdk_common__WEBPACK_IMP
 /* harmony export */   L: () => (/* binding */ setConstraintsValidationCallback),
 /* harmony export */   v: () => (/* binding */ getConstraintsValidationCallback)
 /* harmony export */ });
-/* harmony import */ var scrivito_sdk_common__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(2838);
+/* harmony import */ var scrivito_sdk_common__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(5204);
 
 
 let constraintsValidationCallback;
@@ -765,7 +642,7 @@ function shouldContentTagsForEmptyAttributesBeSkipped() {
 /* harmony export */   p: () => (/* binding */ currentAppSpace)
 /* harmony export */ });
 /* harmony import */ var scrivito_sdk_app_support_editing_context__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(1616);
-/* harmony import */ var scrivito_sdk_models__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(3781);
+/* harmony import */ var scrivito_sdk_models__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(4360);
 
 
 
@@ -792,10 +669,10 @@ function currentAppSpace() {
 /* harmony import */ var urijs__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(4066);
 /* harmony import */ var urijs__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(urijs__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var scrivito_sdk_app_support_current_page_data__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(5634);
-/* harmony import */ var scrivito_sdk_common__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(2838);
+/* harmony import */ var scrivito_sdk_common__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(5204);
 /* harmony import */ var scrivito_sdk_data__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(1091);
-/* harmony import */ var scrivito_sdk_models__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(3781);
-/* harmony import */ var scrivito_sdk_realm__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(3340);
+/* harmony import */ var scrivito_sdk_models__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(4360);
+/* harmony import */ var scrivito_sdk_realm__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(7461);
 /* harmony import */ var scrivito_sdk_state__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(1946);
 
 
@@ -814,9 +691,7 @@ function currentPage() {
 function isCurrentPage(page) {
   var _a;
   (0,scrivito_sdk_data__WEBPACK_IMPORTED_MODULE_3__/* .assertNotUsingInMemoryTenant */ .C_)("Scrivito.isCurrentPage");
-  (0,scrivito_sdk_common__WEBPACK_IMPORTED_MODULE_2__/* .checkArgumentsFor */ .eY)("isCurrentPage", [["page", scrivito_sdk_models__WEBPACK_IMPORTED_MODULE_4__/* .ObjType */ .aT]], {
-    docPermalink: "js-sdk/isCurrentPage"
-  })(page);
+  checkIsCurrentPage(page);
   return ((_a = currentPage()) == null ? void 0 : _a.id()) === page.id();
 }
 function currentPageParams() {
@@ -846,6 +721,17 @@ const customComponentSiteIdState = (0,scrivito_sdk_state__WEBPACK_IMPORTED_MODUL
 function setCustomComponentSiteId(siteId) {
   customComponentSiteIdState.set(siteId);
 }
+function checkIsCurrentPage(obj) {
+  if (!(0,scrivito_sdk_models__WEBPACK_IMPORTED_MODULE_4__/* .isWrappingBasicObj */ .mD)(obj)) {
+    (0,scrivito_sdk_common__WEBPACK_IMPORTED_MODULE_2__/* .throwInvalidArgumentsError */ .Ht)(
+      "isCurrentPage",
+      "'obj' must be an instance of 'Obj'.",
+      {
+        docPermalink: "js-sdk/isCurrentPage"
+      }
+    );
+  }
+}
 
 
 /***/ }),
@@ -862,9 +748,9 @@ function setCustomComponentSiteId(siteId) {
 /* unused harmony export setNavigationStateProvider */
 /* harmony import */ var scrivito_sdk_app_support_current_app_space__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(1048);
 /* harmony import */ var scrivito_sdk_app_support_routing__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(7183);
-/* harmony import */ var scrivito_sdk_common__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(2838);
+/* harmony import */ var scrivito_sdk_common__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(5204);
 /* harmony import */ var scrivito_sdk_loadable__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(5688);
-/* harmony import */ var scrivito_sdk_models__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(3781);
+/* harmony import */ var scrivito_sdk_models__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(4360);
 
 var __defProp = Object.defineProperty;
 var __defProps = Object.defineProperties;
@@ -1012,7 +898,7 @@ function getDestinationUnavailableFallbackUrl(params) {
 /* harmony export */   O: () => (/* binding */ setEditingConfigFor),
 /* harmony export */   u: () => (/* binding */ getEditingConfigFor)
 /* harmony export */ });
-/* harmony import */ var scrivito_sdk_common__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(2838);
+/* harmony import */ var scrivito_sdk_common__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(5204);
 /* harmony import */ var scrivito_sdk_state__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(1946);
 
 
@@ -1058,8 +944,8 @@ function getEditingConfigFor(className) {
 /* harmony export */   gY: () => (/* binding */ isComparisonActive)
 /* harmony export */ });
 /* unused harmony exports initializeEditingContextFromBrowsingContext, setIsInPlaceEditingActive, setIsComparisonActive */
-/* harmony import */ var scrivito_sdk_common__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(2838);
-/* harmony import */ var scrivito_sdk_models__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(3781);
+/* harmony import */ var scrivito_sdk_common__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(5204);
+/* harmony import */ var scrivito_sdk_models__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(4360);
 
 
 
@@ -1116,7 +1002,7 @@ function setIsComparisonActive(isActive) {
 /* harmony export */   q: () => (/* binding */ getExtensionsUrl),
 /* harmony export */   s: () => (/* binding */ setExtensionsUrl)
 /* harmony export */ });
-/* harmony import */ var scrivito_sdk_common__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(2838);
+/* harmony import */ var scrivito_sdk_common__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(5204);
 /* harmony import */ var scrivito_sdk_state__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(1946);
 
 
@@ -1161,9 +1047,9 @@ function getForcedEditorLanguage() {
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   u: () => (/* binding */ getClassName)
 /* harmony export */ });
-/* harmony import */ var scrivito_sdk_common__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(2838);
-/* harmony import */ var scrivito_sdk_data_integration__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(9900);
-/* harmony import */ var scrivito_sdk_realm__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(3340);
+/* harmony import */ var scrivito_sdk_common__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(5204);
+/* harmony import */ var scrivito_sdk_data_integration__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(9800);
+/* harmony import */ var scrivito_sdk_realm__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(7461);
 
 
 
@@ -1196,7 +1082,7 @@ function getClassName(subject) {
 /* harmony export */ });
 /* harmony import */ var scrivito_sdk_app_support_ui_adapter__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(5460);
 /* harmony import */ var scrivito_sdk_client__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(853);
-/* harmony import */ var scrivito_sdk_models__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(3781);
+/* harmony import */ var scrivito_sdk_models__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(4360);
 
 
 
@@ -1216,8 +1102,8 @@ function getComparisonRange() {
 /* harmony export */   p: () => (/* binding */ getDetailsPageUrl)
 /* harmony export */ });
 /* harmony import */ var scrivito_sdk_app_support_basic_url_for__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(5112);
-/* harmony import */ var scrivito_sdk_common__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(2838);
-/* harmony import */ var scrivito_sdk_models__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(3781);
+/* harmony import */ var scrivito_sdk_common__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(5204);
+/* harmony import */ var scrivito_sdk_models__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(4360);
 
 
 
@@ -1242,7 +1128,7 @@ function getDetailsPageUrl(dataItem, siteId) {
 /* harmony export */ });
 /* harmony import */ var scrivito_sdk_app_support_treat_localhost_like__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(5302);
 /* harmony import */ var scrivito_sdk_app_support_ui_adapter__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(5460);
-/* harmony import */ var scrivito_sdk_common__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(2838);
+/* harmony import */ var scrivito_sdk_common__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(5204);
 
 
 
@@ -1276,7 +1162,7 @@ function getEditorAuthToken({
 /* harmony export */   A: () => (/* binding */ setHasComponentHandler),
 /* harmony export */   I: () => (/* binding */ hasComponent)
 /* harmony export */ });
-/* harmony import */ var scrivito_sdk_common__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(2838);
+/* harmony import */ var scrivito_sdk_common__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(5204);
 
 
 let hasComponentHandler;
@@ -1300,7 +1186,7 @@ function setHasComponentHandler(func) {
 /* harmony export */   L: () => (/* binding */ getInitialContentDumpUrl),
 /* harmony export */   d: () => (/* binding */ setInitialContentDumpUrl)
 /* harmony export */ });
-/* harmony import */ var scrivito_sdk_common__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(2838);
+/* harmony import */ var scrivito_sdk_common__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(5204);
 /* harmony import */ var scrivito_sdk_state__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(1946);
 
 
@@ -1335,8 +1221,8 @@ function getInitialContentDumpUrl() {
 /* harmony import */ var scrivito_sdk_app_support_editing_config_store__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(2295);
 /* harmony import */ var scrivito_sdk_app_support_present_ui_adapter__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(7272);
 /* harmony import */ var scrivito_sdk_loadable__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(5688);
-/* harmony import */ var scrivito_sdk_models__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(3781);
-/* harmony import */ var scrivito_sdk_realm__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(3340);
+/* harmony import */ var scrivito_sdk_models__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(4360);
+/* harmony import */ var scrivito_sdk_realm__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(7461);
 
 
 
@@ -1471,7 +1357,7 @@ function isPageEditable() {
 /* harmony export */ });
 /* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(5301);
 /* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react_dom__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var scrivito_sdk_common__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(2838);
+/* harmony import */ var scrivito_sdk_common__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(5204);
 
 
 
@@ -1538,12 +1424,10 @@ class MenuHandlerBuilder {
 
 // EXTERNAL MODULE: ../node_modules/lodash-es/mapValues.js
 var mapValues = __webpack_require__(5796);
-// EXTERNAL MODULE: ../node_modules/lodash-es/pick.js + 2 modules
-var pick = __webpack_require__(2703);
+// EXTERNAL MODULE: ../node_modules/lodash-es/pick.js + 3 modules
+var pick = __webpack_require__(6913);
 // EXTERNAL MODULE: ./scrivito_sdk/app_support/absolute_url.ts
 var absolute_url = __webpack_require__(3617);
-// EXTERNAL MODULE: ./scrivito_sdk/common/index.ts + 64 modules
-var common = __webpack_require__(2838);
 ;// CONCATENATED MODULE: ./scrivito_sdk/app_support/menu/menu_patch_builder.ts
 
 var __defProp = Object.defineProperty;
@@ -1565,7 +1449,6 @@ var __spreadValues = (a, b) => {
 
 
 
-
 class MenuPatchBuilder {
   constructor() {
     this.patch = {
@@ -1575,75 +1458,22 @@ class MenuPatchBuilder {
       modifyItems: {}
     };
   }
-  insert(customMenuItem, ...excessArgs) {
-    checkMenuInsertArguments(customMenuItem, ...excessArgs);
+  insert(customMenuItem) {
     this.patch.insertIds = Array.from(
       new Set(this.patch.insertIds).add(customMenuItem.id)
     );
     this.patch.items[customMenuItem.id] = __spreadValues(__spreadValues(__spreadValues({}, (0,pick/* default */.A)(customMenuItem, "description", "group", "position", "title")), (0,mapValues/* default */.A)((0,pick/* default */.A)(customMenuItem, "enabled"), (v) => !!v)), iconPatch(customMenuItem.icon));
   }
-  modify(menuItem, ...excessArgs) {
-    checkMenuModifyArguments(menuItem, ...excessArgs);
+  modify(menuItem) {
     this.patch.modifyItems[menuItem.id] = __spreadValues(__spreadValues(__spreadValues({}, this.patch.modifyItems[menuItem.id]), (0,pick/* default */.A)(menuItem, "group", "position", "title")), iconPatch(menuItem.icon));
   }
-  remove(id, ...excessArgs) {
-    checkMenuRemoveArguments(id, ...excessArgs);
+  remove(id) {
     this.patch.removeIds.push(id);
   }
   getPatch() {
     return this.patch;
   }
 }
-const PositionType = common/* tcomb.interface */.Uw["interface"]({
-  after: common/* tcomb.maybe */.Uw.maybe(common/* tcomb.String */.Uw.String),
-  before: common/* tcomb.maybe */.Uw.maybe(common/* tcomb.String */.Uw.String)
-});
-const checkMenuInsertArguments = (0,common/* checkArgumentsFor */.eY)(
-  "menu.insert",
-  [
-    [
-      "options",
-      common/* tcomb.interface */.Uw["interface"]({
-        id: common/* tcomb.String */.Uw.String,
-        description: common/* tcomb.maybe */.Uw.maybe(common/* tcomb.String */.Uw.String),
-        enabled: common/* tcomb.maybe */.Uw.maybe(common/* tcomb.Boolean */.Uw.Boolean),
-        group: common/* tcomb.maybe */.Uw.maybe(common/* tcomb.String */.Uw.String),
-        icon: common/* tcomb.maybe */.Uw.maybe(common/* tcomb.String */.Uw.String),
-        onClick: common/* tcomb.maybe */.Uw.maybe(common/* tcomb.Function */.Uw.Function),
-        position: common/* tcomb.maybe */.Uw.maybe(PositionType),
-        title: common/* tcomb.maybe */.Uw.maybe(common/* tcomb.String */.Uw.String)
-      })
-    ]
-  ],
-  {
-    docPermalink: "js-sdk/extendMenu"
-  }
-);
-const checkMenuModifyArguments = (0,common/* checkArgumentsFor */.eY)(
-  "menu.modify",
-  [
-    [
-      "options",
-      common/* tcomb.interface */.Uw["interface"]({
-        id: common/* tcomb.String */.Uw.String,
-        group: common/* tcomb.maybe */.Uw.maybe(common/* tcomb.String */.Uw.String),
-        icon: common/* tcomb.maybe */.Uw.maybe(common/* tcomb.String */.Uw.String),
-        position: common/* tcomb.maybe */.Uw.maybe(PositionType),
-        title: common/* tcomb.maybe */.Uw.maybe(common/* tcomb.String */.Uw.String)
-      })
-    ]
-  ],
-  {
-    docPermalink: "js-sdk/extendMenu"
-  }
-);
-const checkMenuRemoveArguments = (0,common/* checkArgumentsFor */.eY)(
-  "menu.remove",
-  [["id", common/* tcomb.String */.Uw.String]],
-  {
-    docPermalink: "js-sdk/extendMenu"
-  }
-);
 function iconPatch(icon) {
   return icon ? { icon: (0,absolute_url/* absoluteUrl */.r)(icon) } : {};
 }
@@ -1690,7 +1520,7 @@ function getCounter() {
 /* harmony export */   A: () => (/* binding */ getMenuCallbacks),
 /* harmony export */   m: () => (/* binding */ registerMenuCallback)
 /* harmony export */ });
-/* harmony import */ var scrivito_sdk_common__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(2838);
+/* harmony import */ var scrivito_sdk_common__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(5204);
 
 
 let menuCallbacks = [];
@@ -1717,11 +1547,11 @@ function getMenuCallbacks() {
 /* harmony import */ var urijs__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(urijs__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var scrivito_sdk_app_support_basic_navigate_to__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(4572);
 /* harmony import */ var scrivito_sdk_app_support_url_for_data_item__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(5164);
-/* harmony import */ var scrivito_sdk_common__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(2838);
-/* harmony import */ var scrivito_sdk_data_integration__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(9900);
+/* harmony import */ var scrivito_sdk_common__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(5204);
+/* harmony import */ var scrivito_sdk_data_integration__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(9800);
 /* harmony import */ var scrivito_sdk_loadable__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(5688);
-/* harmony import */ var scrivito_sdk_models__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(3781);
-/* harmony import */ var scrivito_sdk_realm__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(3340);
+/* harmony import */ var scrivito_sdk_models__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(4360);
+/* harmony import */ var scrivito_sdk_realm__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(7461);
 /* harmony import */ var scrivito_sdk_state__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(1946);
 
 var __defProp = Object.defineProperty;
@@ -1897,10 +1727,10 @@ function extractRoutingTargetForLink(link, queryParameters, hashToApply) {
 /* harmony import */ var scrivito_sdk_app_support_change_location__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(2354);
 /* harmony import */ var scrivito_sdk_app_support_current_app_space__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(1048);
 /* harmony import */ var scrivito_sdk_app_support_routing__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(7183);
-/* harmony import */ var scrivito_sdk_common__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(2838);
+/* harmony import */ var scrivito_sdk_common__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(5204);
 /* harmony import */ var scrivito_sdk_loadable__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(5688);
-/* harmony import */ var scrivito_sdk_models__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(3781);
-/* harmony import */ var scrivito_sdk_realm__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(3340);
+/* harmony import */ var scrivito_sdk_models__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(4360);
+/* harmony import */ var scrivito_sdk_realm__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(7461);
 
 var __defProp = Object.defineProperty;
 var __defProps = Object.defineProperties;
@@ -2045,7 +1875,7 @@ function resetRecognizedSiteId() {
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   H: () => (/* binding */ presentUiAdapter)
 /* harmony export */ });
-/* harmony import */ var scrivito_sdk_common__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(2838);
+/* harmony import */ var scrivito_sdk_common__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(5204);
 /* harmony import */ var _ui_adapter__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(5460);
 
 
@@ -2067,7 +1897,7 @@ function presentUiAdapter() {
 /* harmony export */   t: () => (/* binding */ configurePreviewSizes)
 /* harmony export */ });
 /* harmony import */ var lodash_es_uniqBy__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(390);
-/* harmony import */ var scrivito_sdk_common__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(2838);
+/* harmony import */ var scrivito_sdk_common__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(5204);
 /* harmony import */ var scrivito_sdk_state__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(1946);
 
 
@@ -2075,7 +1905,6 @@ function presentUiAdapter() {
 
 const state = (0,scrivito_sdk_state__WEBPACK_IMPORTED_MODULE_1__/* .createStateContainer */ .Ld)();
 function configurePreviewSizes(previewSizes) {
-  checkConfigurePreviewSizes(previewSizes);
   if (!previewSizes.length) {
     throw new scrivito_sdk_common__WEBPACK_IMPORTED_MODULE_0__/* .ArgumentError */ .c1(
       'No sizes has been provided for "configurePreviewSizes"'
@@ -2098,20 +1927,6 @@ function validatePreviewSizeWidth(previewSize) {
 function getPreviewSizes() {
   return state.get();
 }
-const PreviewSizeType = scrivito_sdk_common__WEBPACK_IMPORTED_MODULE_0__/* .tcomb["interface"] */ .Uw["interface"](
-  {
-    title: scrivito_sdk_common__WEBPACK_IMPORTED_MODULE_0__/* .tcomb.String */ .Uw.String,
-    width: scrivito_sdk_common__WEBPACK_IMPORTED_MODULE_0__/* .tcomb.maybe */ .Uw.maybe(scrivito_sdk_common__WEBPACK_IMPORTED_MODULE_0__/* .tcomb.Number */ .Uw.Number),
-    description: scrivito_sdk_common__WEBPACK_IMPORTED_MODULE_0__/* .tcomb.maybe */ .Uw.maybe(scrivito_sdk_common__WEBPACK_IMPORTED_MODULE_0__/* .tcomb.String */ .Uw.String),
-    icon: scrivito_sdk_common__WEBPACK_IMPORTED_MODULE_0__/* .tcomb.maybe */ .Uw.maybe(scrivito_sdk_common__WEBPACK_IMPORTED_MODULE_0__/* .tcomb.String */ .Uw.String)
-  },
-  "PreviewSize"
-);
-const checkConfigurePreviewSizes = (0,scrivito_sdk_common__WEBPACK_IMPORTED_MODULE_0__/* .checkArgumentsFor */ .eY)(
-  "configurePreviewSizes",
-  [["previewSizes", scrivito_sdk_common__WEBPACK_IMPORTED_MODULE_0__/* .tcomb.list */ .Uw.list(PreviewSizeType)]],
-  { docPermalink: "js-sdk/configurePreviewSizes" }
-);
 
 
 /***/ }),
@@ -2178,10 +1993,10 @@ function getAttributeEditingOptionsFor(className, attributeName, attributeType) 
 /* harmony import */ var scrivito_sdk_app_support_basic_url_for__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(5112);
 /* harmony import */ var scrivito_sdk_app_support_current_app_space__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(1048);
 /* harmony import */ var scrivito_sdk_app_support_routing__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(7183);
-/* harmony import */ var scrivito_sdk_common__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(2838);
-/* harmony import */ var scrivito_sdk_data_integration__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(9900);
+/* harmony import */ var scrivito_sdk_common__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(5204);
+/* harmony import */ var scrivito_sdk_data_integration__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(9800);
 /* harmony import */ var scrivito_sdk_link_resolution__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(248);
-/* harmony import */ var scrivito_sdk_models__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(3781);
+/* harmony import */ var scrivito_sdk_models__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(4360);
 
 var __defProp = Object.defineProperty;
 var __defProps = Object.defineProperties;
@@ -2231,11 +2046,15 @@ function calculateInternalLinkUrl({ obj_id: objId, query, hash }, options) {
     withoutOriginIfLocal: true
   }));
 }
-const checkResolveHtmlUrls = (0,scrivito_sdk_common__WEBPACK_IMPORTED_MODULE_3__/* .checkArgumentsFor */ .eY)(
-  "resolveHtmlUrls",
-  [["htmlString", scrivito_sdk_common__WEBPACK_IMPORTED_MODULE_3__/* .tcomb.String */ .Uw.String]],
-  { docPermalink: "js-sdk/resolveHtmlUrls" }
-);
+function checkResolveHtmlUrls(htmlString) {
+  if (typeof htmlString !== "string") {
+    (0,scrivito_sdk_common__WEBPACK_IMPORTED_MODULE_3__/* .throwInvalidArgumentsError */ .Ht)(
+      "resolveHtmlUrls",
+      "'htmlString' must be a 'String'.",
+      { docPermalink: "js-sdk/resolveHtmlUrls" }
+    );
+  }
+}
 
 
 /***/ }),
@@ -2267,14 +2086,14 @@ var external_urijs_ = __webpack_require__(4066);
 var current_page_data = __webpack_require__(5634);
 // EXTERNAL MODULE: ./scrivito_sdk/app_support/destination_types.ts
 var destination_types = __webpack_require__(7550);
-// EXTERNAL MODULE: ./scrivito_sdk/common/index.ts + 64 modules
-var common = __webpack_require__(2838);
+// EXTERNAL MODULE: ./scrivito_sdk/common/index.ts + 62 modules
+var common = __webpack_require__(5204);
 // EXTERNAL MODULE: ./scrivito_sdk/data/index.ts + 29 modules
 var data = __webpack_require__(1091);
 // EXTERNAL MODULE: ./scrivito_sdk/loadable/index.ts + 29 modules
 var loadable = __webpack_require__(5688);
-// EXTERNAL MODULE: ./scrivito_sdk/models/index.ts + 41 modules
-var models = __webpack_require__(3781);
+// EXTERNAL MODULE: ./scrivito_sdk/models/index.ts + 44 modules
+var models = __webpack_require__(4360);
 ;// CONCATENATED MODULE: ./scrivito_sdk/app_support/permalink_cache.ts
 
 
@@ -2329,8 +2148,8 @@ var homepage_callback = __webpack_require__(827);
 var current_app_space = __webpack_require__(1048);
 // EXTERNAL MODULE: ./scrivito_sdk/app_support/unstable_multi_site_mode.ts
 var unstable_multi_site_mode = __webpack_require__(4416);
-// EXTERNAL MODULE: ./scrivito_sdk/realm/index.ts + 22 modules
-var realm = __webpack_require__(3340);
+// EXTERNAL MODULE: ./scrivito_sdk/realm/index.ts + 21 modules
+var realm = __webpack_require__(7461);
 ;// CONCATENATED MODULE: ./scrivito_sdk/app_support/routing_path.ts
 
 
@@ -2610,7 +2429,7 @@ function isLocalUri(uri) {
 /* harmony export */   m: () => (/* binding */ setHomepageCallback)
 /* harmony export */ });
 /* harmony import */ var scrivito_sdk_app_support_current_page__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(7639);
-/* harmony import */ var scrivito_sdk_common__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(2838);
+/* harmony import */ var scrivito_sdk_common__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(5204);
 
 
 
@@ -2636,7 +2455,7 @@ function homepageFromCallback() {
 /* harmony export */   js: () => (/* binding */ isInitialUrlAvailable),
 /* harmony export */   s1: () => (/* binding */ scaleDownBinary)
 /* harmony export */ });
-/* harmony import */ var scrivito_sdk_common__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(2838);
+/* harmony import */ var scrivito_sdk_common__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(5204);
 
 
 const prerenderContext = new scrivito_sdk_common__WEBPACK_IMPORTED_MODULE_0__/* .ContextContainer */ .hl();
@@ -2685,8 +2504,8 @@ __webpack_require__.d(__webpack_exports__, {
   R: () => (/* binding */ scrollIntoView)
 });
 
-// EXTERNAL MODULE: ./scrivito_sdk/common/index.ts + 64 modules
-var common = __webpack_require__(2838);
+// EXTERNAL MODULE: ./scrivito_sdk/common/index.ts + 62 modules
+var common = __webpack_require__(5204);
 // EXTERNAL MODULE: ./scrivito_sdk/app_support/navigation_state.ts
 var navigation_state = __webpack_require__(9286);
 // EXTERNAL MODULE: ./scrivito_sdk/loadable/index.ts + 29 modules
@@ -2778,7 +2597,7 @@ let requestedTargetId;
 /* harmony import */ var urijs__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(4066);
 /* harmony import */ var urijs__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(urijs__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var scrivito_sdk_app_support_current_page__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(7639);
-/* harmony import */ var scrivito_sdk_common__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(2838);
+/* harmony import */ var scrivito_sdk_common__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(5204);
 
 
 
@@ -2938,7 +2757,7 @@ const SEE_CONFIGURE = `Visit ${(0,scrivito_sdk_common__WEBPACK_IMPORTED_MODULE_2
 /* harmony export */   X: () => (/* binding */ setTreatLocalhostLike),
 /* harmony export */   d: () => (/* binding */ getTreatLocalhostLike)
 /* harmony export */ });
-/* harmony import */ var scrivito_sdk_common__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(2838);
+/* harmony import */ var scrivito_sdk_common__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(5204);
 
 
 let treatLocalhostLike;
@@ -2960,7 +2779,7 @@ function getTreatLocalhostLike() {
 /* harmony export */   B: () => (/* binding */ uiAdapter)
 /* harmony export */ });
 /* unused harmony export setUiAdapter */
-/* harmony import */ var scrivito_sdk_common__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(2838);
+/* harmony import */ var scrivito_sdk_common__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(5204);
 
 
 let uiAdapter;
@@ -2979,7 +2798,7 @@ function setUiAdapter(newUiAdapter) {
 /* harmony export */   n: () => (/* binding */ uiAdapterCompatibleValue)
 /* harmony export */ });
 /* harmony import */ var lodash_es_isDate__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(9231);
-/* harmony import */ var scrivito_sdk_models__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(3781);
+/* harmony import */ var scrivito_sdk_models__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(4360);
 
 var __defProp = Object.defineProperty;
 var __defProps = Object.defineProperties;
@@ -3081,10 +2900,10 @@ function isSiteRelated(field) {
 /* harmony export */   yG: () => (/* binding */ unstable_selectSiteId)
 /* harmony export */ });
 /* unused harmony exports UnstableMultiSiteModeOperationError, resetUnstableMultiSiteMode */
-/* harmony import */ var scrivito_sdk_common__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(2838);
+/* harmony import */ var scrivito_sdk_common__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(5204);
 /* harmony import */ var scrivito_sdk_loadable__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(5688);
-/* harmony import */ var scrivito_sdk_models__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(3781);
-/* harmony import */ var scrivito_sdk_realm__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(3340);
+/* harmony import */ var scrivito_sdk_models__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(4360);
+/* harmony import */ var scrivito_sdk_realm__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(7461);
 
 
 
@@ -3193,19 +3012,19 @@ function getSiteIdAssumingSelected() {
 /* harmony export */   d: () => (/* binding */ urlFor)
 /* harmony export */ });
 /* harmony import */ var scrivito_sdk_app_support_basic_url_for__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(5112);
-/* harmony import */ var scrivito_sdk_common__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(2838);
+/* harmony import */ var scrivito_sdk_common__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(5204);
 /* harmony import */ var scrivito_sdk_data__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(1091);
-/* harmony import */ var scrivito_sdk_models__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(3781);
-/* harmony import */ var scrivito_sdk_realm__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(3340);
+/* harmony import */ var scrivito_sdk_models__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(4360);
+/* harmony import */ var scrivito_sdk_realm__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(7461);
 
 
 
 
 
 
-function urlFor(target, options, ...excessArgs) {
+function urlFor(target, options) {
   (0,scrivito_sdk_data__WEBPACK_IMPORTED_MODULE_2__/* .assertNotUsingInMemoryTenant */ .C_)("Scrivito.urlFor");
-  checkUrlFor(target, options, ...excessArgs);
+  checkUrlFor(target);
   let query;
   let hash;
   if (options) {
@@ -3214,23 +3033,17 @@ function urlFor(target, options, ...excessArgs) {
   }
   return (0,scrivito_sdk_app_support_basic_url_for__WEBPACK_IMPORTED_MODULE_0__/* .basicUrlFor */ .P)((0,scrivito_sdk_realm__WEBPACK_IMPORTED_MODULE_4__/* .unwrapAppClass */ .zo)(target), { query, hash });
 }
-const TargetType = scrivito_sdk_common__WEBPACK_IMPORTED_MODULE_1__/* .tcomb.union */ .Uw.union([scrivito_sdk_models__WEBPACK_IMPORTED_MODULE_3__/* .ObjType */ .aT, scrivito_sdk_models__WEBPACK_IMPORTED_MODULE_3__/* .LinkType */ .J, scrivito_sdk_models__WEBPACK_IMPORTED_MODULE_3__/* .BinaryType */ .ac]);
-const OptionsType = scrivito_sdk_common__WEBPACK_IMPORTED_MODULE_1__/* .tcomb["interface"] */ .Uw["interface"]({
-  query: scrivito_sdk_common__WEBPACK_IMPORTED_MODULE_1__/* .tcomb.maybe */ .Uw.maybe(scrivito_sdk_common__WEBPACK_IMPORTED_MODULE_1__/* .tcomb.String */ .Uw.String),
-  hash: scrivito_sdk_common__WEBPACK_IMPORTED_MODULE_1__/* .tcomb.maybe */ .Uw.maybe(scrivito_sdk_common__WEBPACK_IMPORTED_MODULE_1__/* .tcomb.String */ .Uw.String),
-  fragment: scrivito_sdk_common__WEBPACK_IMPORTED_MODULE_1__/* .tcomb.maybe */ .Uw.maybe(scrivito_sdk_common__WEBPACK_IMPORTED_MODULE_1__/* .tcomb.String */ .Uw.String)
-  // deprecated
-});
-const checkUrlFor = (0,scrivito_sdk_common__WEBPACK_IMPORTED_MODULE_1__/* .checkArgumentsFor */ .eY)(
-  "urlFor",
-  [
-    ["target", TargetType],
-    ["options", scrivito_sdk_common__WEBPACK_IMPORTED_MODULE_1__/* .tcomb.maybe */ .Uw.maybe(OptionsType)]
-  ],
-  {
-    docPermalink: "js-sdk/urlFor"
+function checkUrlFor(target) {
+  if (!((0,scrivito_sdk_models__WEBPACK_IMPORTED_MODULE_3__/* .isWrappingBasicObj */ .mD)(target) || (0,scrivito_sdk_models__WEBPACK_IMPORTED_MODULE_3__/* .isWrappingBasicLink */ .fZ)(target) || target instanceof scrivito_sdk_models__WEBPACK_IMPORTED_MODULE_3__/* .Binary */ .yI)) {
+    (0,scrivito_sdk_common__WEBPACK_IMPORTED_MODULE_1__/* .throwInvalidArgumentsError */ .Ht)(
+      "urlFor",
+      "'target' must be an instance of 'Obj', 'Link' or 'Binary'.",
+      {
+        docPermalink: "js-sdk/urlFor"
+      }
+    );
   }
-);
+}
 
 
 /***/ }),
@@ -3313,8 +3126,8 @@ __webpack_require__.d(__webpack_exports__, {
 
 // UNUSED EXPORTS: RemoteAdapterError, anticipatedMessageLink, connectTo, createAdapterClient, createAdapterMessageClient, createAdapterProxy, postMessageLinkFor, wrapWithLogging
 
-// EXTERNAL MODULE: ./scrivito_sdk/common/index.ts + 64 modules
-var common = __webpack_require__(2838);
+// EXTERNAL MODULE: ./scrivito_sdk/common/index.ts + 62 modules
+var common = __webpack_require__(5204);
 // EXTERNAL MODULE: ./scrivito_sdk/loadable/index.ts + 29 modules
 var loadable = __webpack_require__(5688);
 // EXTERNAL MODULE: ./scrivito_sdk/state/index.ts + 13 modules
@@ -3903,6 +3716,7 @@ __webpack_require__.d(__webpack_exports__, {
   HM: () => (/* reexport */ isDataLocatorOperatorFilter),
   dQ: () => (/* reexport */ isEmptySpaceId),
   MV: () => (/* reexport */ isExistentObjJson),
+  _p: () => (/* reexport */ isRelationalOpCode),
   g7: () => (/* reexport */ isRevisionObjSpaceId),
   a8: () => (/* reexport */ isUnavailableObjJson),
   Xj: () => (/* reexport */ isWidgetAttributeJson),
@@ -3914,7 +3728,7 @@ __webpack_require__.d(__webpack_exports__, {
   Yy: () => (/* reexport */ withEachAttributeJson)
 });
 
-// UNUSED EXPORTS: ApiClient, MissingWorkspaceError, OP_CODES, fetchBrowserToken, injectBrowserToken, isComparisonRange, isDataLocatorOperatorCode, isDataLocatorValueFilter, isObjSpaceId, objSpaceIdsEqual, replaceCmsRetrieval, retrieveObjFieldDiffs, setIdentityProvider, setupRegisterVerificator
+// UNUSED EXPORTS: ApiClient, DEFAULT_OP_CODES, MissingWorkspaceError, OP_CODES, RELATIONAL_OPERATOR_FILTER_OP_CODES, fetchBrowserToken, injectBrowserToken, isComparisonRange, isDataLocatorOperatorCode, isDataLocatorValueFilter, isObjSpaceId, objSpaceIdsEqual, replaceCmsRetrieval, retrieveObjFieldDiffs, setIdentityProvider, setupRegisterVerificator
 
 ;// CONCATENATED MODULE: ./scrivito_sdk/client/api_client.ts
 
@@ -4003,8 +3817,8 @@ class ApiClient {
   }
 }
 
-// EXTERNAL MODULE: ./scrivito_sdk/common/index.ts + 64 modules
-var common = __webpack_require__(2838);
+// EXTERNAL MODULE: ./scrivito_sdk/common/index.ts + 62 modules
+var common = __webpack_require__(5204);
 ;// CONCATENATED MODULE: ./scrivito_sdk/client/fetch_with_timeout.ts
 
 var fetch_with_timeout_defProp = Object.defineProperty;
@@ -4106,12 +3920,12 @@ function parseOrThrowRequestFailedError(jsonText) {
 
 
 function isErrorResponse(parsedResponse) {
-  if (!(0,common/* isObject */.n_)(parsedResponse))
+  if (!(0,common/* isObject */.Gv)(parsedResponse))
     return false;
   const errorType = typeof parsedResponse.error;
   const codeType = typeof parsedResponse.code;
   const details = parsedResponse.details;
-  return errorType === "string" && (codeType === "string" || codeType === "undefined") && ((0,common/* isObject */.n_)(details) || details === void 0);
+  return errorType === "string" && (codeType === "string" || codeType === "undefined") && ((0,common/* isObject */.Gv)(details) || details === void 0);
 }
 
 ;// CONCATENATED MODULE: ./scrivito_sdk/client/parse_error_response.ts
@@ -4572,7 +4386,7 @@ function create_rest_api_client_fetch(_0) {
 
 
 function getClientVersion() {
-  const clientVersion = "jssdk/1.29.0-dev-1-g2c6fb7bbb5f6";
+  const clientVersion = "jssdk/1.29.0-dev-1-gf1d807accd93";
   if (!clientVersion)
     throw new common/* InternalError */.Gd();
   return clientVersion;
@@ -4946,21 +4760,31 @@ class RequestFailedError extends common/* ScrivitoError */.aS {
 ;// CONCATENATED MODULE: ./scrivito_sdk/client/obj_json.ts
 
 
-const OP_CODES = (/* unused pure expression or super */ null && (["eq", "neq"]));
-const OPERATOR_FILTER_OP_CODES = [
-  "neq",
+const DEFAULT_OP_CODES = ["eq", "neq"];
+const RELATIONAL_OPERATOR_FILTER_OP_CODES = [
   "gt",
   "lt",
   "gte",
   "lte"
 ];
+const OP_CODES = [
+  ...DEFAULT_OP_CODES,
+  ...RELATIONAL_OPERATOR_FILTER_OP_CODES
+];
+const OPERATOR_FILTER_OP_CODES = [
+  "neq",
+  ...RELATIONAL_OPERATOR_FILTER_OP_CODES
+];
 function isDataLocatorOperatorFilter(filter) {
-  return (0,common/* isObject */.n_)(filter) && "field" in filter && typeof filter.field === "string" && "operator" in filter && typeof filter.operator === "string" && OPERATOR_FILTER_OP_CODES.includes(
-    filter.operator
-  ) && "value" in filter && isFilterValue(filter.value);
+  return (0,common/* isObject */.Gv)(filter) && "field" in filter && typeof filter.field === "string" && "operator" in filter && isDataLocatorOperatorCode(filter.operator) && "value" in filter && isFilterValue(filter.value);
 }
 function isDataLocatorOperatorCode(opCode) {
   return typeof opCode === "string" && OPERATOR_FILTER_OP_CODES.includes(opCode);
+}
+function isRelationalOpCode(opCode) {
+  return RELATIONAL_OPERATOR_FILTER_OP_CODES.includes(
+    opCode
+  );
 }
 function isFilterValue(value) {
   return typeof value === "string" || typeof value === "number" || typeof value === "boolean" || value === null;
@@ -5584,7 +5408,7 @@ class TokenAuthorizationProvider {
 
 /***/ }),
 
-/***/ 2838:
+/***/ 5204:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 
@@ -5593,16 +5417,12 @@ __webpack_require__.d(__webpack_exports__, {
   c1: () => (/* reexport */ ArgumentError),
   Oh: () => (/* reexport */ AsyncTaskTracker),
   vL: () => (/* reexport */ BatchRetrieval),
-  Gv: () => (/* reexport */ BlobType),
   s9: () => (/* reexport */ ConfigStore),
   hl: () => (/* reexport */ ContextContainer),
   cY: () => (/* reexport */ deferred_Deferred),
   l6: () => (/* reexport */ EmptyContinueIterable),
   d1: () => (/* reexport */ EndOfStreamError),
-  pt: () => (/* reexport */ FileType),
   Gd: () => (/* reexport */ InternalError),
-  NV: () => (/* reexport */ NonNegativeInteger),
-  ee: () => (/* reexport */ PositiveInteger),
   aS: () => (/* reexport */ ScrivitoError),
   RE: () => (/* reexport */ streamable_Streamable),
   B7: () => (/* reexport */ Subject),
@@ -5611,7 +5431,6 @@ __webpack_require__.d(__webpack_exports__, {
   W3: () => (/* reexport */ assumePresence),
   xQ: () => (/* reexport */ camelCase),
   IH: () => (/* reexport */ cdnAssetUrlBase),
-  eY: () => (/* reexport */ checkArgumentsFor),
   H5: () => (/* reexport */ clickPositionWithinElement),
   Lu: () => (/* reexport */ collectAndSchedule),
   OV: () => (/* reexport */ collectInListAndSchedule),
@@ -5637,17 +5456,20 @@ __webpack_require__.d(__webpack_exports__, {
   Hj: () => (/* reexport */ getScrollHeight),
   eU: () => (/* reexport */ window_proxy_innerHeight),
   On: () => (/* reexport */ isAttributeValidationReportEntry),
+  qf: () => (/* reexport */ isBlob),
   Dz: () => (/* reexport */ isCamelCase),
   Po: () => (/* reexport */ isEmptyValue),
+  fo: () => (/* reexport */ isFile),
   p1: () => (/* reexport */ isISO8601),
   M7: () => (/* reexport */ isModifierClick),
-  n_: () => (/* reexport */ is_object_isObject),
+  Gv: () => (/* reexport */ is_object_isObject),
   Wo: () => (/* reexport */ isPresent),
   Bo: () => (/* reexport */ isStringArray),
   iI: () => (/* reexport */ isSystemAttribute),
   Qr: () => (/* reexport */ isValidDateString),
   Rq: () => (/* reexport */ isValidFloat),
   zh: () => (/* reexport */ isValidInteger),
+  zB: () => (/* reexport */ isWrapping),
   qg: () => (/* reexport */ loadCss),
   kW: () => (/* reexport */ loadJs),
   vV: () => (/* reexport */ logError),
@@ -5681,7 +5503,6 @@ __webpack_require__.d(__webpack_exports__, {
   yb: () => (/* reexport */ setIntervalAndTrackId),
   cN: () => (/* reexport */ setOriginProvider),
   wg: () => (/* reexport */ setTimeoutAndTrackId),
-  Uw: () => (/* reexport */ external_tcomb_validation_namespaceObject),
   nF: () => (/* reexport */ throttle_throttle),
   Ht: () => (/* reexport */ throwInvalidArgumentsError),
   JL: () => (/* reexport */ throwNextTick),
@@ -5749,8 +5570,6 @@ function collectInListAndSchedule(scheduler, fn) {
   }
 }
 
-// EXTERNAL MODULE: ../node_modules/lodash-es/flatten.js
-var flatten = __webpack_require__(8314);
 ;// CONCATENATED MODULE: ./scrivito_sdk/common/error_logging.ts
 
 let consoleErrorIsDisabled = false;
@@ -5788,6 +5607,103 @@ class InternalError extends ScrivitoError {
   constructor(message) {
     super(message != null ? message : "Scrivito internal error");
   }
+}
+
+;// CONCATENATED MODULE: ./scrivito_sdk/common/throw_invalid_arguments_error.ts
+
+
+
+
+function throwInvalidArgumentsError(functionName, errorMessage, { docPermalink, severity }) {
+  const fullErrorMessage = `Invalid arguments for '${functionName}': ${errorMessage} Visit ${docUrl(
+    docPermalink
+  )} for more information.`;
+  if (severity === "warning") {
+    logError(fullErrorMessage);
+  } else {
+    throw new ArgumentError(fullErrorMessage);
+  }
+}
+
+;// CONCATENATED MODULE: ./scrivito_sdk/common/doc_url.ts
+
+function docUrl(docPermalink) {
+  return `https://docs.scrivito.com/${docPermalink}`;
+}
+
+;// CONCATENATED MODULE: ./scrivito_sdk/common/context_container.ts
+
+class ContextContainer {
+  current() {
+    return this.currentContext;
+  }
+  runWith(valueForFunction, fn) {
+    const before = this.currentContext;
+    try {
+      this.currentContext = valueForFunction;
+      return fn();
+    } finally {
+      this.currentContext = before;
+    }
+  }
+}
+
+;// CONCATENATED MODULE: ./scrivito_sdk/common/deferred.ts
+
+class deferred_Deferred {
+  constructor() {
+    this.promise = new Promise(
+      (resolveFn, rejectFn) => {
+        this.resolve = (value) => {
+          this.settled = true;
+          resolveFn(value);
+        };
+        this.reject = (error) => {
+          this.settled = true;
+          rejectFn(error);
+        };
+      }
+    );
+  }
+  isPending() {
+    return !this.settled;
+  }
+  then(onfulfilled, onrejected) {
+    return this.promise.then(onfulfilled, onrejected);
+  }
+}
+
+// EXTERNAL MODULE: external "urijs"
+var external_urijs_ = __webpack_require__(4066);
+;// CONCATENATED MODULE: ./scrivito_sdk/common/ensure_url_has_protocol.ts
+
+
+function ensureUrlHasProtocol(url) {
+  let uri;
+  try {
+    uri = external_urijs_(url);
+  } catch (e) {
+    return url;
+  }
+  if (!uri.protocol() && url.match(/^[^/@]+@[^/@]+$/)) {
+    return `mailto:${url}`;
+  }
+  if (!(uri.protocol() || url.startsWith("/")) && url.includes(".")) {
+    const hostname = getHostname(url);
+    if (hostname && !hostname.includes("_")) {
+      return `https://${url}`;
+    }
+  }
+  return url;
+}
+function getHostname(urlString) {
+  let url;
+  try {
+    url = new URL(`https://${urlString}`);
+  } catch (e) {
+    return;
+  }
+  return url.hostname;
 }
 
 ;// CONCATENATED MODULE: ./scrivito_sdk/common/next_tick.ts
@@ -5908,195 +5824,6 @@ function truncate(value) {
   return value;
 }
 
-;// CONCATENATED MODULE: external "tcomb-validation"
-const external_tcomb_validation_namespaceObject = require("tcomb-validation");
-;// CONCATENATED MODULE: ./scrivito_sdk/common/tcomb.ts
-
-
-external_tcomb_validation_namespaceObject.struct.strict = true;
-external_tcomb_validation_namespaceObject["interface"].strict = true;
-external_tcomb_validation_namespaceObject.fail = (message) => {
-  throw new TypeError(message);
-};
-
-
-;// CONCATENATED MODULE: ./scrivito_sdk/common/check_arguments_for.ts
-
-
-
-
-
-
-
-
-function noop() {
-}
-let skipCheckArguments = false;
-function setSkipCheckArguments(value) {
-  skipCheckArguments = value;
-}
-function checkArgumentsFor(functionName, argumentsDefinitions, options) {
-  if (process.env.NODE_ENV !== "development" || skipCheckArguments)
-    return noop;
-  return (...givenArguments) => {
-    let errorMessage;
-    try {
-      errorMessage = errorMessageForArguments(
-        givenArguments,
-        argumentsDefinitions
-      );
-    } catch (e) {
-      throwNextTick(e);
-    }
-    if (errorMessage) {
-      throwInvalidArgumentsError(functionName, errorMessage, options);
-    }
-  };
-}
-function throwInvalidArgumentsError(functionName, errorMessage, { docPermalink, severity }) {
-  const fullErrorMessage = `Invalid arguments for '${functionName}': ${errorMessage} Visit ${docUrl(
-    docPermalink
-  )} for more information.`;
-  if (severity === "warning") {
-    logError(fullErrorMessage);
-  } else {
-    throw new ArgumentError(fullErrorMessage);
-  }
-}
-function errorMessageForArguments(givenArguments, argumentsDefinitions) {
-  const numExpected = argumentsDefinitions.length;
-  const numGiven = givenArguments.length;
-  if (numGiven > numExpected) {
-    return `Expected ${numExpected} arguments, got ${numGiven}.`;
-  }
-  const errors = (0,flatten/* default */.A)(
-    argumentsDefinitions.map(([argumentName, argumentType], index) => {
-      const givenArgument = givenArguments[index];
-      const validation = external_tcomb_validation_namespaceObject.validate(givenArgument, argumentType);
-      return validation.errors.map(
-        (error) => messageForError(argumentName, error)
-      );
-    })
-  );
-  if (errors.length > 0) {
-    return errors.join(" ");
-  }
-}
-function messageForError(argumentName, error) {
-  const subjectDescription = subjectDescriptionForError(argumentName, error);
-  if (error.actual === void 0) {
-    return `Missing required ${subjectDescription}.`;
-  }
-  if (error.expected === external_tcomb_validation_namespaceObject.Nil) {
-    return `Unexpected ${subjectDescription}.`;
-  }
-  return `Unexpected value for ${subjectDescription}: got ${prettyPrint(
-    error.actual
-  )}, expected type ${external_tcomb_validation_namespaceObject.getTypeName(error.expected)}.`;
-}
-function subjectDescriptionForError(argumentName, error) {
-  const argumentDescription = `argument '${argumentName}'`;
-  if (error.path.length === 0) {
-    return argumentDescription;
-  }
-  return `key '${error.path.join("/")}' in ${argumentDescription}`;
-}
-
-;// CONCATENATED MODULE: ./scrivito_sdk/common/doc_url.ts
-
-function docUrl(docPermalink) {
-  return `https://docs.scrivito.com/${docPermalink}`;
-}
-
-;// CONCATENATED MODULE: ./scrivito_sdk/common/context_container.ts
-
-class ContextContainer {
-  current() {
-    return this.currentContext;
-  }
-  runWith(valueForFunction, fn) {
-    const before = this.currentContext;
-    try {
-      this.currentContext = valueForFunction;
-      return fn();
-    } finally {
-      this.currentContext = before;
-    }
-  }
-}
-
-;// CONCATENATED MODULE: ./scrivito_sdk/common/deferred.ts
-
-class deferred_Deferred {
-  constructor() {
-    this.promise = new Promise(
-      (resolveFn, rejectFn) => {
-        this.resolve = (value) => {
-          this.settled = true;
-          resolveFn(value);
-        };
-        this.reject = (error) => {
-          this.settled = true;
-          rejectFn(error);
-        };
-      }
-    );
-  }
-  isPending() {
-    return !this.settled;
-  }
-  then(onfulfilled, onrejected) {
-    return this.promise.then(onfulfilled, onrejected);
-  }
-}
-
-// EXTERNAL MODULE: external "urijs"
-var external_urijs_ = __webpack_require__(4066);
-;// CONCATENATED MODULE: ./scrivito_sdk/common/ensure_url_has_protocol.ts
-
-
-function ensureUrlHasProtocol(url) {
-  let uri;
-  try {
-    uri = external_urijs_(url);
-  } catch (e) {
-    return url;
-  }
-  if (!uri.protocol() && url.match(/^[^/@]+@[^/@]+$/)) {
-    return `mailto:${url}`;
-  }
-  if (!(uri.protocol() || url.startsWith("/")) && url.includes(".")) {
-    const hostname = getHostname(url);
-    if (hostname && !hostname.includes("_")) {
-      return `https://${url}`;
-    }
-  }
-  return url;
-}
-function getHostname(urlString) {
-  let url;
-  try {
-    url = new URL(`https://${urlString}`);
-  } catch (e) {
-    return;
-  }
-  return url.hostname;
-}
-
-;// CONCATENATED MODULE: ./scrivito_sdk/common/tcomb_refinements.ts
-
-
-const PositiveInteger = external_tcomb_validation_namespaceObject.refinement(
-  external_tcomb_validation_namespaceObject.Integer,
-  (i) => i > 0,
-  "PositiveInteger"
-);
-const NonNegativeInteger = external_tcomb_validation_namespaceObject.refinement(
-  external_tcomb_validation_namespaceObject.Integer,
-  (i) => i >= 0,
-  "NonNegativeInteger"
-);
-
 ;// CONCATENATED MODULE: ./scrivito_sdk/common/run_and_catch_exception.ts
 
 function runAndCatchException(fn) {
@@ -6114,7 +5841,7 @@ function runAndCatchException(fn) {
 
 
 function getScrivitoVersion() {
-  const version = "1.29.0-dev-1-g2c6fb7bbb5f6";
+  const version = "1.29.0-dev-1-gf1d807accd93";
   if (!version) {
     throw new InternalError();
   }
@@ -6228,23 +5955,6 @@ class TransIterator {
     });
   }
 }
-
-;// CONCATENATED MODULE: ./scrivito_sdk/common/input_types.ts
-
-
-const BlobType = external_tcomb_validation_namespaceObject["interface"](
-  {
-    size: external_tcomb_validation_namespaceObject.Number,
-    type: external_tcomb_validation_namespaceObject.String
-  },
-  { name: "Blob", strict: false }
-);
-const FileType = BlobType.extend(
-  {
-    name: external_tcomb_validation_namespaceObject.String
-  },
-  { name: "File", strict: false }
-);
 
 ;// CONCATENATED MODULE: ./scrivito_sdk/common/is_system_attribute.ts
 
@@ -7088,9 +6798,9 @@ function scrollElementIntoView(element, options) {
 
 ;// CONCATENATED MODULE: ./scrivito_sdk/common/timeout.ts
 
-function timeout_noop() {
+function noop() {
 }
-let trackTimeoutId = timeout_noop;
+let trackTimeoutId = noop;
 function setTimeoutAndTrackId(handler, timeout) {
   const timeoutId = setTimeout(handler, timeout);
   trackTimeoutId(timeoutId);
@@ -7312,8 +7022,24 @@ function isISO8601(value) {
   return isoDateTimeWithOptionalMilliseconds.test(value) && !Number.isNaN(Date.parse(value));
 }
 
-;// CONCATENATED MODULE: ./scrivito_sdk/common/index.ts
+;// CONCATENATED MODULE: ./scrivito_sdk/common/is_wrapping.ts
 
+
+function isWrapping(subject, basicClass) {
+  return is_object_isObject(subject) && "_scrivitoPrivateContent" in subject && subject._scrivitoPrivateContent instanceof basicClass;
+}
+
+;// CONCATENATED MODULE: ./scrivito_sdk/common/is_blob.ts
+
+
+function isBlob(subject) {
+  return is_object_isObject(subject) && "size" in subject && typeof subject.size === "number" && "type" in subject && typeof subject.type === "string";
+}
+function isFile(subject) {
+  return isBlob(subject) && "name" in subject && typeof subject.name === "string";
+}
+
+;// CONCATENATED MODULE: ./scrivito_sdk/common/index.ts
 
 
 
@@ -7421,8 +7147,8 @@ __webpack_require__.d(__webpack_exports__, {
 
 // EXTERNAL MODULE: ./scrivito_sdk/client/index.ts + 38 modules
 var client = __webpack_require__(853);
-// EXTERNAL MODULE: ./scrivito_sdk/common/index.ts + 64 modules
-var common = __webpack_require__(2838);
+// EXTERNAL MODULE: ./scrivito_sdk/common/index.ts + 62 modules
+var common = __webpack_require__(5204);
 // EXTERNAL MODULE: ../node_modules/lodash-es/difference.js + 1 modules
 var difference = __webpack_require__(5435);
 // EXTERNAL MODULE: ../node_modules/lodash-es/isEmpty.js
@@ -9439,61 +9165,334 @@ function getObjDataIfExistent(objSpaceId, objId) {
 
 /***/ }),
 
-/***/ 9900:
+/***/ 3664:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   O: () => (/* binding */ throwMissingCallbackError),
+/* harmony export */   j: () => (/* binding */ addMissingDataConnectionHandlers)
+/* harmony export */ });
+/* harmony import */ var scrivito_sdk_common__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(5204);
 
-// EXPORTS
-__webpack_require__.d(__webpack_exports__, {
-  bA: () => (/* reexport */ DataClass),
-  BA: () => (/* reexport */ DataConnectionError),
-  sO: () => (/* reexport */ DataItem),
-  bq: () => (/* reexport */ DataScope),
-  Ao: () => (/* reexport */ EmptyDataScope),
-  Gf: () => (/* reexport */ ExternalDataClass),
-  FU: () => (/* reexport */ ExternalDataItem),
-  zv: () => (/* reexport */ SINGLETON_DATA_ID),
-  Ey: () => (/* reexport */ activateDataIntegration),
-  u5: () => (/* reexport */ allCustomAttributesOfTypeString),
-  VU: () => (/* reexport */ allExternalDataClasses),
-  ZJ: () => (/* reexport */ applyDataLocator),
-  gk: () => (/* reexport */ basicObjToDataContext),
-  En: () => (/* reexport */ createRestApiConnectionForClass),
-  _f: () => (/* reexport */ dataContextFromQueryParams),
-  A_: () => (/* reexport */ dataItemToDataContext),
-  bU: () => (/* reexport */ deserializeDataItem),
-  w1: () => (/* reexport */ deserializeDataScope),
-  uw: () => (/* reexport */ deserializeDataStackElement),
-  Qt: () => (/* reexport */ disableExternalDataLoading),
-  ud: () => (/* reexport */ extractDataClassSchemaResponse),
-  dw: () => (/* reexport */ findItemInGlobalData),
-  sf: () => (/* reexport */ getDataClassOrThrow),
-  nx: () => (/* reexport */ getDataClassTitle),
-  K1: () => (/* reexport */ getDataContextParameters),
-  qD: () => (/* reexport */ getDataContextQuery),
-  iW: () => (/* reexport */ getGlobalDataItems),
-  m8: () => (/* reexport */ getNormalizedDataAttributeDefinitions),
-  BF: () => (/* reexport */ isDataIntegrationActive),
-  o3: () => (/* reexport */ isDataItemPojo),
-  Wq: () => (/* reexport */ isExternalDataClassProvided),
-  VI: () => (/* reexport */ isMultiItemDataScopePojo),
-  y8: () => (/* reexport */ data_attribute_isReferenceAttributeConfig),
-  Uq: () => (/* reexport */ isSingleItemElement),
-  G7: () => (/* reexport */ isSinglePlaceholder),
-  Qk: () => (/* reexport */ isSingletonDataClass),
-  wc: () => (/* reexport */ provideExternalDataItem),
-  $T: () => (/* reexport */ registerExternalDataClass),
-  V8: () => (/* reexport */ replacePlaceholdersWithData),
-  Zk: () => (/* reexport */ scopePojoToItemPojo)
-});
 
-// UNUSED EXPORTS: ExternalDataScope, ObjDataScope, getDataClass, getDataContextValue, isValidDataId
+function addMissingDataConnectionHandlers(connection, dataClass) {
+  return {
+    get: connection.get || throwMissingCallbackError("get", dataClass),
+    update: connection.update || throwMissingCallbackError("update", dataClass),
+    index: connection.index || throwMissingCallbackError("index", dataClass),
+    create: connection.create || throwMissingCallbackError("create", dataClass),
+    delete: connection.delete || throwMissingCallbackError("delete", dataClass)
+  };
+}
+function throwMissingCallbackError(callbackName, dataClass) {
+  return () => {
+    throw new scrivito_sdk_common__WEBPACK_IMPORTED_MODULE_0__/* .ScrivitoError */ .aS(
+      `No ${callbackName} callback defined for data class "${dataClass}"`
+    );
+  };
+}
 
-// EXTERNAL MODULE: ./scrivito_sdk/realm/index.ts + 22 modules
-var realm = __webpack_require__(3340);
-;// CONCATENATED MODULE: ./scrivito_sdk/data_integration/basic_obj_to_data_context.ts
+
+/***/ }),
+
+/***/ 1514:
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   _: () => (/* binding */ setCurrentLanguageHandler),
+/* harmony export */   a: () => (/* binding */ currentLanguage)
+/* harmony export */ });
+/* harmony import */ var scrivito_sdk_common__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(5204);
+
+
+let currentLanguageHandler;
+function currentLanguage() {
+  if (!currentLanguageHandler) {
+    throw new scrivito_sdk_common__WEBPACK_IMPORTED_MODULE_0__/* .InternalError */ .Gd();
+  }
+  return currentLanguageHandler();
+}
+function setCurrentLanguageHandler(func) {
+  currentLanguageHandler = func;
+}
+
+
+/***/ }),
+
+/***/ 3561:
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   Ir: () => (/* binding */ deserializeDataAttribute),
+/* harmony export */   VB: () => (/* binding */ serializeDataAttribute),
+/* harmony export */   y8: () => (/* binding */ isReferenceAttributeConfig)
+/* harmony export */ });
+/* harmony import */ var lodash_es_isDate__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(9231);
+/* harmony import */ var scrivito_sdk_common__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(5204);
+/* harmony import */ var scrivito_sdk_data_integration_data_class__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(8001);
+/* harmony import */ var scrivito_sdk_data_integration_data_class_schema__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(135);
+/* harmony import */ var scrivito_sdk_data_integration_data_id__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(5596);
+/* harmony import */ var scrivito_sdk_data_integration_get_data_class__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(512);
+
+
+
+
+
+
+
+const serializers = {
+  boolean: serializeBooleanAttribute,
+  date: serializeDateAttribute,
+  enum: serializeEnumAttribute,
+  number: serializeNumberAttribute,
+  reference: serializeReferenceAttribute,
+  string: serializeStringAttribute
+};
+function serializeDataAttribute({
+  dataClassName,
+  attributeName,
+  value,
+  attributes
+}) {
+  assertNoTypedObject(dataClassName, attributeName, value);
+  const attributeDefinition = attributes[attributeName];
+  if (attributeDefinition) {
+    const attributeType = getAttributeType(attributeDefinition);
+    const serializer = serializers[attributeType];
+    return serializer(dataClassName, attributeName, value, attributeDefinition);
+  }
+  return value != null ? value : null;
+}
+function deserializeDataAttribute({
+  dataClassName,
+  attributeName,
+  value,
+  attributes
+}) {
+  assertNoTypedObject(dataClassName, attributeName, value);
+  const attributeDefinition = attributes[attributeName];
+  if (attributeDefinition) {
+    const attributeType = getAttributeType(attributeDefinition);
+    const deserializer = deserializers[attributeType];
+    return deserializer(
+      dataClassName,
+      attributeName,
+      value,
+      attributeDefinition
+    );
+  }
+  return value != null ? value : null;
+}
+function serializeBooleanAttribute(dataClassName, attributeName, value) {
+  if (typeof value === "boolean")
+    return value;
+  throwTypeMismatch(dataClassName, attributeName, "a boolean", value);
+}
+function serializeDateAttribute(dataClassName, attributeName, value) {
+  if (value === null || typeof value === "string" && (0,scrivito_sdk_common__WEBPACK_IMPORTED_MODULE_0__/* .isISO8601 */ .p1)(value)) {
+    return value;
+  }
+  if ((0,lodash_es_isDate__WEBPACK_IMPORTED_MODULE_4__/* ["default"] */ .A)(value))
+    return value.toISOString();
+  throwTypeMismatch(
+    dataClassName,
+    attributeName,
+    "an instance of Date, an ISO8601 date string or null",
+    value
+  );
+}
+function serializeEnumAttribute(dataClassName, attributeName, value, attributeDefinition) {
+  const enumValues = getEnumValues(getAttributeConfig(attributeDefinition));
+  if (value === null || typeof value === "string" && enumValues.includes(value)) {
+    return value;
+  }
+  throwTypeMismatch(
+    dataClassName,
+    attributeName,
+    `one of ${JSON.stringify(enumValues)} or null`,
+    value
+  );
+}
+function serializeNumberAttribute(dataClassName, attributeName, value) {
+  if (value === null || typeof value === "number")
+    return value;
+  throwTypeMismatch(dataClassName, attributeName, "a number or null", value);
+}
+function serializeReferenceAttribute(dataClassName, attributeName, value, attributeDefinition) {
+  if (value === null || (0,scrivito_sdk_data_integration_data_id__WEBPACK_IMPORTED_MODULE_5__/* .isValidDataId */ .o)(value))
+    return value;
+  if (value instanceof scrivito_sdk_data_integration_data_class__WEBPACK_IMPORTED_MODULE_1__/* .DataItem */ .sO && value.dataClassName() === getReferencedClassName(getAttributeConfig(attributeDefinition))) {
+    return value.id();
+  }
+  throwTypeMismatch(
+    dataClassName,
+    attributeName,
+    `an instance of DataItem of data class "${dataClassName}", a valid data ID or null`,
+    value
+  );
+  return null;
+}
+function serializeStringAttribute(dataClassName, attributeName, value) {
+  if (typeof value === "string")
+    return value;
+  throwTypeMismatch(dataClassName, attributeName, "a string", value);
+}
+const deserializers = {
+  boolean: deserializeBooleanAttribute,
+  date: deserializeDateAttribute,
+  enum: deserializeEnumAttribute,
+  number: deserializeNumberAttribute,
+  reference: deserializeReferenceAttribute,
+  string: deserializeStringAttribute
+};
+function deserializeBooleanAttribute(dataClassName, attributeName, value) {
+  if (typeof value === "boolean") {
+    return value;
+  }
+  logTypeMismatch(dataClassName, attributeName, "a boolean", value);
+  return false;
+}
+function deserializeDateAttribute(dataClassName, attributeName, value) {
+  if (isEmptyStringOrNull(value))
+    return null;
+  if (typeof value === "string" && (0,scrivito_sdk_common__WEBPACK_IMPORTED_MODULE_0__/* .isISO8601 */ .p1)(value)) {
+    return new Date(value);
+  }
+  logTypeMismatch(
+    dataClassName,
+    attributeName,
+    "an ISO8601 date string",
+    value
+  );
+  return null;
+}
+function deserializeEnumAttribute(dataClassName, attributeName, value, attributeDefinition) {
+  if (isEmptyStringOrNull(value))
+    return null;
+  const enumValues = getEnumValues(getAttributeConfig(attributeDefinition));
+  if (typeof value === "string" && enumValues.includes(value)) {
+    return value;
+  }
+  logTypeMismatch(
+    dataClassName,
+    attributeName,
+    `one of ${JSON.stringify(enumValues)}`,
+    value
+  );
+  return null;
+}
+function deserializeReferenceAttribute(dataClassName, attributeName, value, attributeDefinition) {
+  if (isEmptyStringOrNull(value))
+    return null;
+  if ((0,scrivito_sdk_data_integration_data_id__WEBPACK_IMPORTED_MODULE_5__/* .isValidDataId */ .o)(value)) {
+    return (0,scrivito_sdk_data_integration_get_data_class__WEBPACK_IMPORTED_MODULE_3__/* .getDataClassOrThrow */ .sf)(
+      getReferencedClassName(getAttributeConfig(attributeDefinition))
+    ).get(value) || null;
+  }
+  logTypeMismatch(dataClassName, attributeName, "a valid data ID", value);
+  return null;
+}
+function deserializeNumberAttribute(dataClassName, attributeName, value) {
+  if (typeof value === "number") {
+    return value;
+  }
+  logTypeMismatch(dataClassName, attributeName, "a number", value);
+  return null;
+}
+function deserializeStringAttribute(dataClassName, attributeName, value) {
+  if (typeof value === "string") {
+    return value;
+  }
+  logTypeMismatch(dataClassName, attributeName, "a string", value);
+  return "";
+}
+function isEmptyStringOrNull(value) {
+  return value === null || value === "";
+}
+function getAttributeType(attributeDefinition) {
+  return typeof attributeDefinition === "string" ? attributeDefinition : attributeDefinition[0];
+}
+function getAttributeConfig(attributeDefinition) {
+  if (typeof attributeDefinition !== "string") {
+    return attributeDefinition[1];
+  }
+}
+function getEnumValues(attributeConfig) {
+  if ((0,scrivito_sdk_data_integration_data_class_schema__WEBPACK_IMPORTED_MODULE_2__/* .isEnumAttributeConfig */ .Od)(attributeConfig)) {
+    return attributeConfig.values.map(
+      (valueOrConfig) => typeof valueOrConfig === "string" ? valueOrConfig : valueOrConfig.value
+    );
+  }
+  throw new scrivito_sdk_common__WEBPACK_IMPORTED_MODULE_0__/* .ArgumentError */ .c1(
+    'Enum attribute config is missing the "values" property'
+  );
+}
+function getReferencedClassName(attributeConfig) {
+  if (attributeConfig && isReferenceAttributeConfig(attributeConfig)) {
+    return attributeConfig.to;
+  }
+  throw new scrivito_sdk_common__WEBPACK_IMPORTED_MODULE_0__/* .ArgumentError */ .c1(
+    'Reference attribute config is missing the "to" property'
+  );
+}
+function isReferenceAttributeConfig(attributeConfig) {
+  return !!(attributeConfig && "to" in attributeConfig && typeof attributeConfig.to === "string");
+}
+function assertNoTypedObject(dataClassName, attributeName, value) {
+  if (Array.isArray(value)) {
+    assertNoTypedObject(dataClassName, attributeName, value[0]);
+  }
+  if ((0,scrivito_sdk_common__WEBPACK_IMPORTED_MODULE_0__/* .isObject */ .Gv)(value) && value.hasOwnProperty("_type")) {
+    throw new scrivito_sdk_common__WEBPACK_IMPORTED_MODULE_0__/* .ArgumentError */ .c1(
+      `Value for attribute "${attributeName}" of data class "${dataClassName}" contains an object with property "_type"`
+    );
+  }
+}
+function logTypeMismatch(dataClassName, attributeName, expected, actual) {
+  if (actual === null || actual === void 0)
+    return;
+  (0,scrivito_sdk_common__WEBPACK_IMPORTED_MODULE_0__/* .logError */ .vV)(typeMismatchMessage(dataClassName, attributeName, expected, actual));
+}
+function throwTypeMismatch(dataClassName, attributeName, expected, actual) {
+  throw new scrivito_sdk_common__WEBPACK_IMPORTED_MODULE_0__/* .ArgumentError */ .c1(
+    typeMismatchMessage(dataClassName, attributeName, expected, actual)
+  );
+}
+function typeMismatchMessage(dataClassName, attributeName, expected, actual) {
+  return `Expected attribute "${attributeName}" of data class "${dataClassName}" to be ${expected}, but got ${JSON.stringify(actual)}`;
+}
+
+
+/***/ }),
+
+/***/ 8001:
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   $v: () => (/* binding */ itemPojoToScopePojo),
+/* harmony export */   Hd: () => (/* binding */ assertValidDataItemAttributes),
+/* harmony export */   IE: () => (/* binding */ combineSearches),
+/* harmony export */   Zc: () => (/* binding */ combineFilters),
+/* harmony export */   Zk: () => (/* binding */ scopePojoToItemPojo),
+/* harmony export */   Zz: () => (/* binding */ DataScopeError),
+/* harmony export */   bA: () => (/* binding */ DataClass),
+/* harmony export */   bq: () => (/* binding */ DataScope),
+/* harmony export */   dB: () => (/* binding */ isFilterOperator),
+/* harmony export */   eH: () => (/* binding */ DEFAULT_LIMIT),
+/* harmony export */   mX: () => (/* binding */ itemIdFromFilters),
+/* harmony export */   sO: () => (/* binding */ DataItem),
+/* harmony export */   ws: () => (/* binding */ isOperatorSpec)
+/* harmony export */ });
+/* unused harmony export DataItemAttribute */
+/* harmony import */ var lodash_es_isEqual__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(1900);
+/* harmony import */ var lodash_es_mapValues__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(5796);
+/* harmony import */ var scrivito_sdk_common__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(5204);
+/* harmony import */ var scrivito_sdk_data_integration_data_class_schema__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(135);
+/* harmony import */ var scrivito_sdk_models__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(4360);
 
 var __defProp = Object.defineProperty;
+var __defProps = Object.defineProperties;
+var __getOwnPropDescs = Object.getOwnPropertyDescriptors;
 var __getOwnPropSymbols = Object.getOwnPropertySymbols;
 var __hasOwnProp = Object.prototype.hasOwnProperty;
 var __propIsEnum = Object.prototype.propertyIsEnumerable;
@@ -9509,54 +9508,263 @@ var __spreadValues = (a, b) => {
     }
   return a;
 };
-
-function basicObjToDataContext(obj) {
-  return __spreadValues({
-    _class: obj.objClass(),
-    _id: obj.id()
-  }, allCustomAttributesOfTypeString(obj));
-}
-function allCustomAttributesOfTypeString(obj) {
-  const schema = (0,realm/* schemaFromBasicObjOrWidget */.e6)(obj);
-  if (!schema)
-    return;
-  const attributes = schema.attributes();
-  const stringAttributes = {};
-  Object.keys(attributes).forEach((attributeName) => {
-    const [attributeType] = attributes[attributeName];
-    if (attributeType === "string") {
-      const attributeValue = obj.get(attributeName, "string");
-      stringAttributes[attributeName] = attributeValue;
-    }
+var __spreadProps = (a, b) => __defProps(a, __getOwnPropDescs(b));
+var __async = (__this, __arguments, generator) => {
+  return new Promise((resolve, reject) => {
+    var fulfilled = (value) => {
+      try {
+        step(generator.next(value));
+      } catch (e) {
+        reject(e);
+      }
+    };
+    var rejected = (value) => {
+      try {
+        step(generator.throw(value));
+      } catch (e) {
+        reject(e);
+      }
+    };
+    var step = (x) => x.done ? resolve(x.value) : Promise.resolve(x.value).then(fulfilled, rejected);
+    step((generator = generator.apply(__this, __arguments)).next());
   });
-  return stringAttributes;
+};
+
+
+
+
+
+class DataClass {
+  /** @public */
+  attributeDefinitions() {
+    return (0,scrivito_sdk_data_integration_data_class_schema__WEBPACK_IMPORTED_MODULE_1__/* .getNormalizedDataAttributeDefinitions */ .m8)(this.name());
+  }
+  /** @internal */
+  title() {
+    return (0,scrivito_sdk_data_integration_data_class_schema__WEBPACK_IMPORTED_MODULE_1__/* .getDataClassTitle */ .nx)(this.name());
+  }
+  /** @internal */
+  forAttribute(attributeName) {
+    return this.all().transform({ attributeName });
+  }
+}
+class DataScope {
+  /** @public */
+  dataItemAttribute() {
+    const attributeName = this.attributeName();
+    if (!attributeName)
+      return null;
+    const dataItem = this.dataItem();
+    if (!dataItem)
+      return null;
+    return new DataItemAttribute(dataItem, attributeName);
+  }
+  /** @public */
+  isEmpty() {
+    return this.transform({ limit: 1 }).take().length === 0;
+  }
+  /** @public */
+  containsData() {
+    return !this.isEmpty();
+  }
+  /** @internal */
+  normalizeFilters(filters) {
+    if (!filters)
+      return;
+    return (0,lodash_es_mapValues__WEBPACK_IMPORTED_MODULE_3__/* ["default"] */ .A)(filters, (valueOrSpec, attributeName) => {
+      if (isAndOperatorSpec(valueOrSpec))
+        return valueOrSpec;
+      const isOpSpec = isOperatorSpec(valueOrSpec);
+      const actualValue = isOpSpec ? valueOrSpec.value : valueOrSpec;
+      let serializedValue = actualValue;
+      if (actualValue instanceof Date) {
+        serializedValue = actualValue.toISOString();
+      }
+      if (actualValue instanceof DataItem) {
+        serializedValue = actualValue.id();
+      }
+      if (serializedValue === null || typeof serializedValue === "string" || typeof serializedValue === "number" || typeof serializedValue === "boolean") {
+        const operator = isOpSpec ? valueOrSpec.operator : "equals";
+        return { operator, value: serializedValue };
+      }
+      throw new scrivito_sdk_common__WEBPACK_IMPORTED_MODULE_0__/* .ArgumentError */ .c1(
+        `Invalid filter value for "${attributeName}": ${JSON.stringify(
+          valueOrSpec
+        )}`
+      );
+    });
+  }
+  attributesFromFilters(filters) {
+    if (!filters)
+      return;
+    const initialAttributes = {};
+    return Object.keys(filters).reduce((attributes, name) => {
+      const filter = filters[name];
+      const specs = isOperatorSpec(filter) ? [filter] : filter.value;
+      specs.forEach((spec) => {
+        if (spec.operator === "equals")
+          attributes[name] = spec.value;
+      });
+      return attributes;
+    }, initialAttributes);
+  }
+}
+class DataItemAttribute {
+  constructor(_dataItem, _attributeName) {
+    this._dataItem = _dataItem;
+    this._attributeName = _attributeName;
+  }
+  dataClass() {
+    return this._dataItem.dataClass();
+  }
+  dataClassName() {
+    return this._dataItem.dataClassName();
+  }
+  dataItem() {
+    return this._dataItem;
+  }
+  attributeName() {
+    return this._attributeName;
+  }
+  get() {
+    return this._dataItem.get(this._attributeName);
+  }
+  update(value) {
+    return __async(this, null, function* () {
+      return this._dataItem.update({ [this._attributeName]: value });
+    });
+  }
+}
+const DEFAULT_LIMIT = 20;
+class DataItem {
+  /** @public */
+  attributeDefinitions() {
+    return this.dataClass().attributeDefinitions();
+  }
+  /** @internal */
+  title() {
+    return this.dataClass().title();
+  }
+  /** @internal */
+  getRaw(_attributeName) {
+    return;
+  }
+}
+class DataScopeError extends scrivito_sdk_common__WEBPACK_IMPORTED_MODULE_0__/* .ScrivitoError */ .aS {
+  /** @internal */
+  constructor(message) {
+    super(message);
+    this.message = message;
+  }
+}
+function assertValidDataItemAttributes(attributes) {
+  if (!(0,scrivito_sdk_common__WEBPACK_IMPORTED_MODULE_0__/* .isObject */ .Gv)(attributes)) {
+    throw new scrivito_sdk_common__WEBPACK_IMPORTED_MODULE_0__/* .ArgumentError */ .c1("Data item attributes must be an object");
+  }
+  if (!Object.keys(attributes).every(scrivito_sdk_models__WEBPACK_IMPORTED_MODULE_2__/* .isValidDataIdentifier */ .Wf)) {
+    throw new scrivito_sdk_common__WEBPACK_IMPORTED_MODULE_0__/* .ArgumentError */ .c1(
+      "Keys of data item attributes must be valid data identifiers"
+    );
+  }
+}
+function combineFilters(currFilters, nextFilters) {
+  if (!currFilters)
+    return nextFilters;
+  if (!nextFilters)
+    return currFilters;
+  let combinedFilters = __spreadValues({}, currFilters);
+  Object.keys(nextFilters).forEach((attributeName) => {
+    if (attributeName in combinedFilters && !(0,lodash_es_isEqual__WEBPACK_IMPORTED_MODULE_4__/* ["default"] */ .A)(combinedFilters[attributeName], nextFilters[attributeName])) {
+      const currentFilter = combinedFilters[attributeName];
+      const nextFilter = nextFilters[attributeName];
+      combinedFilters = __spreadProps(__spreadValues({}, combinedFilters), {
+        [attributeName]: {
+          operator: "and",
+          value: [
+            ...isOperatorSpec(currentFilter) ? [currentFilter] : currentFilter.value,
+            ...isOperatorSpec(nextFilter) ? [nextFilter] : nextFilter.value
+          ]
+        }
+      });
+      return;
+    }
+    combinedFilters[attributeName] = nextFilters[attributeName];
+  });
+  return combinedFilters;
+}
+function combineSearches(currSearch, nextSearch) {
+  return currSearch && nextSearch ? `${currSearch} ${nextSearch}` : currSearch || nextSearch;
+}
+function itemPojoToScopePojo({
+  _class,
+  _id
+}) {
+  return { _class, filters: { _id: { operator: "equals", value: _id } } };
+}
+function scopePojoToItemPojo({
+  _class,
+  filters
+}) {
+  const id = itemIdFromFilters(filters);
+  if (id)
+    return { _class, _id: id };
+}
+function itemIdFromFilters(filters) {
+  var _a;
+  const id = (_a = filters == null ? void 0 : filters._id) == null ? void 0 : _a.value;
+  if (typeof id === "string")
+    return id;
+}
+function isFilterOperator(operator) {
+  return typeof operator === "string" && [
+    "equals",
+    "notEquals",
+    "isGreaterThan",
+    "isLessThan",
+    "isGreaterThanOrEquals",
+    "isLessThanOrEquals"
+  ].includes(operator);
+}
+function isOperatorSpec(spec) {
+  return (0,scrivito_sdk_common__WEBPACK_IMPORTED_MODULE_0__/* .isObject */ .Gv)(spec) && "operator" in spec && isFilterOperator(spec.operator) && "value" in spec && (spec.value === null || ["string", "number", "boolean"].includes(typeof spec.value));
+}
+function isAndOperatorSpec(spec) {
+  return (0,scrivito_sdk_common__WEBPACK_IMPORTED_MODULE_0__/* .isObject */ .Gv)(spec) && "operator" in spec && spec.operator === "and" && "value" in spec && Array.isArray(spec.value) && spec.value.every(isOperatorSpec);
 }
 
-// EXTERNAL MODULE: ../node_modules/lodash-es/isEqual.js
-var isEqual = __webpack_require__(1900);
-// EXTERNAL MODULE: ../node_modules/lodash-es/mapValues.js
-var mapValues = __webpack_require__(5796);
-// EXTERNAL MODULE: ./scrivito_sdk/common/index.ts + 64 modules
-var common = __webpack_require__(2838);
-// EXTERNAL MODULE: ./scrivito_sdk/loadable/index.ts + 29 modules
-var loadable = __webpack_require__(5688);
-// EXTERNAL MODULE: ./scrivito_sdk/state/index.ts + 13 modules
-var state = __webpack_require__(1946);
-;// CONCATENATED MODULE: ./scrivito_sdk/data_integration/data_class_schema.ts
 
-var data_class_schema_defProp = Object.defineProperty;
-var data_class_schema_getOwnPropSymbols = Object.getOwnPropertySymbols;
-var data_class_schema_hasOwnProp = Object.prototype.hasOwnProperty;
-var data_class_schema_propIsEnum = Object.prototype.propertyIsEnumerable;
-var data_class_schema_defNormalProp = (obj, key, value) => key in obj ? data_class_schema_defProp(obj, key, { enumerable: true, configurable: true, writable: true, value }) : obj[key] = value;
-var data_class_schema_spreadValues = (a, b) => {
+/***/ }),
+
+/***/ 135:
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   $b: () => (/* binding */ getDataAttributeDefinitions),
+/* harmony export */   Od: () => (/* binding */ isEnumAttributeConfig),
+/* harmony export */   h$: () => (/* binding */ registerDataClassSchema),
+/* harmony export */   m8: () => (/* binding */ getNormalizedDataAttributeDefinitions),
+/* harmony export */   nx: () => (/* binding */ getDataClassTitle),
+/* harmony export */   ud: () => (/* binding */ extractDataClassSchemaResponse)
+/* harmony export */ });
+/* unused harmony export unregisterDataClassSchema */
+/* harmony import */ var lodash_es_mapValues__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(5796);
+/* harmony import */ var scrivito_sdk_common__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(5204);
+/* harmony import */ var scrivito_sdk_loadable__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(5688);
+/* harmony import */ var scrivito_sdk_state__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(1946);
+
+var __defProp = Object.defineProperty;
+var __getOwnPropSymbols = Object.getOwnPropertySymbols;
+var __hasOwnProp = Object.prototype.hasOwnProperty;
+var __propIsEnum = Object.prototype.propertyIsEnumerable;
+var __defNormalProp = (obj, key, value) => key in obj ? __defProp(obj, key, { enumerable: true, configurable: true, writable: true, value }) : obj[key] = value;
+var __spreadValues = (a, b) => {
   for (var prop in b || (b = {}))
-    if (data_class_schema_hasOwnProp.call(b, prop))
-      data_class_schema_defNormalProp(a, prop, b[prop]);
-  if (data_class_schema_getOwnPropSymbols)
-    for (var prop of data_class_schema_getOwnPropSymbols(b)) {
-      if (data_class_schema_propIsEnum.call(b, prop))
-        data_class_schema_defNormalProp(a, prop, b[prop]);
+    if (__hasOwnProp.call(b, prop))
+      __defNormalProp(a, prop, b[prop]);
+  if (__getOwnPropSymbols)
+    for (var prop of __getOwnPropSymbols(b)) {
+      if (__propIsEnum.call(b, prop))
+        __defNormalProp(a, prop, b[prop]);
     }
   return a;
 };
@@ -9590,7 +9798,7 @@ function isDataAttributeType(attributeType) {
   );
 }
 function registerDataClassSchema(dataClassName, schema) {
-  const schemata = data_class_schema_spreadValues({}, schemataState.get());
+  const schemata = __spreadValues({}, schemataState.get());
   schemata[dataClassName] = wrapInCallback(schema);
   schemataState.set(schemata);
   invalidateSchemataCollection();
@@ -9604,20 +9812,20 @@ function getDataClassTitle(dataClassName) {
   return (_a = schemataCollection.get(dataClassName).get()) == null ? void 0 : _a.title;
 }
 function getNormalizedDataAttributeDefinitions(dataClassName) {
-  return (0,mapValues/* default */.A)(
+  return (0,lodash_es_mapValues__WEBPACK_IMPORTED_MODULE_3__/* ["default"] */ .A)(
     getDataAttributeDefinitions(dataClassName),
     normalizeDataAttributeDefinition
   );
 }
 function unregisterDataClassSchema(dataClassName) {
-  const schemata = data_class_schema_spreadValues({}, schemataState.get());
+  const schemata = __spreadValues({}, schemataState.get());
   delete schemata[dataClassName];
   schemataState.set(schemata);
   invalidateSchemataCollection();
 }
-const schemataState = (0,state/* createStateContainer */.Ld)();
-const counterState = (0,state/* createStateContainer */.Ld)();
-const schemataCollection = (0,loadable/* createLoadableCollection */.rL)({
+const schemataState = (0,scrivito_sdk_state__WEBPACK_IMPORTED_MODULE_2__/* .createStateContainer */ .Ld)();
+const counterState = (0,scrivito_sdk_state__WEBPACK_IMPORTED_MODULE_2__/* .createStateContainer */ .Ld)();
+const schemataCollection = (0,scrivito_sdk_loadable__WEBPACK_IMPORTED_MODULE_1__/* .createLoadableCollection */ .rL)({
   name: "dataClassSchema",
   loadElement: (dataClassName) => ({
     loader() {
@@ -9671,14 +9879,14 @@ function extractDataClassSchemaResponse(input) {
     attributes: {},
     title: void 0
   };
-  if (!(0,common/* isObject */.n_)(input)) {
-    (0,common/* logError */.vV)(
+  if (!(0,scrivito_sdk_common__WEBPACK_IMPORTED_MODULE_0__/* .isObject */ .Gv)(input)) {
+    (0,scrivito_sdk_common__WEBPACK_IMPORTED_MODULE_0__/* .logError */ .vV)(
       `Invalid schema response: expected an object: ${JSON.stringify(input)}`
     );
     return response;
   }
   if (!("attributes" in input)) {
-    (0,common/* logError */.vV)(
+    (0,scrivito_sdk_common__WEBPACK_IMPORTED_MODULE_0__/* .logError */ .vV)(
       `Invalid schema response: no "attributes" key: ${JSON.stringify(input)}`
     );
     return response;
@@ -9691,8 +9899,8 @@ function extractDataClassSchemaResponse(input) {
 }
 function extractDataAttributeDefinitions(input) {
   const attributes = {};
-  if (!(0,common/* isObject */.n_)(input)) {
-    (0,common/* logError */.vV)(
+  if (!(0,scrivito_sdk_common__WEBPACK_IMPORTED_MODULE_0__/* .isObject */ .Gv)(input)) {
+    (0,scrivito_sdk_common__WEBPACK_IMPORTED_MODULE_0__/* .logError */ .vV)(
       `Invalid schema response: expected "attributes" to be an object: ${JSON.stringify(
         input
       )}`
@@ -9781,24 +9989,24 @@ function extractDataAttributeDefinitionWithConfig(attributeName, definition) {
   }
 }
 function isEnumAttributeConfig(config) {
-  return (0,common/* isObject */.n_)(config) && titleIsValidOrNotPresent(config) && "values" in config && Array.isArray(config.values) && config.values.every(
+  return (0,scrivito_sdk_common__WEBPACK_IMPORTED_MODULE_0__/* .isObject */ .Gv)(config) && titleIsValidOrNotPresent(config) && "values" in config && Array.isArray(config.values) && config.values.every(
     (valueOrConfig) => typeof valueOrConfig === "string" && valueOrConfig.length || isLocalizedEnumValueConfig(valueOrConfig)
   );
 }
 function isLocalizedEnumValueConfig(config) {
-  return (0,common/* isObject */.n_)(config) && "value" in config && typeof config.value === "string" && !!config.value.length && titleIsValidOrNotPresent(config);
+  return (0,scrivito_sdk_common__WEBPACK_IMPORTED_MODULE_0__/* .isObject */ .Gv)(config) && "value" in config && typeof config.value === "string" && !!config.value.length && titleIsValidOrNotPresent(config);
 }
 function isReferenceAttributeConfig(config) {
-  return (0,common/* isObject */.n_)(config) && "to" in config && typeof config.to === "string" && titleIsValidOrNotPresent(config) && (!("reverseTitle" in config) || typeof config.reverseTitle === "string");
+  return (0,scrivito_sdk_common__WEBPACK_IMPORTED_MODULE_0__/* .isObject */ .Gv)(config) && "to" in config && typeof config.to === "string" && titleIsValidOrNotPresent(config) && (!("reverseTitle" in config) || typeof config.reverseTitle === "string");
 }
 function isLocalizedAttributeConfig(config) {
-  return (0,common/* isObject */.n_)(config) && (!Object.keys(config).length || titleIsValidOrNotPresent(config));
+  return (0,scrivito_sdk_common__WEBPACK_IMPORTED_MODULE_0__/* .isObject */ .Gv)(config) && (!Object.keys(config).length || titleIsValidOrNotPresent(config));
 }
 function titleIsValidOrNotPresent(object) {
   return !("title" in object) || typeof object.title === "string";
 }
 function logSchemaError(attributeName, actual, details) {
-  (0,common/* logError */.vV)(
+  (0,scrivito_sdk_common__WEBPACK_IMPORTED_MODULE_0__/* .logError */ .vV)(
     `Invalid schema definition for attribute "${attributeName}": ${JSON.stringify(
       actual
     )}${details ? `
@@ -9806,621 +10014,53 @@ Details: ${details}` : ""}`
   );
 }
 
-// EXTERNAL MODULE: ./scrivito_sdk/models/index.ts + 41 modules
-var models = __webpack_require__(3781);
-;// CONCATENATED MODULE: ./scrivito_sdk/data_integration/data_class.ts
 
-var data_class_defProp = Object.defineProperty;
-var __defProps = Object.defineProperties;
-var __getOwnPropDescs = Object.getOwnPropertyDescriptors;
-var data_class_getOwnPropSymbols = Object.getOwnPropertySymbols;
-var data_class_hasOwnProp = Object.prototype.hasOwnProperty;
-var data_class_propIsEnum = Object.prototype.propertyIsEnumerable;
-var data_class_defNormalProp = (obj, key, value) => key in obj ? data_class_defProp(obj, key, { enumerable: true, configurable: true, writable: true, value }) : obj[key] = value;
-var data_class_spreadValues = (a, b) => {
-  for (var prop in b || (b = {}))
-    if (data_class_hasOwnProp.call(b, prop))
-      data_class_defNormalProp(a, prop, b[prop]);
-  if (data_class_getOwnPropSymbols)
-    for (var prop of data_class_getOwnPropSymbols(b)) {
-      if (data_class_propIsEnum.call(b, prop))
-        data_class_defNormalProp(a, prop, b[prop]);
-    }
-  return a;
-};
-var __spreadProps = (a, b) => __defProps(a, __getOwnPropDescs(b));
-var data_class_async = (__this, __arguments, generator) => {
-  return new Promise((resolve, reject) => {
-    var fulfilled = (value) => {
-      try {
-        step(generator.next(value));
-      } catch (e) {
-        reject(e);
-      }
-    };
-    var rejected = (value) => {
-      try {
-        step(generator.throw(value));
-      } catch (e) {
-        reject(e);
-      }
-    };
-    var step = (x) => x.done ? resolve(x.value) : Promise.resolve(x.value).then(fulfilled, rejected);
-    step((generator = generator.apply(__this, __arguments)).next());
-  });
-};
+/***/ }),
+
+/***/ 7824:
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   B: () => (/* binding */ DataConnectionError)
+/* harmony export */ });
+/* harmony import */ var scrivito_sdk_common__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(5204);
 
 
-
-
-
-class DataClass {
-  /** @public */
-  attributeDefinitions() {
-    return getNormalizedDataAttributeDefinitions(this.name());
-  }
-  /** @internal */
-  title() {
-    return getDataClassTitle(this.name());
-  }
-  /** @internal */
-  forAttribute(attributeName) {
-    return this.all().transform({ attributeName });
-  }
-}
-class DataScope {
-  /** @public */
-  dataItemAttribute() {
-    const attributeName = this.attributeName();
-    if (!attributeName)
-      return null;
-    const dataItem = this.dataItem();
-    if (!dataItem)
-      return null;
-    return new DataItemAttribute(dataItem, attributeName);
-  }
-  /** @public */
-  isEmpty() {
-    return this.transform({ limit: 1 }).take().length === 0;
-  }
-  /** @public */
-  containsData() {
-    return !this.isEmpty();
-  }
-  /** @internal */
-  normalizeFilters(filters) {
-    if (!filters)
-      return;
-    return (0,mapValues/* default */.A)(filters, (valueOrSpec, attributeName) => {
-      if (isAndOperatorSpec(valueOrSpec))
-        return valueOrSpec;
-      const isOpSpec = isOperatorSpec(valueOrSpec);
-      const actualValue = isOpSpec ? valueOrSpec.value : valueOrSpec;
-      let serializedValue = actualValue;
-      if (actualValue instanceof Date) {
-        serializedValue = actualValue.toISOString();
-      }
-      if (actualValue instanceof DataItem) {
-        serializedValue = actualValue.id();
-      }
-      if (serializedValue === null || typeof serializedValue === "string" || typeof serializedValue === "number" || typeof serializedValue === "boolean") {
-        const operator = isOpSpec ? valueOrSpec.operator : "equals";
-        return { operator, value: serializedValue };
-      }
-      throw new common/* ArgumentError */.c1(
-        `Invalid filter value for "${attributeName}": ${JSON.stringify(
-          valueOrSpec
-        )}`
-      );
-    });
-  }
-  attributesFromFilters(filters) {
-    if (!filters)
-      return;
-    const initialAttributes = {};
-    return Object.keys(filters).reduce((attributes, name) => {
-      const filter = filters[name];
-      const specs = isOperatorSpec(filter) ? [filter] : filter.value;
-      specs.forEach((spec) => {
-        if (spec.operator === "equals")
-          attributes[name] = spec.value;
-      });
-      return attributes;
-    }, initialAttributes);
-  }
-}
-class DataItemAttribute {
-  constructor(_dataItem, _attributeName) {
-    this._dataItem = _dataItem;
-    this._attributeName = _attributeName;
-  }
-  dataClass() {
-    return this._dataItem.dataClass();
-  }
-  dataClassName() {
-    return this._dataItem.dataClassName();
-  }
-  dataItem() {
-    return this._dataItem;
-  }
-  attributeName() {
-    return this._attributeName;
-  }
-  get() {
-    return this._dataItem.get(this._attributeName);
-  }
-  update(value) {
-    return data_class_async(this, null, function* () {
-      return this._dataItem.update({ [this._attributeName]: value });
-    });
-  }
-}
-const DEFAULT_LIMIT = 20;
-class DataItem {
-  /** @public */
-  attributeDefinitions() {
-    return this.dataClass().attributeDefinitions();
-  }
-  /** @internal */
-  title() {
-    return this.dataClass().title();
-  }
-  /** @internal */
-  getRaw(_attributeName) {
-    return;
-  }
-}
-class DataScopeError extends common/* ScrivitoError */.aS {
-  /** @internal */
+class DataConnectionError extends scrivito_sdk_common__WEBPACK_IMPORTED_MODULE_0__/* .ScrivitoError */ .aS {
   constructor(message) {
     super(message);
     this.message = message;
   }
 }
-function assertValidDataItemAttributes(attributes) {
-  if (!(0,common/* isObject */.n_)(attributes)) {
-    throw new common/* ArgumentError */.c1("Data item attributes must be an object");
-  }
-  if (!Object.keys(attributes).every(models/* isValidDataIdentifier */.Wf)) {
-    throw new common/* ArgumentError */.c1(
-      "Keys of data item attributes must be valid data identifiers"
-    );
-  }
-}
-function combineFilters(currFilters, nextFilters) {
-  if (!currFilters)
-    return nextFilters;
-  if (!nextFilters)
-    return currFilters;
-  let combinedFilters = data_class_spreadValues({}, currFilters);
-  Object.keys(nextFilters).forEach((attributeName) => {
-    if (attributeName in combinedFilters && !(0,isEqual/* default */.A)(combinedFilters[attributeName], nextFilters[attributeName])) {
-      const currentFilter = combinedFilters[attributeName];
-      const nextFilter = nextFilters[attributeName];
-      combinedFilters = __spreadProps(data_class_spreadValues({}, combinedFilters), {
-        [attributeName]: {
-          operator: "and",
-          value: [
-            ...isOperatorSpec(currentFilter) ? [currentFilter] : currentFilter.value,
-            ...isOperatorSpec(nextFilter) ? [nextFilter] : nextFilter.value
-          ]
-        }
-      });
-      return;
-    }
-    combinedFilters[attributeName] = nextFilters[attributeName];
-  });
-  return combinedFilters;
-}
-function combineSearches(currSearch, nextSearch) {
-  return currSearch && nextSearch ? `${currSearch} ${nextSearch}` : currSearch || nextSearch;
-}
-function itemPojoToScopePojo({
-  _class,
-  _id
-}) {
-  return { _class, filters: { _id: { operator: "equals", value: _id } } };
-}
-function scopePojoToItemPojo({
-  _class,
-  filters
-}) {
-  const id = itemIdFromFilters(filters);
-  if (id)
-    return { _class, _id: id };
-}
-function itemIdFromFilters(filters) {
-  var _a;
-  const id = (_a = filters == null ? void 0 : filters._id) == null ? void 0 : _a.value;
-  if (typeof id === "string")
-    return id;
-}
-function isFilterOperator(operator) {
-  return typeof operator === "string" && [
-    "equals",
-    "notEquals",
-    "isGreaterThan",
-    "isLessThan",
-    "isGreaterThanOrEquals",
-    "isLessThanOrEquals"
-  ].includes(operator);
-}
-function isOperatorSpec(spec) {
-  return (0,common/* isObject */.n_)(spec) && "operator" in spec && isFilterOperator(spec.operator) && "value" in spec && (spec.value === null || ["string", "number", "boolean"].includes(typeof spec.value));
-}
-function isAndOperatorSpec(spec) {
-  return (0,common/* isObject */.n_)(spec) && "operator" in spec && spec.operator === "and" && "value" in spec && Array.isArray(spec.value) && spec.value.every(isOperatorSpec);
-}
 
-;// CONCATENATED MODULE: ./scrivito_sdk/data_integration/create_rest_api_connection.ts
 
-var create_rest_api_connection_defProp = Object.defineProperty;
-var create_rest_api_connection_defProps = Object.defineProperties;
-var create_rest_api_connection_getOwnPropDescs = Object.getOwnPropertyDescriptors;
-var create_rest_api_connection_getOwnPropSymbols = Object.getOwnPropertySymbols;
-var create_rest_api_connection_hasOwnProp = Object.prototype.hasOwnProperty;
-var create_rest_api_connection_propIsEnum = Object.prototype.propertyIsEnumerable;
-var create_rest_api_connection_defNormalProp = (obj, key, value) => key in obj ? create_rest_api_connection_defProp(obj, key, { enumerable: true, configurable: true, writable: true, value }) : obj[key] = value;
-var create_rest_api_connection_spreadValues = (a, b) => {
-  for (var prop in b || (b = {}))
-    if (create_rest_api_connection_hasOwnProp.call(b, prop))
-      create_rest_api_connection_defNormalProp(a, prop, b[prop]);
-  if (create_rest_api_connection_getOwnPropSymbols)
-    for (var prop of create_rest_api_connection_getOwnPropSymbols(b)) {
-      if (create_rest_api_connection_propIsEnum.call(b, prop))
-        create_rest_api_connection_defNormalProp(a, prop, b[prop]);
-    }
-  return a;
-};
-var create_rest_api_connection_spreadProps = (a, b) => create_rest_api_connection_defProps(a, create_rest_api_connection_getOwnPropDescs(b));
-var create_rest_api_connection_async = (__this, __arguments, generator) => {
-  return new Promise((resolve, reject) => {
-    var fulfilled = (value) => {
-      try {
-        step(generator.next(value));
-      } catch (e) {
-        reject(e);
-      }
-    };
-    var rejected = (value) => {
-      try {
-        step(generator.throw(value));
-      } catch (e) {
-        reject(e);
-      }
-    };
-    var step = (x) => x.done ? resolve(x.value) : Promise.resolve(x.value).then(fulfilled, rejected);
-    step((generator = generator.apply(__this, __arguments)).next());
-  });
-};
+/***/ }),
 
-function createRestApiConnectionForClass(apiClient) {
-  return {
-    create: (data) => create_rest_api_connection_async(this, null, function* () {
-      return apiClient.fetch("", { method: "post", data });
-    }),
-    index: (params) => create_rest_api_connection_async(this, null, function* () {
-      return apiClient.fetch("", { params: toClientParams(params) });
-    }),
-    get: (id) => create_rest_api_connection_async(this, null, function* () {
-      return apiClient.fetch(id);
-    }),
-    update: (id, data) => create_rest_api_connection_async(this, null, function* () {
-      return apiClient.fetch(id, { method: "patch", data });
-    }),
-    delete: (id) => apiClient.fetch(id, { method: "delete" })
-  };
-}
-function toClientParams(params) {
-  return create_rest_api_connection_spreadProps(create_rest_api_connection_spreadValues({}, toClientFilterParam(params.filters())), {
-    _continuation: params.continuation(),
-    _order: toClientOrderParam(params.order()),
-    _limit: params.limit().toString(),
-    _search: params.search() || void 0,
-    _count: params.includeCount() ? params.includeCount().toString() : void 0
-  });
-}
-function toClientFilterParam(filters) {
-  const params = {};
-  Object.keys(filters).forEach((name) => {
-    const filter = filters[name];
-    let filterCollection;
-    if (filter.operator === "and") {
-      assertNoConflicts(filter.value);
-      filterCollection = filter.value;
-    } else {
-      filterCollection = [filter];
-    }
-    filterCollection.forEach((currentFilter) => {
-      const { opCode, value } = currentFilter;
-      const key = opCode === "eq" ? name : [name, opCode].join(".");
-      params[key] = serializeFilterValue(value);
-    });
-  });
-  return params;
-}
-function toClientOrderParam(orderSpec) {
-  if (orderSpec.length) {
-    return orderSpec.map((order) => order.join(".")).join(",");
-  }
-}
-function serializeFilterValue(value) {
-  if (typeof value === "string")
-    return value;
-  if (value === null)
-    return "";
-  return JSON.stringify(value);
-}
-function assertNoConflicts(specs) {
-  if (specs.length < 2)
-    return;
-  if (specs.some(
-    (outerSpec, index) => specs.slice(index + 1).some(
-      (innerSpec) => innerSpec.operator === outerSpec.operator && innerSpec.value !== outerSpec.value
-    )
-  )) {
-    throw new common/* ArgumentError */.c1(
-      `Multiple filters on the same attribute with the same operator but different values are currently not supported: ${JSON.stringify(
-        specs
-      )}`
-    );
-  }
-}
+/***/ 5596:
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-// EXTERNAL MODULE: ./scrivito_sdk/client/index.ts + 38 modules
-var client = __webpack_require__(853);
-// EXTERNAL MODULE: ../node_modules/lodash-es/isDate.js + 1 modules
-var isDate = __webpack_require__(9231);
-;// CONCATENATED MODULE: ./scrivito_sdk/data_integration/data_id.ts
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   o: () => (/* binding */ isValidDataId)
+/* harmony export */ });
 
 function isValidDataId(id) {
   return typeof id === "string" && (!!id.match(/^\d+(-\d+)*$/) || !!id.match(/^[a-f0-9]{8,}(-[a-f0-9]{8,})*$/i));
 }
 
-;// CONCATENATED MODULE: ./scrivito_sdk/data_integration/data_attribute.ts
+
+/***/ }),
+
+/***/ 1032:
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   Q: () => (/* binding */ disableExternalDataLoading),
+/* harmony export */   c: () => (/* binding */ isExternalDataLoadingDisabled)
+/* harmony export */ });
+/* harmony import */ var scrivito_sdk_common__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(5204);
 
 
-
-
-
-
-
-const serializers = {
-  boolean: serializeBooleanAttribute,
-  date: serializeDateAttribute,
-  enum: serializeEnumAttribute,
-  number: serializeNumberAttribute,
-  reference: serializeReferenceAttribute,
-  string: serializeStringAttribute
-};
-function serializeDataAttribute({
-  dataClassName,
-  attributeName,
-  value,
-  attributes
-}) {
-  assertNoTypedObject(dataClassName, attributeName, value);
-  const attributeDefinition = attributes[attributeName];
-  if (attributeDefinition) {
-    const attributeType = getAttributeType(attributeDefinition);
-    const serializer = serializers[attributeType];
-    return serializer(dataClassName, attributeName, value, attributeDefinition);
-  }
-  return value != null ? value : null;
-}
-function deserializeDataAttribute({
-  dataClassName,
-  attributeName,
-  value,
-  attributes
-}) {
-  assertNoTypedObject(dataClassName, attributeName, value);
-  const attributeDefinition = attributes[attributeName];
-  if (attributeDefinition) {
-    const attributeType = getAttributeType(attributeDefinition);
-    const deserializer = deserializers[attributeType];
-    return deserializer(
-      dataClassName,
-      attributeName,
-      value,
-      attributeDefinition
-    );
-  }
-  return value != null ? value : null;
-}
-function serializeBooleanAttribute(dataClassName, attributeName, value) {
-  if (typeof value === "boolean")
-    return value;
-  throwTypeMismatch(dataClassName, attributeName, "a boolean", value);
-}
-function serializeDateAttribute(dataClassName, attributeName, value) {
-  if (value === null || typeof value === "string" && (0,common/* isISO8601 */.p1)(value)) {
-    return value;
-  }
-  if ((0,isDate/* default */.A)(value))
-    return value.toISOString();
-  throwTypeMismatch(
-    dataClassName,
-    attributeName,
-    "an instance of Date, an ISO8601 date string or null",
-    value
-  );
-}
-function serializeEnumAttribute(dataClassName, attributeName, value, attributeDefinition) {
-  const enumValues = getEnumValues(getAttributeConfig(attributeDefinition));
-  if (value === null || typeof value === "string" && enumValues.includes(value)) {
-    return value;
-  }
-  throwTypeMismatch(
-    dataClassName,
-    attributeName,
-    `one of ${JSON.stringify(enumValues)} or null`,
-    value
-  );
-}
-function serializeNumberAttribute(dataClassName, attributeName, value) {
-  if (value === null || typeof value === "number")
-    return value;
-  throwTypeMismatch(dataClassName, attributeName, "a number or null", value);
-}
-function serializeReferenceAttribute(dataClassName, attributeName, value, attributeDefinition) {
-  if (value === null || isValidDataId(value))
-    return value;
-  if (value instanceof DataItem && value.dataClassName() === getReferencedClassName(getAttributeConfig(attributeDefinition))) {
-    return value.id();
-  }
-  throwTypeMismatch(
-    dataClassName,
-    attributeName,
-    `an instance of DataItem of data class "${dataClassName}", a valid data ID or null`,
-    value
-  );
-  return null;
-}
-function serializeStringAttribute(dataClassName, attributeName, value) {
-  if (typeof value === "string")
-    return value;
-  throwTypeMismatch(dataClassName, attributeName, "a string", value);
-}
-const deserializers = {
-  boolean: deserializeBooleanAttribute,
-  date: deserializeDateAttribute,
-  enum: deserializeEnumAttribute,
-  number: deserializeNumberAttribute,
-  reference: deserializeReferenceAttribute,
-  string: deserializeStringAttribute
-};
-function deserializeBooleanAttribute(dataClassName, attributeName, value) {
-  if (typeof value === "boolean") {
-    return value;
-  }
-  logTypeMismatch(dataClassName, attributeName, "a boolean", value);
-  return false;
-}
-function deserializeDateAttribute(dataClassName, attributeName, value) {
-  if (isEmptyStringOrNull(value))
-    return null;
-  if (typeof value === "string" && (0,common/* isISO8601 */.p1)(value)) {
-    return new Date(value);
-  }
-  logTypeMismatch(
-    dataClassName,
-    attributeName,
-    "an ISO8601 date string",
-    value
-  );
-  return null;
-}
-function deserializeEnumAttribute(dataClassName, attributeName, value, attributeDefinition) {
-  if (isEmptyStringOrNull(value))
-    return null;
-  const enumValues = getEnumValues(getAttributeConfig(attributeDefinition));
-  if (typeof value === "string" && enumValues.includes(value)) {
-    return value;
-  }
-  logTypeMismatch(
-    dataClassName,
-    attributeName,
-    `one of ${JSON.stringify(enumValues)}`,
-    value
-  );
-  return null;
-}
-function deserializeReferenceAttribute(dataClassName, attributeName, value, attributeDefinition) {
-  if (isEmptyStringOrNull(value))
-    return null;
-  if (isValidDataId(value)) {
-    return getDataClassOrThrow(
-      getReferencedClassName(getAttributeConfig(attributeDefinition))
-    ).get(value) || null;
-  }
-  logTypeMismatch(dataClassName, attributeName, "a valid data ID", value);
-  return null;
-}
-function deserializeNumberAttribute(dataClassName, attributeName, value) {
-  if (typeof value === "number") {
-    return value;
-  }
-  logTypeMismatch(dataClassName, attributeName, "a number", value);
-  return null;
-}
-function deserializeStringAttribute(dataClassName, attributeName, value) {
-  if (typeof value === "string") {
-    return value;
-  }
-  logTypeMismatch(dataClassName, attributeName, "a string", value);
-  return "";
-}
-function isEmptyStringOrNull(value) {
-  return value === null || value === "";
-}
-function getAttributeType(attributeDefinition) {
-  return typeof attributeDefinition === "string" ? attributeDefinition : attributeDefinition[0];
-}
-function getAttributeConfig(attributeDefinition) {
-  if (typeof attributeDefinition !== "string") {
-    return attributeDefinition[1];
-  }
-}
-function getEnumValues(attributeConfig) {
-  if (isEnumAttributeConfig(attributeConfig)) {
-    return attributeConfig.values.map(
-      (valueOrConfig) => typeof valueOrConfig === "string" ? valueOrConfig : valueOrConfig.value
-    );
-  }
-  throw new common/* ArgumentError */.c1(
-    'Enum attribute config is missing the "values" property'
-  );
-}
-function getReferencedClassName(attributeConfig) {
-  if (attributeConfig && data_attribute_isReferenceAttributeConfig(attributeConfig)) {
-    return attributeConfig.to;
-  }
-  throw new common/* ArgumentError */.c1(
-    'Reference attribute config is missing the "to" property'
-  );
-}
-function data_attribute_isReferenceAttributeConfig(attributeConfig) {
-  return !!(attributeConfig && "to" in attributeConfig && typeof attributeConfig.to === "string");
-}
-function assertNoTypedObject(dataClassName, attributeName, value) {
-  if (Array.isArray(value)) {
-    assertNoTypedObject(dataClassName, attributeName, value[0]);
-  }
-  if ((0,common/* isObject */.n_)(value) && value.hasOwnProperty("_type")) {
-    throw new common/* ArgumentError */.c1(
-      `Value for attribute "${attributeName}" of data class "${dataClassName}" contains an object with property "_type"`
-    );
-  }
-}
-function logTypeMismatch(dataClassName, attributeName, expected, actual) {
-  if (actual === null || actual === void 0)
-    return;
-  (0,common/* logError */.vV)(typeMismatchMessage(dataClassName, attributeName, expected, actual));
-}
-function throwTypeMismatch(dataClassName, attributeName, expected, actual) {
-  throw new common/* ArgumentError */.c1(
-    typeMismatchMessage(dataClassName, attributeName, expected, actual)
-  );
-}
-function typeMismatchMessage(dataClassName, attributeName, expected, actual) {
-  return `Expected attribute "${attributeName}" of data class "${dataClassName}" to be ${expected}, but got ${JSON.stringify(actual)}`;
-}
-
-;// CONCATENATED MODULE: ./scrivito_sdk/data_integration/data_connection_error.ts
-
-
-class DataConnectionError extends common/* ScrivitoError */.aS {
-  constructor(message) {
-    super(message);
-    this.message = message;
-  }
-}
-
-;// CONCATENATED MODULE: ./scrivito_sdk/data_integration/disable_external_data_loading.ts
-
-
-const isLoadingDisabled = new common/* ContextContainer */.hl();
+const isLoadingDisabled = new scrivito_sdk_common__WEBPACK_IMPORTED_MODULE_0__/* .ContextContainer */ .hl();
 function disableExternalDataLoading(fn) {
   return isLoadingDisabled.runWith(true, fn);
 }
@@ -10428,323 +10068,43 @@ function isExternalDataLoadingDisabled() {
   return isLoadingDisabled.current() || false;
 }
 
-// EXTERNAL MODULE: ../node_modules/lodash-es/memoize.js
-var memoize = __webpack_require__(3920);
-;// CONCATENATED MODULE: ./scrivito_sdk/data_integration/add_missing_data_connection_handlers.ts
+
+/***/ }),
+
+/***/ 4962:
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 
-function addMissingDataConnectionHandlers(connection, dataClass) {
-  return {
-    get: connection.get || throwMissingCallbackError("get", dataClass),
-    update: connection.update || throwMissingCallbackError("update", dataClass),
-    index: connection.index || throwMissingCallbackError("index", dataClass),
-    create: connection.create || throwMissingCallbackError("create", dataClass),
-    delete: connection.delete || throwMissingCallbackError("delete", dataClass)
-  };
-}
-function throwMissingCallbackError(callbackName, dataClass) {
-  return () => {
-    throw new common/* ScrivitoError */.aS(
-      `No ${callbackName} callback defined for data class "${dataClass}"`
-    );
-  };
-}
+// EXPORTS
+__webpack_require__.d(__webpack_exports__, {
+  Gf: () => (/* binding */ ExternalDataClass),
+  FU: () => (/* binding */ ExternalDataItem),
+  VU: () => (/* binding */ allExternalDataClasses),
+  D5: () => (/* binding */ isExternalDataClassProvided)
+});
 
-;// CONCATENATED MODULE: ./scrivito_sdk/data_integration/anticipated_data_connection.ts
+// UNUSED EXPORTS: ExternalDataScope
 
-var anticipated_data_connection_async = (__this, __arguments, generator) => {
-  return new Promise((resolve, reject) => {
-    var fulfilled = (value) => {
-      try {
-        step(generator.next(value));
-      } catch (e) {
-        reject(e);
-      }
-    };
-    var rejected = (value) => {
-      try {
-        step(generator.throw(value));
-      } catch (e) {
-        reject(e);
-      }
-    };
-    var step = (x) => x.done ? resolve(x.value) : Promise.resolve(x.value).then(fulfilled, rejected);
-    step((generator = generator.apply(__this, __arguments)).next());
-  });
-};
-
-
-function anticipatedDataConnection(connectionPromise, dataClass) {
-  const getCompleteConnection = (0,memoize/* default */.A)(
-    () => anticipated_data_connection_async(this, null, function* () {
-      return addMissingDataConnectionHandlers(yield connectionPromise, dataClass);
-    })
-  );
-  return {
-    get: (...args) => anticipated_data_connection_async(this, null, function* () {
-      return (yield getCompleteConnection()).get(...args);
-    }),
-    index: (...args) => anticipated_data_connection_async(this, null, function* () {
-      return (yield getCompleteConnection()).index(...args);
-    }),
-    create: (...args) => anticipated_data_connection_async(this, null, function* () {
-      return (yield getCompleteConnection()).create(...args);
-    }),
-    update: (...args) => anticipated_data_connection_async(this, null, function* () {
-      return (yield getCompleteConnection()).update(...args);
-    }),
-    delete: (...args) => anticipated_data_connection_async(this, null, function* () {
-      return (yield getCompleteConnection()).delete(...args);
-    })
-  };
-}
-
-;// CONCATENATED MODULE: ./scrivito_sdk/data_integration/external_data_connection.ts
-
-var external_data_connection_defProp = Object.defineProperty;
-var external_data_connection_defProps = Object.defineProperties;
-var external_data_connection_getOwnPropDescs = Object.getOwnPropertyDescriptors;
-var external_data_connection_getOwnPropSymbols = Object.getOwnPropertySymbols;
-var external_data_connection_hasOwnProp = Object.prototype.hasOwnProperty;
-var external_data_connection_propIsEnum = Object.prototype.propertyIsEnumerable;
-var external_data_connection_defNormalProp = (obj, key, value) => key in obj ? external_data_connection_defProp(obj, key, { enumerable: true, configurable: true, writable: true, value }) : obj[key] = value;
-var external_data_connection_spreadValues = (a, b) => {
-  for (var prop in b || (b = {}))
-    if (external_data_connection_hasOwnProp.call(b, prop))
-      external_data_connection_defNormalProp(a, prop, b[prop]);
-  if (external_data_connection_getOwnPropSymbols)
-    for (var prop of external_data_connection_getOwnPropSymbols(b)) {
-      if (external_data_connection_propIsEnum.call(b, prop))
-        external_data_connection_defNormalProp(a, prop, b[prop]);
-    }
-  return a;
-};
-var external_data_connection_spreadProps = (a, b) => external_data_connection_defProps(a, external_data_connection_getOwnPropDescs(b));
-var __objRest = (source, exclude) => {
-  var target = {};
-  for (var prop in source)
-    if (external_data_connection_hasOwnProp.call(source, prop) && exclude.indexOf(prop) < 0)
-      target[prop] = source[prop];
-  if (source != null && external_data_connection_getOwnPropSymbols)
-    for (var prop of external_data_connection_getOwnPropSymbols(source)) {
-      if (exclude.indexOf(prop) < 0 && external_data_connection_propIsEnum.call(source, prop))
-        target[prop] = source[prop];
-    }
-  return target;
-};
-var external_data_connection_async = (__this, __arguments, generator) => {
-  return new Promise((resolve, reject) => {
-    var fulfilled = (value) => {
-      try {
-        step(generator.next(value));
-      } catch (e) {
-        reject(e);
-      }
-    };
-    var rejected = (value) => {
-      try {
-        step(generator.throw(value));
-      } catch (e) {
-        reject(e);
-      }
-    };
-    var step = (x) => x.done ? resolve(x.value) : Promise.resolve(x.value).then(fulfilled, rejected);
-    step((generator = generator.apply(__this, __arguments)).next());
-  });
-};
-
-
-
-
-
-
-
-function assertValidNumericId(id) {
-  if (id < 0 || !Number.isSafeInteger(id)) {
-    throw new common/* ArgumentError */.c1(
-      `Numeric IDs must be a non-negative "safe" integer: ${id.toString()}`
-    );
-  }
-}
-function parseResultItem(resultItem) {
-  if (!(0,common/* isObject */.n_)(resultItem)) {
-    throw new common/* ArgumentError */.c1("A result item must be an object");
-  }
-  if ("_id" in resultItem) {
-    const _a = resultItem, { _id } = _a, customData = __objRest(_a, ["_id"]);
-    return parseToExternalData(_id, customData);
-  }
-  if ("id" in resultItem) {
-    const _b = resultItem, { id } = _b, customData = __objRest(_b, ["id"]);
-    return parseToExternalData(id, customData);
-  }
-  throw new common/* ArgumentError */.c1('"_id" key missing');
-}
-function parseToExternalData(id, customData) {
-  return {
-    systemData: { _id: parseId(id) },
-    customData: filterValidDataIdentifiers(customData)
-  };
-}
-function parseId(id) {
-  if (typeof id === "number") {
-    assertValidNumericId(id);
-    return id.toString();
-  }
-  if (!isValidDataId(id)) {
-    throw new common/* ArgumentError */.c1('"_id" key invalid (must be numeric or hex)');
-  }
-  return id;
-}
-function parseIndexResult(result) {
-  if (!(0,common/* isObject */.n_)(result)) {
-    throw new common/* ArgumentError */.c1("An index result must be an object");
-  }
-  const { results: inputResults, continuation, count } = result;
-  if (!Array.isArray(inputResults)) {
-    throw new common/* ArgumentError */.c1("Results of an index result must be an array");
-  }
-  const parsedResults = inputResults.map((idOrItem) => {
-    if (typeof idOrItem === "number") {
-      assertValidNumericId(idOrItem);
-      return idOrItem;
-    } else if (typeof idOrItem === "string") {
-      assertValidDataId(idOrItem);
-      return idOrItem;
-    }
-    return parseResultItem(idOrItem);
-  });
-  if (typeof continuation === "string") {
-    if (continuation.length === 0) {
-      throw new common/* ArgumentError */.c1(
-        "Continuation of an index result must be a non-empty string, null or undefined"
-      );
-    }
-  } else if (continuation !== null && continuation !== void 0) {
-    throw new common/* ArgumentError */.c1(
-      "Continuation of an index result must be a string, null or undefined"
-    );
-  }
-  return {
-    results: parsedResults,
-    continuation,
-    count: parseCount(count)
-  };
-}
-function parseCount(resultCount) {
-  if (resultCount === void 0 || resultCount === null)
-    return;
-  if (typeof resultCount !== "number" && typeof resultCount !== "string") {
-    throw new common/* ArgumentError */.c1(
-      "Count of an index result must be a non-negative integer, null or undefined"
-    );
-  }
-  const count = Number(resultCount);
-  if (count >= 0 && (0,common/* isValidInteger */.zh)(count))
-    return count;
-  throw new common/* ArgumentError */.c1(
-    "Count of an index result must be a non-negative integer"
-  );
-}
-function assertValidDataId(dataId) {
-  if (!isValidDataId(dataId)) {
-    throw new common/* ArgumentError */.c1(
-      "Strings in results of an index result must be valid data IDs"
-    );
-  }
-}
-const connectionsState = (0,state/* createStateContainer */.Ld)();
-function setExternalDataConnection(name, partialConnection) {
-  const connection = anticipatedDataConnection(partialConnection, name);
-  connectionsState.set(external_data_connection_spreadProps(external_data_connection_spreadValues({}, connectionsState.get()), {
-    [name]: connection
-  }));
-}
-function hasExternalDataConnection(name) {
-  return !!getExternalDataConnection(name);
-}
-function getExternalDataConnection(name) {
-  const connections = connectionsState.get();
-  if (connections)
-    return connections[name];
-}
-function getExternalDataConnectionNames() {
-  const connections = connectionsState.get();
-  return connections ? Object.keys(connections) : [];
-}
-function getExternalDataConnectionOrThrow(name) {
-  const connection = getExternalDataConnection(name);
-  if (!connection) {
-    throw new common/* ArgumentError */.c1(`Missing data class with name ${name}`);
-  }
-  return connection;
-}
-function getViaDataConnection(name, id) {
-  return external_data_connection_async(this, null, function* () {
-    if (!isValidDataId(id)) {
-      throw new common/* ArgumentError */.c1(`Invalid data ID "${id}"`);
-    }
-    let response;
-    try {
-      response = yield getExternalDataConnectionOrThrow(name).get(id);
-    } catch (error) {
-      if (error instanceof client/* ClientError */.MZ && error.httpStatus === 404) {
-        return null;
-      }
-      throw error;
-    }
-    if (response === null)
-      return null;
-    if (!(0,common/* isObject */.n_)(response)) {
-      throw new common/* ArgumentError */.c1("External data must be an object or null");
-    }
-    return {
-      systemData: { _id: id },
-      customData: filterValidDataIdentifiers(response)
-    };
-  });
-}
-function filterValidDataIdentifiers(data) {
-  return Object.fromEntries(
-    Object.entries(data).filter(([key]) => (0,models/* isValidDataIdentifier */.Wf)(key))
-  );
-}
-function indexViaDataConnection(name, params) {
-  return external_data_connection_async(this, null, function* () {
-    const result = yield getExternalDataConnectionOrThrow(name).index(params);
-    if (result instanceof DataConnectionError)
-      throw result;
-    return parseIndexResult(result);
-  });
-}
-function createViaDataConnection(name, data) {
-  return external_data_connection_async(this, null, function* () {
-    const response = yield getExternalDataConnectionOrThrow(name).create(data);
-    const { systemData, customData } = parseResultItem(response);
-    return {
-      systemData,
-      customData: Object.keys(customData).length === 0 ? data : customData
-    };
-  });
-}
-function updateViaDataConnection(name, id, data) {
-  return external_data_connection_async(this, null, function* () {
-    const response = yield getExternalDataConnectionOrThrow(name).update(
-      id,
-      data
-    );
-    const updatedData = response != null ? response : {};
-    if (!(0,common/* isObject */.n_)(updatedData)) {
-      throw new common/* ArgumentError */.c1("External data must be an object or null");
-    }
-    const _a = filterValidDataIdentifiers(updatedData), { _id } = _a, filteredData = __objRest(_a, ["_id"]);
-    return external_data_connection_spreadValues(external_data_connection_spreadValues({}, data), filteredData);
-  });
-}
-function deleteViaDataConnection(name, id) {
-  return getExternalDataConnectionOrThrow(name).delete(id);
-}
-
+// EXTERNAL MODULE: ../node_modules/lodash-es/mapValues.js
+var mapValues = __webpack_require__(5796);
+// EXTERNAL MODULE: ./scrivito_sdk/client/index.ts + 38 modules
+var client = __webpack_require__(853);
+// EXTERNAL MODULE: ./scrivito_sdk/common/index.ts + 62 modules
+var common = __webpack_require__(5204);
+// EXTERNAL MODULE: ./scrivito_sdk/data_integration/data_attribute.ts
+var data_attribute = __webpack_require__(3561);
+// EXTERNAL MODULE: ./scrivito_sdk/data_integration/data_class.ts
+var data_class = __webpack_require__(8001);
+// EXTERNAL MODULE: ./scrivito_sdk/data_integration/data_class_schema.ts
+var data_class_schema = __webpack_require__(135);
+// EXTERNAL MODULE: ./scrivito_sdk/data_integration/data_connection_error.ts
+var data_connection_error = __webpack_require__(7824);
+// EXTERNAL MODULE: ./scrivito_sdk/data_integration/disable_external_data_loading.ts
+var disable_external_data_loading = __webpack_require__(1032);
+// EXTERNAL MODULE: ./scrivito_sdk/data_integration/external_data_connection.ts + 1 modules
+var external_data_connection = __webpack_require__(5481);
+// EXTERNAL MODULE: ./scrivito_sdk/loadable/index.ts + 29 modules
+var loadable = __webpack_require__(5688);
 ;// CONCATENATED MODULE: ./scrivito_sdk/data_integration/external_data.ts
 
 
@@ -10754,14 +10114,14 @@ function setExternalData(dataClass, dataId, data) {
   loadableCollection.get([dataClass, dataId]).set(data);
 }
 function getExternalData(dataClass, dataId) {
-  if (isExternalDataLoadingDisabled())
+  if ((0,disable_external_data_loading/* isExternalDataLoadingDisabled */.c)())
     return void 0;
   return loadableCollection.get([dataClass, dataId]).get();
 }
 const loadableCollection = (0,loadable/* createLoadableCollection */.rL)({
   name: "externaldata",
   loadElement: ([dataClass, dataId]) => ({
-    loader: () => getViaDataConnection(dataClass, dataId)
+    loader: () => (0,external_data_connection/* getViaDataConnection */.F_)(dataClass, dataId)
   })
 });
 function findInExternalDataOfflineStore(selector) {
@@ -10770,9 +10130,11 @@ function findInExternalDataOfflineStore(selector) {
 
 // EXTERNAL MODULE: ./scrivito_sdk/data/index.ts + 29 modules
 var data = __webpack_require__(1091);
+// EXTERNAL MODULE: ./scrivito_sdk/data_integration/index.ts + 13 modules
+var data_integration = __webpack_require__(9800);
 ;// CONCATENATED MODULE: ./scrivito_sdk/data_integration/external_data_offline_query.ts
 
-var external_data_offline_query_async = (__this, __arguments, generator) => {
+var __async = (__this, __arguments, generator) => {
   return new Promise((resolve, reject) => {
     var fulfilled = (value) => {
       try {
@@ -10795,7 +10157,7 @@ var external_data_offline_query_async = (__this, __arguments, generator) => {
 
 
 function queryExternalDataOfflineStore(_0) {
-  return external_data_offline_query_async(this, arguments, function* ([
+  return __async(this, arguments, function* ([
     wantedDataClass,
     filters,
     search,
@@ -10920,82 +10282,13 @@ function attributeValue(id, data, attribute) {
   return rawValue === void 0 ? null : rawValue;
 }
 function throwNotSupported(description) {
-  throw new DataConnectionError(`Not supported: ${description}`);
+  throw new data_integration/* DataConnectionError */.BA(`Not supported: ${description}`);
 }
 
-;// CONCATENATED MODULE: ./scrivito_sdk/data_integration/index_params.ts
-
-var index_params_defProp = Object.defineProperty;
-var index_params_defProps = Object.defineProperties;
-var index_params_getOwnPropDescs = Object.getOwnPropertyDescriptors;
-var index_params_getOwnPropSymbols = Object.getOwnPropertySymbols;
-var index_params_hasOwnProp = Object.prototype.hasOwnProperty;
-var index_params_propIsEnum = Object.prototype.propertyIsEnumerable;
-var index_params_defNormalProp = (obj, key, value) => key in obj ? index_params_defProp(obj, key, { enumerable: true, configurable: true, writable: true, value }) : obj[key] = value;
-var index_params_spreadValues = (a, b) => {
-  for (var prop in b || (b = {}))
-    if (index_params_hasOwnProp.call(b, prop))
-      index_params_defNormalProp(a, prop, b[prop]);
-  if (index_params_getOwnPropSymbols)
-    for (var prop of index_params_getOwnPropSymbols(b)) {
-      if (index_params_propIsEnum.call(b, prop))
-        index_params_defNormalProp(a, prop, b[prop]);
-    }
-  return a;
-};
-var index_params_spreadProps = (a, b) => index_params_defProps(a, index_params_getOwnPropDescs(b));
-
-class DataConnectionIndexParams {
-  constructor(_continuation, _params) {
-    this._continuation = _continuation;
-    this._params = _params;
-  }
-  continuation() {
-    return this._continuation;
-  }
-  filters() {
-    return Object.entries(this._params.filters || {}).reduce(
-      (filters, [name, operatorSpec]) => {
-        if (!name)
-          return filters;
-        return index_params_spreadProps(index_params_spreadValues({}, filters), {
-          [name]: isOperatorSpec(operatorSpec) ? index_params_spreadProps(index_params_spreadValues({}, operatorSpec), {
-            opCode: operatorToOpCode[operatorSpec.operator]
-          }) : {
-            operator: "and",
-            value: operatorSpec.value.map((spec) => index_params_spreadProps(index_params_spreadValues({}, spec), {
-              opCode: operatorToOpCode[spec.operator]
-            }))
-          }
-        });
-      },
-      {}
-    );
-  }
-  search() {
-    return this._params.search || "";
-  }
-  order() {
-    return (this._params.order || []).filter(
-      ([attributeName]) => !!attributeName
-    );
-  }
-  limit() {
-    return this._params.limit;
-  }
-  includeCount() {
-    return this._params.count;
-  }
-}
-const operatorToOpCode = {
-  equals: "eq",
-  notEquals: "neq",
-  isGreaterThan: "gt",
-  isLessThan: "lt",
-  isGreaterThanOrEquals: "gte",
-  isLessThanOrEquals: "lte"
-};
-
+// EXTERNAL MODULE: ./scrivito_sdk/data_integration/index_params.ts
+var index_params = __webpack_require__(5941);
+// EXTERNAL MODULE: ./scrivito_sdk/state/index.ts + 13 modules
+var state = __webpack_require__(1946);
 ;// CONCATENATED MODULE: ./scrivito_sdk/data_integration/external_data_query.ts
 
 var external_data_query_async = (__this, __arguments, generator) => {
@@ -11052,10 +10345,10 @@ function countExternalData(dataClass, filters, search, attributes) {
   ])) != null ? _a : null;
 }
 function getExternalDataQuery({ _class: dataClass, filters, search, order, limit }, attributes) {
-  if (isExternalDataLoadingDisabled())
+  if ((0,disable_external_data_loading/* isExternalDataLoadingDisabled */.c)())
     return new common/* EmptyContinueIterable */.l6();
   validateFilters(dataClass, filters, attributes);
-  const batchSize = limit != null ? limit : DEFAULT_LIMIT;
+  const batchSize = limit != null ? limit : data_class/* DEFAULT_LIMIT */.eH;
   const idQuery = new data/* IdBatchQuery */.UX(
     (batchNumber) => batchCollection.getBatch(
       [
@@ -11077,10 +10370,10 @@ function getExternalDataQuery({ _class: dataClass, filters, search, order, limit
 }
 function validateFilters(dataClassName, filters, attributes) {
   (0,mapValues/* default */.A)(filters, (filterValue, filterName) => {
-    const operatorSpecs = isOperatorSpec(filterValue) ? [filterValue] : filterValue.value;
+    const operatorSpecs = (0,data_class/* isOperatorSpec */.ws)(filterValue) ? [filterValue] : filterValue.value;
     operatorSpecs.forEach((operatorSpec) => {
-      const actualValue = isOperatorSpec(operatorSpec) ? operatorSpec.value : operatorSpec;
-      serializeDataAttribute({
+      const actualValue = (0,data_class/* isOperatorSpec */.ws)(operatorSpec) ? operatorSpec.value : operatorSpec;
+      (0,data_attribute/* serializeDataAttribute */.VB)({
         dataClassName,
         attributeName: filterName,
         value: actualValue,
@@ -11097,9 +10390,9 @@ function notifyExternalDataWrite(dataClass) {
 function loadBatch(_0, _1, _2) {
   return external_data_query_async(this, arguments, function* ([dataClass, filters, search, order, count], continuation, batchSize) {
     var _a;
-    const result = yield indexViaDataConnection(
+    const result = yield (0,external_data_connection/* indexViaDataConnection */.hi)(
       dataClass,
-      new DataConnectionIndexParams(continuation, {
+      new index_params/* DataConnectionIndexParams */.Dx(continuation, {
         filters,
         search,
         order,
@@ -11160,19 +10453,19 @@ function toDataResult(idOrItem, dataClass) {
 
 ;// CONCATENATED MODULE: ./scrivito_sdk/data_integration/external_data_class.ts
 
-var external_data_class_defProp = Object.defineProperty;
-var external_data_class_getOwnPropSymbols = Object.getOwnPropertySymbols;
-var external_data_class_hasOwnProp = Object.prototype.hasOwnProperty;
-var external_data_class_propIsEnum = Object.prototype.propertyIsEnumerable;
-var external_data_class_defNormalProp = (obj, key, value) => key in obj ? external_data_class_defProp(obj, key, { enumerable: true, configurable: true, writable: true, value }) : obj[key] = value;
-var external_data_class_spreadValues = (a, b) => {
+var __defProp = Object.defineProperty;
+var __getOwnPropSymbols = Object.getOwnPropertySymbols;
+var __hasOwnProp = Object.prototype.hasOwnProperty;
+var __propIsEnum = Object.prototype.propertyIsEnumerable;
+var __defNormalProp = (obj, key, value) => key in obj ? __defProp(obj, key, { enumerable: true, configurable: true, writable: true, value }) : obj[key] = value;
+var __spreadValues = (a, b) => {
   for (var prop in b || (b = {}))
-    if (external_data_class_hasOwnProp.call(b, prop))
-      external_data_class_defNormalProp(a, prop, b[prop]);
-  if (external_data_class_getOwnPropSymbols)
-    for (var prop of external_data_class_getOwnPropSymbols(b)) {
-      if (external_data_class_propIsEnum.call(b, prop))
-        external_data_class_defNormalProp(a, prop, b[prop]);
+    if (__hasOwnProp.call(b, prop))
+      __defNormalProp(a, prop, b[prop]);
+  if (__getOwnPropSymbols)
+    for (var prop of __getOwnPropSymbols(b)) {
+      if (__propIsEnum.call(b, prop))
+        __defNormalProp(a, prop, b[prop]);
     }
   return a;
 };
@@ -11207,7 +10500,7 @@ var external_data_class_async = (__this, __arguments, generator) => {
 
 
 
-class ExternalDataClass extends DataClass {
+class ExternalDataClass extends data_class/* DataClass */.bA {
   constructor(_name) {
     super();
     this._name = _name;
@@ -11231,14 +10524,14 @@ class ExternalDataClass extends DataClass {
   }
 }
 function isExternalDataClassProvided(name) {
-  return hasExternalDataConnection(name);
+  return (0,external_data_connection/* hasExternalDataConnection */.oJ)(name);
 }
 function allExternalDataClasses() {
-  return getExternalDataConnectionNames().map(
+  return (0,external_data_connection/* getExternalDataConnectionNames */.Ke)().map(
     (name) => new ExternalDataClass(name)
   );
 }
-class ExternalDataScope extends DataScope {
+class ExternalDataScope extends data_class/* DataScope */.bq {
   constructor(_dataClass, _attributeName, _params = {}) {
     super();
     this._dataClass = _dataClass;
@@ -11254,7 +10547,7 @@ class ExternalDataScope extends DataScope {
   create(attributes) {
     return external_data_class_async(this, null, function* () {
       this.assertNoIdFilter();
-      assertValidDataItemAttributes(attributes);
+      (0,data_class/* assertValidDataItemAttributes */.Hd)(attributes);
       const { filters } = this._params;
       const dataClassName = this.dataClassName();
       const dataAttributeDefinitions = yield loadAttributesOrThrow(dataClassName);
@@ -11263,8 +10556,8 @@ class ExternalDataScope extends DataScope {
         attributes,
         dataAttributeDefinitions
       );
-      const dataForCallback = external_data_class_spreadValues(external_data_class_spreadValues({}, serializedAttributes), this.attributesFromFilters(filters));
-      const data = yield createViaDataConnection(dataClassName, dataForCallback);
+      const dataForCallback = __spreadValues(__spreadValues({}, serializedAttributes), this.attributesFromFilters(filters));
+      const data = yield (0,external_data_connection/* createViaDataConnection */.ZH)(dataClassName, dataForCallback);
       const id = data.systemData._id;
       setExternalData(dataClassName, id, data);
       notifyExternalDataWrite(dataClassName);
@@ -11296,7 +10589,7 @@ class ExternalDataScope extends DataScope {
     return this._attributeName || null;
   }
   take() {
-    const attributes = getDataAttributeDefinitions(this.dataClassName());
+    const attributes = (0,data_class_schema/* getDataAttributeDefinitions */.$b)(this.dataClassName());
     if (!attributes)
       return [];
     const id = this.itemIdFromFilters();
@@ -11319,11 +10612,11 @@ class ExternalDataScope extends DataScope {
       this._dataClass,
       attributeName || this._attributeName,
       {
-        filters: combineFilters(
+        filters: (0,data_class/* combineFilters */.Zc)(
           this._params.filters,
           this.normalizeFilters(filters)
         ),
-        search: combineSearches(this._params.search, search),
+        search: (0,data_class/* combineSearches */.IE)(this._params.search, search),
         order: order || this._params.order,
         limit: limit != null ? limit : this._params.limit
       }
@@ -11335,7 +10628,7 @@ class ExternalDataScope extends DataScope {
   count() {
     const { filters, search } = this._params;
     const dataClassName = this.dataClassName();
-    const attributes = getDataAttributeDefinitions(dataClassName);
+    const attributes = (0,data_class_schema/* getDataAttributeDefinitions */.$b)(dataClassName);
     if (!attributes)
       return null;
     return handleCommunicationError(
@@ -11347,7 +10640,7 @@ class ExternalDataScope extends DataScope {
   }
   /** @internal */
   toPojo() {
-    return external_data_class_spreadValues({
+    return __spreadValues({
       _class: this.dataClassName(),
       _attribute: this._attributeName
     }, this._params);
@@ -11356,7 +10649,7 @@ class ExternalDataScope extends DataScope {
     var _a;
     return (0,common/* extractFromIterator */._Q)(
       this.getIterator(attributes),
-      (_a = this._params.limit) != null ? _a : DEFAULT_LIMIT
+      (_a = this._params.limit) != null ? _a : data_class/* DEFAULT_LIMIT */.eH
     );
   }
   getIterator(attributes) {
@@ -11380,14 +10673,14 @@ class ExternalDataScope extends DataScope {
     }
   }
   itemIdFromFilters() {
-    return itemIdFromFilters(this._params.filters);
+    return (0,data_class/* itemIdFromFilters */.mX)(this._params.filters);
   }
   hasSingleFilter() {
     const { filters, search } = this._params;
     return filters && Object.keys(filters).length === 1 && !search;
   }
 }
-class ExternalDataItem extends DataItem {
+class ExternalDataItem extends data_class/* DataItem */.sO {
   constructor(_dataClass, _dataId) {
     super();
     this._dataClass = _dataClass;
@@ -11396,7 +10689,7 @@ class ExternalDataItem extends DataItem {
   /** Returns an item if its schema is loaded. Returns null otherwise. */
   /** Triggers schema loading, thus requires a loading context. */
   static build(dataClass, dataId) {
-    const attributes = getDataAttributeDefinitions(dataClass.name());
+    const attributes = (0,data_class_schema/* getDataAttributeDefinitions */.$b)(dataClass.name());
     return attributes ? new ExternalDataItem(dataClass, dataId) : null;
   }
   /** Returns an item for an already loaded schema */
@@ -11426,9 +10719,9 @@ class ExternalDataItem extends DataItem {
     if (!externalData)
       return null;
     const dataClassName = this.dataClassName();
-    const attributes = getDataAttributeDefinitions(dataClassName);
+    const attributes = (0,data_class_schema/* getDataAttributeDefinitions */.$b)(dataClassName);
     const { customData } = externalData;
-    return attributes ? deserializeDataAttribute({
+    return attributes ? (0,data_attribute/* deserializeDataAttribute */.Ir)({
       dataClassName,
       attributeName,
       value: customData[attributeName],
@@ -11441,7 +10734,7 @@ class ExternalDataItem extends DataItem {
   }
   update(attributes) {
     return external_data_class_async(this, null, function* () {
-      assertValidDataItemAttributes(attributes);
+      (0,data_class/* assertValidDataItemAttributes */.Hd)(attributes);
       const externalData = yield (0,loadable/* load */.Hh)(() => this.getExternalData());
       if (!externalData) {
         throw new common/* ArgumentError */.c1(`Missing data with ID ${this._dataId}`);
@@ -11453,21 +10746,21 @@ class ExternalDataItem extends DataItem {
         attributes,
         dataAttributeDefinitions
       );
-      const updatedData = yield updateViaDataConnection(
+      const updatedData = yield (0,external_data_connection/* updateViaDataConnection */.EH)(
         this.dataClassName(),
         this._dataId,
         serializedAttributes
       );
       setExternalData(dataClassName, this._dataId, {
         systemData: externalData.systemData,
-        customData: external_data_class_spreadValues(external_data_class_spreadValues({}, externalData.customData), updatedData)
+        customData: __spreadValues(__spreadValues({}, externalData.customData), updatedData)
       });
       this.notifyWrite();
     });
   }
   delete() {
     return external_data_class_async(this, null, function* () {
-      yield deleteViaDataConnection(this.dataClassName(), this._dataId);
+      yield (0,external_data_connection/* deleteViaDataConnection */.cq)(this.dataClassName(), this._dataId);
       setExternalData(this.dataClassName(), this._dataId, null);
       this.notifyWrite();
     });
@@ -11487,7 +10780,7 @@ class ExternalDataItem extends DataItem {
 function serializeAttributes(dataClassName, attributes, dataAttributeDefinitions) {
   return (0,mapValues/* default */.A)(
     attributes,
-    (value, attributeName) => serializeDataAttribute({
+    (value, attributeName) => (0,data_attribute/* serializeDataAttribute */.VB)({
       dataClassName,
       attributeName,
       value,
@@ -11496,21 +10789,21 @@ function serializeAttributes(dataClassName, attributes, dataAttributeDefinitions
   );
 }
 function isCommunicationError(error) {
-  return error instanceof client/* ClientError */.MZ || error instanceof DataConnectionError;
+  return error instanceof client/* ClientError */.MZ || error instanceof data_connection_error/* DataConnectionError */.B;
 }
 function handleCommunicationError(request) {
   try {
     return request();
   } catch (error) {
     if (isCommunicationError(error))
-      throw new DataScopeError(error.message);
+      throw new data_class/* DataScopeError */.Zz(error.message);
     throw error;
   }
 }
 function loadAttributesOrThrow(dataClassName) {
   return external_data_class_async(this, null, function* () {
     const attributes = yield (0,loadable/* load */.Hh)(
-      () => getDataAttributeDefinitions(dataClassName)
+      () => (0,data_class_schema/* getDataAttributeDefinitions */.$b)(dataClassName)
     );
     if (!attributes)
       throw new common/* InternalError */.Gd();
@@ -11518,25 +10811,124 @@ function loadAttributesOrThrow(dataClassName) {
   });
 }
 
-;// CONCATENATED MODULE: ./scrivito_sdk/data_integration/obj_data_class.ts
 
-var obj_data_class_defProp = Object.defineProperty;
-var obj_data_class_getOwnPropSymbols = Object.getOwnPropertySymbols;
-var obj_data_class_hasOwnProp = Object.prototype.hasOwnProperty;
-var obj_data_class_propIsEnum = Object.prototype.propertyIsEnumerable;
-var obj_data_class_defNormalProp = (obj, key, value) => key in obj ? obj_data_class_defProp(obj, key, { enumerable: true, configurable: true, writable: true, value }) : obj[key] = value;
-var obj_data_class_spreadValues = (a, b) => {
+/***/ }),
+
+/***/ 5481:
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+
+// EXPORTS
+__webpack_require__.d(__webpack_exports__, {
+  ZH: () => (/* binding */ createViaDataConnection),
+  cq: () => (/* binding */ deleteViaDataConnection),
+  Ke: () => (/* binding */ getExternalDataConnectionNames),
+  F_: () => (/* binding */ getViaDataConnection),
+  oJ: () => (/* binding */ hasExternalDataConnection),
+  hi: () => (/* binding */ indexViaDataConnection),
+  kz: () => (/* binding */ setExternalDataConnection),
+  EH: () => (/* binding */ updateViaDataConnection)
+});
+
+// EXTERNAL MODULE: ./scrivito_sdk/client/index.ts + 38 modules
+var client = __webpack_require__(853);
+// EXTERNAL MODULE: ./scrivito_sdk/common/index.ts + 62 modules
+var common = __webpack_require__(5204);
+// EXTERNAL MODULE: ../node_modules/lodash-es/memoize.js
+var memoize = __webpack_require__(3920);
+// EXTERNAL MODULE: ./scrivito_sdk/data_integration/add_missing_data_connection_handlers.ts
+var add_missing_data_connection_handlers = __webpack_require__(3664);
+;// CONCATENATED MODULE: ./scrivito_sdk/data_integration/anticipated_data_connection.ts
+
+var __async = (__this, __arguments, generator) => {
+  return new Promise((resolve, reject) => {
+    var fulfilled = (value) => {
+      try {
+        step(generator.next(value));
+      } catch (e) {
+        reject(e);
+      }
+    };
+    var rejected = (value) => {
+      try {
+        step(generator.throw(value));
+      } catch (e) {
+        reject(e);
+      }
+    };
+    var step = (x) => x.done ? resolve(x.value) : Promise.resolve(x.value).then(fulfilled, rejected);
+    step((generator = generator.apply(__this, __arguments)).next());
+  });
+};
+
+
+function anticipatedDataConnection(connectionPromise, dataClass) {
+  const getCompleteConnection = (0,memoize/* default */.A)(
+    () => __async(this, null, function* () {
+      return (0,add_missing_data_connection_handlers/* addMissingDataConnectionHandlers */.j)(yield connectionPromise, dataClass);
+    })
+  );
+  return {
+    get: (...args) => __async(this, null, function* () {
+      return (yield getCompleteConnection()).get(...args);
+    }),
+    index: (...args) => __async(this, null, function* () {
+      return (yield getCompleteConnection()).index(...args);
+    }),
+    create: (...args) => __async(this, null, function* () {
+      return (yield getCompleteConnection()).create(...args);
+    }),
+    update: (...args) => __async(this, null, function* () {
+      return (yield getCompleteConnection()).update(...args);
+    }),
+    delete: (...args) => __async(this, null, function* () {
+      return (yield getCompleteConnection()).delete(...args);
+    })
+  };
+}
+
+// EXTERNAL MODULE: ./scrivito_sdk/data_integration/data_connection_error.ts
+var data_connection_error = __webpack_require__(7824);
+// EXTERNAL MODULE: ./scrivito_sdk/data_integration/data_id.ts
+var data_id = __webpack_require__(5596);
+// EXTERNAL MODULE: ./scrivito_sdk/models/index.ts + 44 modules
+var models = __webpack_require__(4360);
+// EXTERNAL MODULE: ./scrivito_sdk/state/index.ts + 13 modules
+var state = __webpack_require__(1946);
+;// CONCATENATED MODULE: ./scrivito_sdk/data_integration/external_data_connection.ts
+
+var __defProp = Object.defineProperty;
+var __defProps = Object.defineProperties;
+var __getOwnPropDescs = Object.getOwnPropertyDescriptors;
+var __getOwnPropSymbols = Object.getOwnPropertySymbols;
+var __hasOwnProp = Object.prototype.hasOwnProperty;
+var __propIsEnum = Object.prototype.propertyIsEnumerable;
+var __defNormalProp = (obj, key, value) => key in obj ? __defProp(obj, key, { enumerable: true, configurable: true, writable: true, value }) : obj[key] = value;
+var __spreadValues = (a, b) => {
   for (var prop in b || (b = {}))
-    if (obj_data_class_hasOwnProp.call(b, prop))
-      obj_data_class_defNormalProp(a, prop, b[prop]);
-  if (obj_data_class_getOwnPropSymbols)
-    for (var prop of obj_data_class_getOwnPropSymbols(b)) {
-      if (obj_data_class_propIsEnum.call(b, prop))
-        obj_data_class_defNormalProp(a, prop, b[prop]);
+    if (__hasOwnProp.call(b, prop))
+      __defNormalProp(a, prop, b[prop]);
+  if (__getOwnPropSymbols)
+    for (var prop of __getOwnPropSymbols(b)) {
+      if (__propIsEnum.call(b, prop))
+        __defNormalProp(a, prop, b[prop]);
     }
   return a;
 };
-var obj_data_class_async = (__this, __arguments, generator) => {
+var __spreadProps = (a, b) => __defProps(a, __getOwnPropDescs(b));
+var __objRest = (source, exclude) => {
+  var target = {};
+  for (var prop in source)
+    if (__hasOwnProp.call(source, prop) && exclude.indexOf(prop) < 0)
+      target[prop] = source[prop];
+  if (source != null && __getOwnPropSymbols)
+    for (var prop of __getOwnPropSymbols(source)) {
+      if (exclude.indexOf(prop) < 0 && __propIsEnum.call(source, prop))
+        target[prop] = source[prop];
+    }
+  return target;
+};
+var external_data_connection_async = (__this, __arguments, generator) => {
   return new Promise((resolve, reject) => {
     var fulfilled = (value) => {
       try {
@@ -11562,453 +10954,455 @@ var obj_data_class_async = (__this, __arguments, generator) => {
 
 
 
-const TYPES_WITH_SCHEMA_SUPPORT = [
-  "boolean",
-  "enum",
-  "float",
-  "integer",
-  "string",
-  "reference"
-];
-const TYPES_WITH_GARBAGE_IN_GARBAGE_OUT_SUPPORT = ["multienum", "stringlist"];
-const SUPPORTED_ATTRIBUTE_TYPES = [
-  ...TYPES_WITH_SCHEMA_SUPPORT,
-  ...TYPES_WITH_GARBAGE_IN_GARBAGE_OUT_SUPPORT
-];
-const SUBPAGES_CHILD_ORDER_LIMIT = 200;
-class ObjDataClass extends DataClass {
-  constructor(_name) {
-    super();
-    this._name = _name;
-  }
-  name() {
-    return this._name;
-  }
-  create(attributes) {
-    return obj_data_class_async(this, null, function* () {
-      return this.all().create(attributes);
-    });
-  }
-  all() {
-    return new ObjDataScope(this);
-  }
-  get(id) {
-    const obj = getDataObj(this, id);
-    return obj ? new ObjDataItem(this, id) : null;
-  }
-  getUnchecked(id) {
-    return new ObjDataItem(this, id);
-  }
-  attributeDefinitions() {
-    return attributeDefinitions(this._name);
-  }
-}
-function getDataObj(dataClass, dataId) {
-  return (0,models/* getObjFrom */.ED)(objClassScope(dataClass).and(models/* excludeDeletedObjs */.cb), dataId);
-}
-class ObjDataScope extends DataScope {
-  constructor(_dataClass, _attributeName, _params = {}) {
-    super();
-    this._dataClass = _dataClass;
-    this._attributeName = _attributeName;
-    this._params = _params;
-  }
-  dataClass() {
-    return this._dataClass;
-  }
-  dataClassName() {
-    return this._dataClass.name();
-  }
-  create(attributes) {
-    return obj_data_class_async(this, null, function* () {
-      if (this.isBuiltInClass()) {
-        throw new common/* ArgumentError */.c1(
-          "Cannot create data items using the built-in Obj class"
-        );
-      }
-      const obj = (0,models/* createObjIn */.ZU)(
-        this.objClassScope(),
-        prepareAttributes(
-          obj_data_class_spreadValues(obj_data_class_spreadValues({}, attributes), this.attributesFromFilters(this._params.filters)),
-          this._dataClass.name()
-        )
-      );
-      yield obj.finishSaving();
-      return this.wrapInDataItem(obj);
-    });
-  }
-  get(id) {
-    const [obj] = this.getSearch().and("_id", "equals", id).take(1);
-    if (!obj)
-      return null;
-    return this.wrapInDataItem(obj);
-  }
-  take() {
-    var _a;
-    const search = this.getSearch();
-    const parentObj = this.parentObj();
-    const limit = (_a = this._params.limit) != null ? _a : DEFAULT_LIMIT;
-    let objs;
-    if (!this._params.search && !this._params.order && (parentObj == null ? void 0 : parentObj.hasChildOrder())) {
-      objs = parentObj.sortByChildOrder(
-        search.take(Math.max(limit, SUBPAGES_CHILD_ORDER_LIMIT))
-      ).slice(0, limit);
-    } else {
-      objs = search.take(limit);
-    }
-    return objs.map((obj) => this.wrapInDataItem(obj));
-  }
-  dataItem() {
-    const id = this.itemIdFromFilters();
-    if (id)
-      return this._dataClass.get(id);
-    return null;
-  }
-  isDataItem() {
-    return !!this.itemIdFromFilters();
-  }
-  attributeName() {
-    return this._attributeName || null;
-  }
-  count() {
-    return this.getSearch().count();
-  }
-  transform({
-    filters,
-    search,
-    order,
-    limit,
-    attributeName
-  }) {
-    return new ObjDataScope(
-      this._dataClass,
-      attributeName || this._attributeName,
-      {
-        filters: combineFilters(
-          this._params.filters,
-          this.normalizeFilters(filters)
-        ),
-        search: combineSearches(this._params.search, search),
-        order: order || this._params.order,
-        limit: limit != null ? limit : this._params.limit
-      }
+
+function assertValidNumericId(id) {
+  if (id < 0 || !Number.isSafeInteger(id)) {
+    throw new common/* ArgumentError */.c1(
+      `Numeric IDs must be a non-negative "safe" integer: ${id.toString()}`
     );
   }
-  limit() {
-    return this._params.limit;
+}
+function parseResultItem(resultItem) {
+  if (!(0,common/* isObject */.Gv)(resultItem)) {
+    throw new common/* ArgumentError */.c1("A result item must be an object");
   }
-  objSearch() {
-    const search = this.getSearch();
-    if (!(0,client/* isEmptySpaceId */.dQ)(search.objSpaceId())) {
-      return new realm/* ObjSearch */.G5(search);
+  if ("_id" in resultItem) {
+    const _a = resultItem, { _id } = _a, customData = __objRest(_a, ["_id"]);
+    return parseToExternalData(_id, customData);
+  }
+  if ("id" in resultItem) {
+    const _b = resultItem, { id } = _b, customData = __objRest(_b, ["id"]);
+    return parseToExternalData(id, customData);
+  }
+  throw new common/* ArgumentError */.c1('"_id" key missing');
+}
+function parseToExternalData(id, customData) {
+  return {
+    systemData: { _id: parseId(id) },
+    customData: filterValidDataIdentifiers(customData)
+  };
+}
+function parseId(id) {
+  if (typeof id === "number") {
+    assertValidNumericId(id);
+    return id.toString();
+  }
+  if (!(0,data_id/* isValidDataId */.o)(id)) {
+    throw new common/* ArgumentError */.c1('"_id" key invalid (must be numeric or hex)');
+  }
+  return id;
+}
+function parseIndexResult(result) {
+  if (!(0,common/* isObject */.Gv)(result)) {
+    throw new common/* ArgumentError */.c1("An index result must be an object");
+  }
+  const { results: inputResults, continuation, count } = result;
+  if (!Array.isArray(inputResults)) {
+    throw new common/* ArgumentError */.c1("Results of an index result must be an array");
+  }
+  const parsedResults = inputResults.map((idOrItem) => {
+    if (typeof idOrItem === "number") {
+      assertValidNumericId(idOrItem);
+      return idOrItem;
+    } else if (typeof idOrItem === "string") {
+      assertValidDataId(idOrItem);
+      return idOrItem;
     }
-  }
-  /** @internal */
-  toPojo() {
-    return obj_data_class_spreadValues({
-      _class: this.dataClassName(),
-      _attribute: this._attributeName
-    }, this._params);
-  }
-  getSearch() {
-    let initialSearch = this.getInitialSearch();
-    const { filters, search: searchTerm, order: givenOrder } = this._params;
-    if (searchTerm) {
-      initialSearch = initialSearch.and("*", "matches", searchTerm);
-    }
-    if (givenOrder) {
-      const order = givenOrder.filter(([attributeName]) => !!attributeName);
-      if (order.length)
-        initialSearch = initialSearch.order(order);
-    }
-    if (!filters)
-      return initialSearch;
-    return Object.keys(filters).filter((name) => !!name).reduce(
-      (search, name) => this.applyFilter(search, name, filters[name]),
-      initialSearch
-    );
-  }
-  getInitialSearch() {
-    return (this.isBuiltInClass() ? currentObjScope() : this.objClassScope()).and(models/* excludeDeletedObjs */.cb).search();
-  }
-  isBuiltInClass() {
-    return isBuiltInClass(this.dataClassName());
-  }
-  applyFilter(search, attributeName, operatorSpec) {
-    const { operator, value } = operatorSpec;
-    if (operator === "and") {
-      return value.reduce(
-        (currentSearch, spec) => this.applyFilter(currentSearch, attributeName, spec),
-        search
+    return parseResultItem(idOrItem);
+  });
+  if (typeof continuation === "string") {
+    if (continuation.length === 0) {
+      throw new common/* ArgumentError */.c1(
+        "Continuation of an index result must be a non-empty string, null or undefined"
       );
     }
-    if (operator === "equals") {
-      if (attributeName === "_obj_parent_id") {
-        return this.applySubpagesFilter(search);
-      }
-      return search.and(attributeName, "equals", value);
-    }
-    if (operator === "notEquals") {
-      return search.andNot(attributeName, "equals", value);
-    }
-    if (operator === "isGreaterThan") {
-      return search.and(attributeName, "isGreaterThan", value);
-    }
-    if (operator === "isLessThan") {
-      return search.and(attributeName, "isLessThan", value);
-    }
-    if (operator === "isGreaterThanOrEquals") {
-      return search.andNot(attributeName, "isLessThan", value);
-    }
-    if (operator === "isLessThanOrEquals") {
-      return search.andNot(attributeName, "isGreaterThan", value);
-    }
-    throw new common/* ArgumentError */.c1(`Unknown filter operator "${operator}"`);
-  }
-  applySubpagesFilter(search) {
-    const parentObj = this.parentObj();
-    const siteId = parentObj == null ? void 0 : parentObj.siteId();
-    const parentPath = parentObj == null ? void 0 : parentObj.path();
-    if (!siteId || !parentPath) {
-      return (0,models/* objSpaceScope */.aG)(client/* EMPTY_SPACE */.HY).search();
-    }
-    return search.and("_siteId", "equals", siteId).and("_parentPath", "equals", parentPath);
-  }
-  objClassScope() {
-    return objClassScope(this._dataClass);
-  }
-  wrapInDataItem(obj) {
-    const item = new ObjDataItem(this._dataClass, obj.id());
-    item.setBasicObj(obj);
-    return item;
-  }
-  itemIdFromFilters() {
-    return itemIdFromFilters(this._params.filters);
-  }
-  parentObj() {
-    var _a, _b;
-    const parentId = (_b = (_a = this._params.filters) == null ? void 0 : _a._obj_parent_id) == null ? void 0 : _b.value;
-    if (typeof parentId === "string") {
-      return (0,models/* getObjFrom */.ED)(currentObjScope().and(models/* excludeDeletedObjs */.cb), parentId);
-    }
-  }
-}
-class ObjDataItem extends DataItem {
-  constructor(_dataClass, _dataId) {
-    super();
-    this._dataClass = _dataClass;
-    this._dataId = _dataId;
-  }
-  id() {
-    return this._dataId;
-  }
-  dataClass() {
-    return this._dataClass;
-  }
-  dataClassName() {
-    return this._dataClass.name();
-  }
-  obj() {
-    return (0,realm/* wrapInAppClass */.Dy)(this.getOrThrow());
-  }
-  /** @internal */
-  getBasicObj() {
-    if (this._obj === void 0) {
-      this._obj = getDataObj(this._dataClass, this._dataId);
-    }
-    return this._obj;
-  }
-  /** @internal */
-  setBasicObj(obj) {
-    this._obj = obj;
-  }
-  get(attributeName) {
-    const obj = this.getBasicObj();
-    if (!obj)
-      return null;
-    const typeInfo = getAttributeTypeInfo(obj.objClass(), attributeName);
-    if (!typeInfo)
-      return null;
-    const [attributeType, attributeConfig] = typeInfo;
-    if (SUPPORTED_ATTRIBUTE_TYPES.includes(attributeType)) {
-      return attributeType === "reference" ? getReference(obj, attributeName, attributeConfig) : obj.get(attributeName, typeInfo);
-    }
-    return null;
-  }
-  update(attributes) {
-    const obj = this.getOrThrow();
-    obj.update(prepareAttributes(attributes, this.dataClassName()));
-    return obj.finishSaving();
-  }
-  delete() {
-    return obj_data_class_async(this, null, function* () {
-      const obj = this.getBasicObj();
-      if (obj) {
-        obj.delete();
-        return obj.finishSaving();
-      }
-    });
-  }
-  getOrThrow() {
-    const obj = this.getBasicObj();
-    if (!obj) {
-      throw new common/* ArgumentError */.c1(`Missing obj with ID ${this._dataId}`);
-    }
-    return obj;
-  }
-}
-function getAttributeTypeInfo(className, attributeName) {
-  return getSchema(className).attribute(attributeName);
-}
-function isObjDataClassProvided(className) {
-  return !!(0,realm/* getRealmClass */.an)(className);
-}
-function getSchema(className) {
-  const objClass = (0,realm/* getRealmClass */.an)(className);
-  if (!objClass) {
-    throw new common/* ArgumentError */.c1(`Class ${className} does not exist`);
-  }
-  const schema = realm/* Schema */.Sj.forClass(objClass);
-  if (!schema) {
-    throw new common/* ArgumentError */.c1(`Class ${className} has no schema`);
-  }
-  return schema;
-}
-function objClassScope(dataClass) {
-  return currentObjScope().and((0,models/* restrictToObjClass */.Lw)(dataClass.name()));
-}
-function prepareAttributes(attributes, className) {
-  const preparedAttributes = {};
-  Object.keys(attributes).forEach((attributeName) => {
-    const attributeValue = attributes[attributeName];
-    if ((0,common/* isSystemAttribute */.iI)(attributeName)) {
-      preparedAttributes[attributeName] = attributeValue;
-    } else {
-      const typeInfo = getAttributeTypeInfo(className, attributeName);
-      if (!typeInfo) {
-        throw new common/* ArgumentError */.c1(
-          `Attribute ${attributeName} of class ${className} does not exist`
-        );
-      }
-      const [attributeType, attributeConfig] = typeInfo;
-      if (!SUPPORTED_ATTRIBUTE_TYPES.includes(attributeType)) {
-        throw new common/* ArgumentError */.c1(
-          `Attribute ${attributeName} of class ${className} has unsupported type ${attributeType}`
-        );
-      }
-      preparedAttributes[attributeName] = [
-        attributeType === "reference" ? prepareReferenceValue(attributeValue, attributeConfig) : attributeValue,
-        typeInfo
-      ];
-    }
-  });
-  return preparedAttributes;
-}
-function getReference(obj, attributeName, attributeConfig) {
-  if (!attributeConfig)
-    return null;
-  const referenceObj = obj.get(attributeName, "reference");
-  if (!(referenceObj instanceof models/* BasicObj */.kI))
-    return null;
-  const referenceObjClass = referenceObj.objClass();
-  if (referenceObjClass !== getValidReferenceClass(attributeConfig)) {
-    return null;
-  }
-  const dataClass = getObjDataClass(referenceObjClass);
-  if (!dataClass)
-    return null;
-  return dataClass.get(referenceObj.id());
-}
-function prepareReferenceValue(attributeValue, attributeConfig) {
-  return attributeValue instanceof DataItem && attributeValue.dataClassName() === getValidReferenceClass(attributeConfig) ? (0,realm/* unwrapAppClass */.zo)(attributeValue.obj()) : null;
-}
-function getValidReferenceClass(attributeConfig) {
-  if (attributeConfig) {
-    const { validClasses } = attributeConfig;
-    if (validClasses.length === 1)
-      return validClasses[0];
-  }
-}
-function attributeDefinitions(dataClassName) {
-  if (isBuiltInClass(dataClassName))
-    return {};
-  const attributes = {};
-  const normalizedAttributes = getSchema(dataClassName).normalizedAttributes();
-  Object.keys(normalizedAttributes).forEach((attributeName) => {
-    const dataAttributeDefinition = toDataAttributeDefinition(
-      normalizedAttributes[attributeName]
+  } else if (continuation !== null && continuation !== void 0) {
+    throw new common/* ArgumentError */.c1(
+      "Continuation of an index result must be a string, null or undefined"
     );
-    if (dataAttributeDefinition) {
-      attributes[attributeName] = dataAttributeDefinition;
-    }
-  });
-  return attributes;
+  }
+  return {
+    results: parsedResults,
+    continuation,
+    count: parseCount(count)
+  };
 }
-function toDataAttributeDefinition([
-  cmsType,
-  cmsTypeInfo
-]) {
-  if (cmsType === "boolean" || cmsType === "string") {
-    return [cmsType, {}];
+function parseCount(resultCount) {
+  if (resultCount === void 0 || resultCount === null)
+    return;
+  if (typeof resultCount !== "number" && typeof resultCount !== "string") {
+    throw new common/* ArgumentError */.c1(
+      "Count of an index result must be a non-negative integer, null or undefined"
+    );
   }
-  if (cmsType === "float" || cmsType === "integer") {
-    return ["number", {}];
+  const count = Number(resultCount);
+  if (count >= 0 && (0,common/* isValidInteger */.zh)(count))
+    return count;
+  throw new common/* ArgumentError */.c1(
+    "Count of an index result must be a non-negative integer"
+  );
+}
+function assertValidDataId(dataId) {
+  if (!(0,data_id/* isValidDataId */.o)(dataId)) {
+    throw new common/* ArgumentError */.c1(
+      "Strings in results of an index result must be valid data IDs"
+    );
   }
-  if (cmsType === "enum") {
-    return [
-      "enum",
-      {
-        values: [
-          ...cmsTypeInfo.values.map((value) => ({ value, title: value }))
-        ]
+}
+const connectionsState = (0,state/* createStateContainer */.Ld)();
+function setExternalDataConnection(name, partialConnection) {
+  const connection = anticipatedDataConnection(partialConnection, name);
+  connectionsState.set(__spreadProps(__spreadValues({}, connectionsState.get()), {
+    [name]: connection
+  }));
+}
+function hasExternalDataConnection(name) {
+  return !!getExternalDataConnection(name);
+}
+function getExternalDataConnection(name) {
+  const connections = connectionsState.get();
+  if (connections)
+    return connections[name];
+}
+function getExternalDataConnectionNames() {
+  const connections = connectionsState.get();
+  return connections ? Object.keys(connections) : [];
+}
+function getExternalDataConnectionOrThrow(name) {
+  const connection = getExternalDataConnection(name);
+  if (!connection) {
+    throw new common/* ArgumentError */.c1(`Missing data class with name ${name}`);
+  }
+  return connection;
+}
+function getViaDataConnection(name, id) {
+  return external_data_connection_async(this, null, function* () {
+    if (!(0,data_id/* isValidDataId */.o)(id)) {
+      throw new common/* ArgumentError */.c1(`Invalid data ID "${id}"`);
+    }
+    let response;
+    try {
+      response = yield getExternalDataConnectionOrThrow(name).get(id);
+    } catch (error) {
+      if (error instanceof client/* ClientError */.MZ && error.httpStatus === 404) {
+        return null;
       }
-    ];
-  }
-  if (cmsType === "reference") {
-    const { only } = cmsTypeInfo;
-    if (typeof only === "string") {
-      return ["reference", { to: only }];
+      throw error;
     }
-    if (Array.isArray(only) && only.length === 1) {
-      return ["reference", { to: only[0] }];
+    if (response === null)
+      return null;
+    if (!(0,common/* isObject */.Gv)(response)) {
+      throw new common/* ArgumentError */.c1("External data must be an object or null");
     }
-  }
-  return null;
+    return {
+      systemData: { _id: id },
+      customData: filterValidDataIdentifiers(response)
+    };
+  });
 }
-function currentObjScope() {
-  return (0,models/* objSpaceScope */.aG)((0,models/* currentObjSpaceId */.eb)());
+function filterValidDataIdentifiers(data) {
+  return Object.fromEntries(
+    Object.entries(data).filter(([key]) => (0,models/* isValidDataIdentifier */.Wf)(key))
+  );
 }
-function isBuiltInClass(dataClassName) {
-  return dataClassName === "Obj";
+function indexViaDataConnection(name, params) {
+  return external_data_connection_async(this, null, function* () {
+    const result = yield getExternalDataConnectionOrThrow(name).index(params);
+    if (result instanceof data_connection_error/* DataConnectionError */.B)
+      throw result;
+    return parseIndexResult(result);
+  });
+}
+function createViaDataConnection(name, data) {
+  return external_data_connection_async(this, null, function* () {
+    const response = yield getExternalDataConnectionOrThrow(name).create(data);
+    const { systemData, customData } = parseResultItem(response);
+    return {
+      systemData,
+      customData: Object.keys(customData).length === 0 ? data : customData
+    };
+  });
+}
+function updateViaDataConnection(name, id, data) {
+  return external_data_connection_async(this, null, function* () {
+    const response = yield getExternalDataConnectionOrThrow(name).update(
+      id,
+      data
+    );
+    const updatedData = response != null ? response : {};
+    if (!(0,common/* isObject */.Gv)(updatedData)) {
+      throw new common/* ArgumentError */.c1("External data must be an object or null");
+    }
+    const _a = filterValidDataIdentifiers(updatedData), { _id } = _a, filteredData = __objRest(_a, ["_id"]);
+    return __spreadValues(__spreadValues({}, data), filteredData);
+  });
+}
+function deleteViaDataConnection(name, id) {
+  return getExternalDataConnectionOrThrow(name).delete(id);
 }
 
-;// CONCATENATED MODULE: ./scrivito_sdk/data_integration/get_data_class.ts
+
+/***/ }),
+
+/***/ 512:
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   D5: () => (/* binding */ getDataClass),
+/* harmony export */   Q$: () => (/* binding */ getObjDataClass),
+/* harmony export */   sf: () => (/* binding */ getDataClassOrThrow)
+/* harmony export */ });
+/* harmony import */ var scrivito_sdk_common__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(5204);
+/* harmony import */ var scrivito_sdk_data_integration_external_data_class__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(4962);
+/* harmony import */ var scrivito_sdk_data_integration_obj_data_class__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(8083);
 
 
 
 
 function getDataClass(dataClassName) {
-  return getExternalDataClass(dataClassName) || getObjDataClass(dataClassName);
+  return getExternalDataClass(dataClassName) || getObjDataClass(dataClassName) || null;
 }
 function getDataClassOrThrow(dataClassName) {
   const dataClass = getDataClass(dataClassName);
   if (dataClass)
     return dataClass;
-  throw new common/* ArgumentError */.c1(`No "${dataClassName}" found`);
+  throw new scrivito_sdk_common__WEBPACK_IMPORTED_MODULE_0__/* .ArgumentError */ .c1(`No "${dataClassName}" found`);
 }
 function getObjDataClass(dataClassName) {
-  if (dataClassName === "Obj" || isObjDataClassProvided(dataClassName)) {
-    return new ObjDataClass(dataClassName);
+  if (dataClassName === "Obj" || (0,scrivito_sdk_data_integration_obj_data_class__WEBPACK_IMPORTED_MODULE_2__/* .isObjDataClassProvided */ .Be)(dataClassName)) {
+    return new scrivito_sdk_data_integration_obj_data_class__WEBPACK_IMPORTED_MODULE_2__/* .ObjDataClass */ .wS(dataClassName);
   }
 }
 function getExternalDataClass(dataClassName) {
-  if (isExternalDataClassProvided(dataClassName)) {
-    return new ExternalDataClass(dataClassName);
+  if ((0,scrivito_sdk_data_integration_external_data_class__WEBPACK_IMPORTED_MODULE_1__/* .isExternalDataClassProvided */ .D5)(dataClassName)) {
+    return new scrivito_sdk_data_integration_external_data_class__WEBPACK_IMPORTED_MODULE_1__/* .ExternalDataClass */ .Gf(dataClassName);
   }
 }
 
+
+/***/ }),
+
+/***/ 9800:
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+
+// EXPORTS
+__webpack_require__.d(__webpack_exports__, {
+  bA: () => (/* reexport */ data_class/* DataClass */.bA),
+  BA: () => (/* reexport */ data_connection_error/* DataConnectionError */.B),
+  sO: () => (/* reexport */ data_class/* DataItem */.sO),
+  bq: () => (/* reexport */ data_class/* DataScope */.bq),
+  Ao: () => (/* reexport */ EmptyDataScope),
+  Gf: () => (/* reexport */ external_data_class/* ExternalDataClass */.Gf),
+  FU: () => (/* reexport */ external_data_class/* ExternalDataItem */.FU),
+  zv: () => (/* reexport */ SINGLETON_DATA_ID),
+  Ey: () => (/* reexport */ activateDataIntegration),
+  u5: () => (/* reexport */ allCustomAttributesOfTypeString),
+  VU: () => (/* reexport */ external_data_class/* allExternalDataClasses */.VU),
+  ZJ: () => (/* reexport */ applyDataLocator),
+  gk: () => (/* reexport */ basicObjToDataContext),
+  En: () => (/* reexport */ createRestApiConnectionForClass),
+  _f: () => (/* reexport */ dataContextFromQueryParams),
+  A_: () => (/* reexport */ dataItemToDataContext),
+  bU: () => (/* reexport */ deserializeDataItem),
+  w1: () => (/* reexport */ deserializeDataScope),
+  uw: () => (/* reexport */ deserializeDataStackElement),
+  Qt: () => (/* reexport */ disable_external_data_loading/* disableExternalDataLoading */.Q),
+  ud: () => (/* reexport */ data_class_schema/* extractDataClassSchemaResponse */.ud),
+  dw: () => (/* reexport */ findItemInGlobalData),
+  sf: () => (/* reexport */ get_data_class/* getDataClassOrThrow */.sf),
+  nx: () => (/* reexport */ data_class_schema/* getDataClassTitle */.nx),
+  K1: () => (/* reexport */ getDataContextParameters),
+  qD: () => (/* reexport */ getDataContextQuery),
+  iW: () => (/* reexport */ getGlobalDataItems),
+  m8: () => (/* reexport */ data_class_schema/* getNormalizedDataAttributeDefinitions */.m8),
+  BF: () => (/* reexport */ isDataIntegrationActive),
+  o3: () => (/* reexport */ isDataItemPojo),
+  Wq: () => (/* reexport */ external_data_class/* isExternalDataClassProvided */.D5),
+  VI: () => (/* reexport */ isMultiItemDataScopePojo),
+  y8: () => (/* reexport */ data_attribute/* isReferenceAttributeConfig */.y8),
+  Uq: () => (/* reexport */ isSingleItemElement),
+  G7: () => (/* reexport */ isSinglePlaceholder),
+  Qk: () => (/* reexport */ isSingletonDataClass),
+  wc: () => (/* reexport */ provideExternalDataItem),
+  $T: () => (/* reexport */ registerExternalDataClass),
+  V8: () => (/* reexport */ replacePlaceholdersWithData),
+  Zk: () => (/* reexport */ data_class/* scopePojoToItemPojo */.Zk),
+  _L: () => (/* reexport */ current_language/* setCurrentLanguageHandler */._)
+});
+
+// UNUSED EXPORTS: ExternalDataScope, ObjDataScope, getDataClass, getDataContextValue, isValidDataId
+
+// EXTERNAL MODULE: ./scrivito_sdk/realm/index.ts + 21 modules
+var realm = __webpack_require__(7461);
+;// CONCATENATED MODULE: ./scrivito_sdk/data_integration/basic_obj_to_data_context.ts
+
+var __defProp = Object.defineProperty;
+var __getOwnPropSymbols = Object.getOwnPropertySymbols;
+var __hasOwnProp = Object.prototype.hasOwnProperty;
+var __propIsEnum = Object.prototype.propertyIsEnumerable;
+var __defNormalProp = (obj, key, value) => key in obj ? __defProp(obj, key, { enumerable: true, configurable: true, writable: true, value }) : obj[key] = value;
+var __spreadValues = (a, b) => {
+  for (var prop in b || (b = {}))
+    if (__hasOwnProp.call(b, prop))
+      __defNormalProp(a, prop, b[prop]);
+  if (__getOwnPropSymbols)
+    for (var prop of __getOwnPropSymbols(b)) {
+      if (__propIsEnum.call(b, prop))
+        __defNormalProp(a, prop, b[prop]);
+    }
+  return a;
+};
+
+function basicObjToDataContext(obj) {
+  return __spreadValues({
+    _class: obj.objClass(),
+    _id: obj.id()
+  }, allCustomAttributesOfTypeString(obj));
+}
+function allCustomAttributesOfTypeString(obj) {
+  const schema = (0,realm/* schemaFromBasicObjOrWidget */.e6)(obj);
+  if (!schema)
+    return;
+  const attributes = schema.attributes();
+  const stringAttributes = {};
+  Object.keys(attributes).forEach((attributeName) => {
+    const [attributeType] = attributes[attributeName];
+    if (attributeType === "string") {
+      const attributeValue = obj.get(attributeName, "string");
+      stringAttributes[attributeName] = attributeValue;
+    }
+  });
+  return stringAttributes;
+}
+
+// EXTERNAL MODULE: ./scrivito_sdk/data_integration/data_class.ts
+var data_class = __webpack_require__(8001);
+// EXTERNAL MODULE: ./scrivito_sdk/common/index.ts + 62 modules
+var common = __webpack_require__(5204);
+;// CONCATENATED MODULE: ./scrivito_sdk/data_integration/create_rest_api_connection.ts
+
+var create_rest_api_connection_defProp = Object.defineProperty;
+var __defProps = Object.defineProperties;
+var __getOwnPropDescs = Object.getOwnPropertyDescriptors;
+var create_rest_api_connection_getOwnPropSymbols = Object.getOwnPropertySymbols;
+var create_rest_api_connection_hasOwnProp = Object.prototype.hasOwnProperty;
+var create_rest_api_connection_propIsEnum = Object.prototype.propertyIsEnumerable;
+var create_rest_api_connection_defNormalProp = (obj, key, value) => key in obj ? create_rest_api_connection_defProp(obj, key, { enumerable: true, configurable: true, writable: true, value }) : obj[key] = value;
+var create_rest_api_connection_spreadValues = (a, b) => {
+  for (var prop in b || (b = {}))
+    if (create_rest_api_connection_hasOwnProp.call(b, prop))
+      create_rest_api_connection_defNormalProp(a, prop, b[prop]);
+  if (create_rest_api_connection_getOwnPropSymbols)
+    for (var prop of create_rest_api_connection_getOwnPropSymbols(b)) {
+      if (create_rest_api_connection_propIsEnum.call(b, prop))
+        create_rest_api_connection_defNormalProp(a, prop, b[prop]);
+    }
+  return a;
+};
+var __spreadProps = (a, b) => __defProps(a, __getOwnPropDescs(b));
+var __async = (__this, __arguments, generator) => {
+  return new Promise((resolve, reject) => {
+    var fulfilled = (value) => {
+      try {
+        step(generator.next(value));
+      } catch (e) {
+        reject(e);
+      }
+    };
+    var rejected = (value) => {
+      try {
+        step(generator.throw(value));
+      } catch (e) {
+        reject(e);
+      }
+    };
+    var step = (x) => x.done ? resolve(x.value) : Promise.resolve(x.value).then(fulfilled, rejected);
+    step((generator = generator.apply(__this, __arguments)).next());
+  });
+};
+
+function createRestApiConnectionForClass(apiClient) {
+  return {
+    create: (data) => __async(this, null, function* () {
+      return apiClient.fetch("", { method: "post", data });
+    }),
+    index: (params) => __async(this, null, function* () {
+      return apiClient.fetch("", { params: toClientParams(params) });
+    }),
+    get: (id) => __async(this, null, function* () {
+      return apiClient.fetch(id);
+    }),
+    update: (id, data) => __async(this, null, function* () {
+      return apiClient.fetch(id, { method: "patch", data });
+    }),
+    delete: (id) => apiClient.fetch(id, { method: "delete" })
+  };
+}
+function toClientParams(params) {
+  return __spreadProps(create_rest_api_connection_spreadValues({}, toClientFilterParam(params.filters())), {
+    _continuation: params.continuation(),
+    _order: toClientOrderParam(params.order()),
+    _limit: params.limit().toString(),
+    _search: params.search() || void 0,
+    _count: params.includeCount() ? params.includeCount().toString() : void 0
+  });
+}
+function toClientFilterParam(filters) {
+  const params = {};
+  Object.keys(filters).forEach((name) => {
+    const filter = filters[name];
+    let filterCollection;
+    if (filter.operator === "and") {
+      assertNoConflicts(filter.value);
+      filterCollection = filter.value;
+    } else {
+      filterCollection = [filter];
+    }
+    filterCollection.forEach((currentFilter) => {
+      const { opCode, value } = currentFilter;
+      const key = opCode === "eq" ? name : [name, opCode].join(".");
+      params[key] = serializeFilterValue(value);
+    });
+  });
+  return params;
+}
+function toClientOrderParam(orderSpec) {
+  if (orderSpec.length) {
+    return orderSpec.map((order) => order.join(".")).join(",");
+  }
+}
+function serializeFilterValue(value) {
+  if (typeof value === "string")
+    return value;
+  if (value === null)
+    return "";
+  return JSON.stringify(value);
+}
+function assertNoConflicts(specs) {
+  if (specs.length < 2)
+    return;
+  if (specs.some(
+    (outerSpec, index) => specs.slice(index + 1).some(
+      (innerSpec) => innerSpec.operator === outerSpec.operator && innerSpec.value !== outerSpec.value
+    )
+  )) {
+    throw new common/* ArgumentError */.c1(
+      `Multiple filters on the same attribute with the same operator but different values are currently not supported: ${JSON.stringify(
+        specs
+      )}`
+    );
+  }
+}
+
+// EXTERNAL MODULE: ./scrivito_sdk/data_integration/get_data_class.ts
+var get_data_class = __webpack_require__(512);
+// EXTERNAL MODULE: ./scrivito_sdk/data_integration/obj_data_class.ts
+var obj_data_class = __webpack_require__(8083);
 // EXTERNAL MODULE: external "urijs"
 var external_urijs_ = __webpack_require__(4066);
+// EXTERNAL MODULE: ./scrivito_sdk/data_integration/data_id.ts
+var data_id = __webpack_require__(5596);
 ;// CONCATENATED MODULE: ./scrivito_sdk/data_integration/empty_data_scope.ts
 
 var empty_data_scope_async = (__this, __arguments, generator) => {
@@ -12033,7 +11427,7 @@ var empty_data_scope_async = (__this, __arguments, generator) => {
 };
 
 
-class EmptyDataScope extends DataScope {
+class EmptyDataScope extends data_class/* DataScope */.bq {
   constructor(params = {}) {
     super();
     this.params = params;
@@ -12100,7 +11494,7 @@ class EmptyDataScope extends DataScope {
   }
   throwErrorIfPresent() {
     if (this.params.error) {
-      throw new DataScopeError(this.params.error.message);
+      throw new data_class/* DataScopeError */.Zz(this.params.error.message);
     }
   }
 }
@@ -12126,7 +11520,7 @@ var data_stack_spreadValues = (a, b) => {
   return a;
 };
 var data_stack_spreadProps = (a, b) => data_stack_defProps(a, data_stack_getOwnPropDescs(b));
-var data_stack_objRest = (source, exclude) => {
+var __objRest = (source, exclude) => {
   var target = {};
   for (var prop in source)
     if (data_stack_hasOwnProp.call(source, prop) && exclude.indexOf(prop) < 0)
@@ -12179,13 +11573,13 @@ function findScopeInDataStack(dataClassName, dataStack) {
 function deserializeDataScope(_a) {
   var _b = _a, {
     _class: dataClassName
-  } = _b, dataScopeParams = data_stack_objRest(_b, [
+  } = _b, dataScopeParams = __objRest(_b, [
     "_class"
   ]);
   if (dataClassName) {
-    const dataClass = getDataClassOrThrow(dataClassName);
+    const dataClass = (0,get_data_class/* getDataClassOrThrow */.sf)(dataClassName);
     if ("isEmpty" in dataScopeParams) {
-      const error = dataScopeParams._error ? new DataScopeError(dataScopeParams._error) : void 0;
+      const error = dataScopeParams._error ? new data_class/* DataScopeError */.Zz(dataScopeParams._error) : void 0;
       return new EmptyDataScope({
         dataClass,
         error,
@@ -12200,9 +11594,11 @@ function deserializeDataItem({
   _class: dataClass,
   _id: dataId
 }) {
-  return getDataClassOrThrow(dataClass).get(dataId) || void 0;
+  return (0,get_data_class/* getDataClassOrThrow */.sf)(dataClass).get(dataId) || void 0;
 }
 
+// EXTERNAL MODULE: ./scrivito_sdk/state/index.ts + 13 modules
+var state = __webpack_require__(1946);
 ;// CONCATENATED MODULE: ./scrivito_sdk/data_integration/global_data.ts
 
 var global_data_defProp = Object.defineProperty;
@@ -12238,7 +11634,7 @@ function provideGlobalData(dataItem) {
 function getGlobalDataItems() {
   const globalContext = globalContextState.get();
   return globalContext ? Object.entries(globalContext).map(
-    ([dataClassName, dataId]) => getDataClassOrThrow(dataClassName).get(dataId)
+    ([dataClassName, dataId]) => (0,get_data_class/* getDataClassOrThrow */.sf)(dataClassName).get(dataId)
   ).filter(
     (maybeDataItem) => !!maybeDataItem
   ) : [];
@@ -12259,9 +11655,13 @@ function findItemInGlobalData(dataClassName) {
 function findScopeInGlobalData(dataClassName) {
   const itemPojo = findItemInGlobalData(dataClassName);
   if (itemPojo)
-    return itemPojoToScopePojo(itemPojo);
+    return (0,data_class/* itemPojoToScopePojo */.$v)(itemPojo);
 }
 
+// EXTERNAL MODULE: ./scrivito_sdk/loadable/index.ts + 29 modules
+var loadable = __webpack_require__(5688);
+// EXTERNAL MODULE: ./scrivito_sdk/models/index.ts + 44 modules
+var models = __webpack_require__(4360);
 ;// CONCATENATED MODULE: ./scrivito_sdk/data_integration/data_context.ts
 
 var data_context_defProp = Object.defineProperty;
@@ -12344,7 +11744,7 @@ function findScopeElementInDataStackAndGlobalData(dataClassName, dataStack, viaR
   }
   const itemPojo = findItemInDataStack(dataClassName, dataStack);
   if (itemPojo)
-    return itemPojoToScopePojo(itemPojo);
+    return (0,data_class/* itemPojoToScopePojo */.$v)(itemPojo);
   return findScopeInGlobalData(dataClassName);
 }
 function dataContextFromQueryParams(obj, params) {
@@ -12355,9 +11755,9 @@ function dataContextFromQueryParams(obj, params) {
   if (!dataClassName)
     return;
   const dataId = getDataId(dataClassName, params);
-  if (!isValidDataId(dataId))
+  if (!(0,data_id/* isValidDataId */.o)(dataId))
     return "unavailable";
-  const dataClass = getDataClass(dataClassName);
+  const dataClass = (0,get_data_class/* getDataClass */.D5)(dataClassName);
   if (!dataClass)
     return;
   const dataItem = (0,loadable/* loadWithDefault */.qt)("loading", () => dataClass.get(dataId));
@@ -12368,7 +11768,7 @@ function dataContextFromQueryParams(obj, params) {
   return dataItemToDataContext(dataItem);
 }
 function dataItemToDataContext(dataItem) {
-  if (dataItem instanceof ObjDataItem) {
+  if (dataItem instanceof obj_data_class/* ObjDataItem */.DP) {
     return objDataItemToDataContext(dataItem);
   }
   return externalDataItemToDataContext(dataItem);
@@ -12392,7 +11792,7 @@ function getDataIdFromParams(dataClassName, params) {
     return dataId;
 }
 function getDataIdOfFirstDataItem(dataClassName) {
-  const [firstDataItem] = getDataClassOrThrow(dataClassName).all().transform({ limit: 1 }).take();
+  const [firstDataItem] = (0,get_data_class/* getDataClassOrThrow */.sf)(dataClassName).all().transform({ limit: 1 }).take();
   if (firstDataItem)
     return firstDataItem.id();
 }
@@ -12418,6 +11818,12 @@ function getDataContextValue(identifier, context) {
   );
 }
 
+// EXTERNAL MODULE: ./scrivito_sdk/data_integration/external_data_class.ts + 3 modules
+var external_data_class = __webpack_require__(4962);
+// EXTERNAL MODULE: ./scrivito_sdk/data_integration/data_class_schema.ts
+var data_class_schema = __webpack_require__(135);
+// EXTERNAL MODULE: ./scrivito_sdk/data_integration/external_data_connection.ts + 1 modules
+var external_data_connection = __webpack_require__(5481);
 ;// CONCATENATED MODULE: ./scrivito_sdk/data_integration/register_external_data_class.ts
 
 var register_external_data_class_async = (__this, __arguments, generator) => {
@@ -12445,11 +11851,17 @@ var register_external_data_class_async = (__this, __arguments, generator) => {
 function registerExternalDataClass(name, params) {
   return register_external_data_class_async(this, null, function* () {
     const { connection, schema } = yield params;
-    setExternalDataConnection(name, connection);
-    registerDataClassSchema(name, schema);
+    (0,external_data_connection/* setExternalDataConnection */.kz)(name, connection);
+    (0,data_class_schema/* registerDataClassSchema */.h$)(name, schema);
   });
 }
 
+// EXTERNAL MODULE: ./scrivito_sdk/data_integration/data_connection_error.ts
+var data_connection_error = __webpack_require__(7824);
+// EXTERNAL MODULE: ./scrivito_sdk/client/index.ts + 38 modules
+var client = __webpack_require__(853);
+// EXTERNAL MODULE: ./scrivito_sdk/data_integration/index_params.ts
+var index_params = __webpack_require__(5941);
 ;// CONCATENATED MODULE: ./scrivito_sdk/data_integration/apply_data_locator.ts
 
 
@@ -12470,11 +11882,11 @@ function applyDataLocator(dataStack, dataLocator) {
     return new EmptyDataScope();
   try {
     const viaRef = dataLocator.viaRef();
-    const sourceDataScope = viaRef ? findMatchingDataScopeOrThrow(className, dataStack, viaRef) : getDataClassOrThrow(className).all();
+    const sourceDataScope = viaRef ? findMatchingDataScopeOrThrow(className, dataStack, viaRef) : (0,get_data_class/* getDataClassOrThrow */.sf)(className).all();
     return applyDataLocatorDefinition(sourceDataScope, dataStack, dataLocator);
   } catch (error) {
     if (error instanceof common/* ArgumentError */.c1) {
-      return new EmptyDataScope({ error: new DataScopeError(error.message) });
+      return new EmptyDataScope({ error: new data_class/* DataScopeError */.Zz(error.message) });
     }
     throw error;
   }
@@ -12512,11 +11924,11 @@ function applyFilter(scope, filter, dataStack) {
   return applyValueFilter(scope, filter);
 }
 function applyOperatorFilter(scope, { field, operator, value }) {
-  const [fullOperator] = Object.entries(operatorToOpCode).find(([_, val]) => val === operator) || [];
+  const [fullOperator] = Object.entries(index_params/* operatorToOpCode */.oK).find(([_, val]) => val === operator) || [];
   return scope.transform({
     filters: {
       [field]: {
-        operator: isFilterOperator(fullOperator) ? fullOperator : "equals",
+        operator: (0,data_class/* isFilterOperator */.dB)(fullOperator) ? fullOperator : "equals",
         value
       }
     }
@@ -12550,7 +11962,7 @@ function applyValueViaFilter(scope, {
         isDataItem: true
       });
     }
-    if (!isValidDataId(value)) {
+    if (!(0,data_id/* isValidDataId */.o)(value)) {
       return new EmptyDataScope({
         dataClass,
         isDataItem: true,
@@ -12568,7 +11980,7 @@ function findMatchingDataItemOrThrow(viaClass, dataStack) {
   if (!element)
     throw new common/* ArgumentError */.c1(`No ${viaClass} item found`);
   const item = deserializeDataStackElement(element);
-  if (item instanceof DataItem)
+  if (item instanceof data_class/* DataItem */.sO)
     return item;
   throw new common/* ArgumentError */.c1(`No ${viaClass} item with ID ${element._id} found`);
 }
@@ -12581,9 +11993,88 @@ function findMatchingDataScopeOrThrow(className, dataStack, viaRef) {
   if (!element)
     throw new common/* ArgumentError */.c1(`No ${className} scope found`);
   const scope = deserializeDataStackElement(element);
-  if (scope instanceof DataScope)
+  if (scope instanceof data_class/* DataScope */.bq)
     return scope;
   throw new common/* ArgumentError */.c1(`No ${className} scope found`);
+}
+
+// EXTERNAL MODULE: ./scrivito_sdk/data_integration/add_missing_data_connection_handlers.ts
+var add_missing_data_connection_handlers = __webpack_require__(3664);
+;// CONCATENATED MODULE: ./scrivito_sdk/data_integration/filter_external_data_item.ts
+
+var filter_external_data_item_async = (__this, __arguments, generator) => {
+  return new Promise((resolve, reject) => {
+    var fulfilled = (value) => {
+      try {
+        step(generator.next(value));
+      } catch (e) {
+        reject(e);
+      }
+    };
+    var rejected = (value) => {
+      try {
+        step(generator.throw(value));
+      } catch (e) {
+        reject(e);
+      }
+    };
+    var step = (x) => x.done ? resolve(x.value) : Promise.resolve(x.value).then(fulfilled, rejected);
+    step((generator = generator.apply(__this, __arguments)).next());
+  });
+};
+
+
+
+
+
+function filterExternalDataItem(dataItem, filters) {
+  return filter_external_data_item_async(this, null, function* () {
+    const doesMatch = yield (0,loadable/* load */.Hh)(
+      () => Object.entries(filters).every(([name, filter]) => {
+        if (!filter)
+          return false;
+        return name === "_id" || valueMatchesFilter(dataItem.get(name), filter);
+      })
+    );
+    return { results: doesMatch ? [SINGLETON_DATA_ID] : [] };
+  });
+}
+function valueMatchesFilter(itemValue, filter) {
+  if ((0,index_params/* isAndFilterSpec */.pR)(filter)) {
+    return filter.value.every((spec) => valueMatchesFilter(itemValue, spec));
+  }
+  const { value: filterValue, opCode } = filter;
+  if (Array.isArray(itemValue)) {
+    if (opCode === "neq") {
+      return itemValue.every((element) => valueMatchesFilter(element, filter));
+    }
+    return itemValue.some((element) => valueMatchesFilter(element, filter));
+  }
+  if ((0,client/* isRelationalOpCode */._p)(opCode)) {
+    assertStringOrNumber(itemValue);
+    assertStringOrNumber(filterValue);
+    return RELATIONAL_OPERATOR_COMPARATORS[opCode](itemValue, filterValue);
+  }
+  const areEqual = areValuesEqual(filterValue, itemValue);
+  return opCode === "neq" ? !areEqual : areEqual;
+}
+const RELATIONAL_OPERATOR_COMPARATORS = {
+  gt: (a, b) => a > b,
+  lt: (a, b) => a < b,
+  gte: (a, b) => a >= b,
+  lte: (a, b) => a <= b
+};
+function assertStringOrNumber(arg) {
+  if (typeof arg === "string" || typeof arg === "number")
+    return;
+  throw new common/* ArgumentError */.c1(`Must be a string or number, but got ${String(arg)}`);
+}
+function areValuesEqual(filterValue, itemValue) {
+  if (filterValue === itemValue)
+    return true;
+  if (filterValue === null || filterValue === "null")
+    return itemValue == null;
+  return filterValue === "true" && itemValue === true || filterValue === "false" && itemValue === false;
 }
 
 ;// CONCATENATED MODULE: ./scrivito_sdk/data_integration/singleton_data_classes.ts
@@ -12656,14 +12147,17 @@ function provideExternalDataItem(dataClass, paramsPromise) {
       const { update } = yield connection;
       if (update)
         return update(data);
-      throwMissingCallbackError("update", name)();
+      (0,add_missing_data_connection_handlers/* throwMissingCallbackError */.O)("update", name)();
     });
     const dataConnection = provide_external_data_item_spreadValues({
       get: (id) => provide_external_data_item_async(this, null, function* () {
         return isSingletonDataId(id) ? getCallback() : null;
       }),
       index: (params) => provide_external_data_item_async(this, null, function* () {
-        return readAndFilterItem(params, dataClass);
+        const dataItem = yield (0,loadable/* load */.Hh)(() => dataClass.get(SINGLETON_DATA_ID));
+        if (!dataItem)
+          return { results: [] };
+        return filterExternalDataItem(dataItem, params.filters());
       })
     }, updateCallback && {
       update: (id, data) => provide_external_data_item_async(this, null, function* () {
@@ -12685,31 +12179,6 @@ function provideExternalDataItem(dataClass, paramsPromise) {
 }
 function isSingletonDataId(id) {
   return id === SINGLETON_DATA_ID;
-}
-function readAndFilterItem(params, dataClass) {
-  return provide_external_data_item_async(this, null, function* () {
-    const dataItem = yield (0,loadable/* load */.Hh)(() => dataClass.get(SINGLETON_DATA_ID));
-    if (!dataItem)
-      return { results: [] };
-    const filters = params.filters();
-    const doesMatch = yield (0,loadable/* load */.Hh)(
-      () => Object.keys(filters).every((name) => {
-        const { value } = filters[name];
-        return name === "_id" || typeof value === "string" && consideredEqual(dataItem.get(name), value);
-      })
-    );
-    return { results: doesMatch ? [SINGLETON_DATA_ID] : [] };
-  });
-}
-function consideredEqual(itemValue, filterValue) {
-  if (itemValue === void 0 || itemValue === null)
-    return false;
-  if (typeof itemValue === "string")
-    return itemValue === filterValue;
-  if (Array.isArray(itemValue)) {
-    return itemValue.some((element) => element === filterValue);
-  }
-  throw new common/* ArgumentError */.c1(`Cannot filter on ${typeof itemValue}`);
 }
 
 ;// CONCATENATED MODULE: ./scrivito_sdk/data_integration/activate_data_integration.ts
@@ -12789,7 +12258,7 @@ function getDataItem(dataClassName, dataStack) {
       dataStack
     );
     if (element)
-      return (_a = getDataClass(dataClassName)) == null ? void 0 : _a.get(element._id);
+      return (_a = (0,get_data_class/* getDataClass */.D5)(dataClassName)) == null ? void 0 : _a.get(element._id);
   });
 }
 function replaceLegacyPlaceholder({
@@ -12801,7 +12270,14 @@ function replaceLegacyPlaceholder({
   return rawValue === void 0 ? placeholder : rawValue;
 }
 
+// EXTERNAL MODULE: ./scrivito_sdk/data_integration/disable_external_data_loading.ts
+var disable_external_data_loading = __webpack_require__(1032);
+// EXTERNAL MODULE: ./scrivito_sdk/data_integration/data_attribute.ts
+var data_attribute = __webpack_require__(3561);
+// EXTERNAL MODULE: ./scrivito_sdk/data_integration/current_language.ts
+var current_language = __webpack_require__(1514);
 ;// CONCATENATED MODULE: ./scrivito_sdk/data_integration/index.ts
+
 
 
 
@@ -12829,6 +12305,574 @@ function replaceLegacyPlaceholder({
 
 /***/ }),
 
+/***/ 5941:
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   Dx: () => (/* binding */ DataConnectionIndexParams),
+/* harmony export */   oK: () => (/* binding */ operatorToOpCode),
+/* harmony export */   pR: () => (/* binding */ isAndFilterSpec)
+/* harmony export */ });
+/* harmony import */ var scrivito_sdk_data_integration_data_class__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(8001);
+
+var __defProp = Object.defineProperty;
+var __defProps = Object.defineProperties;
+var __getOwnPropDescs = Object.getOwnPropertyDescriptors;
+var __getOwnPropSymbols = Object.getOwnPropertySymbols;
+var __hasOwnProp = Object.prototype.hasOwnProperty;
+var __propIsEnum = Object.prototype.propertyIsEnumerable;
+var __defNormalProp = (obj, key, value) => key in obj ? __defProp(obj, key, { enumerable: true, configurable: true, writable: true, value }) : obj[key] = value;
+var __spreadValues = (a, b) => {
+  for (var prop in b || (b = {}))
+    if (__hasOwnProp.call(b, prop))
+      __defNormalProp(a, prop, b[prop]);
+  if (__getOwnPropSymbols)
+    for (var prop of __getOwnPropSymbols(b)) {
+      if (__propIsEnum.call(b, prop))
+        __defNormalProp(a, prop, b[prop]);
+    }
+  return a;
+};
+var __spreadProps = (a, b) => __defProps(a, __getOwnPropDescs(b));
+
+class DataConnectionIndexParams {
+  constructor(_continuation, _params) {
+    this._continuation = _continuation;
+    this._params = _params;
+  }
+  continuation() {
+    return this._continuation;
+  }
+  filters() {
+    return Object.entries(this._params.filters || {}).reduce(
+      (filters, [name, operatorSpec]) => {
+        if (!name)
+          return filters;
+        return __spreadProps(__spreadValues({}, filters), {
+          [name]: (0,scrivito_sdk_data_integration_data_class__WEBPACK_IMPORTED_MODULE_0__/* .isOperatorSpec */ .ws)(operatorSpec) ? __spreadProps(__spreadValues({}, operatorSpec), {
+            opCode: operatorToOpCode[operatorSpec.operator]
+          }) : {
+            operator: "and",
+            value: operatorSpec.value.map((spec) => __spreadProps(__spreadValues({}, spec), {
+              opCode: operatorToOpCode[spec.operator]
+            }))
+          }
+        });
+      },
+      {}
+    );
+  }
+  search() {
+    return this._params.search || "";
+  }
+  order() {
+    return (this._params.order || []).filter(
+      ([attributeName]) => !!attributeName
+    );
+  }
+  limit() {
+    return this._params.limit;
+  }
+  includeCount() {
+    return this._params.count;
+  }
+}
+const operatorToOpCode = {
+  equals: "eq",
+  notEquals: "neq",
+  isGreaterThan: "gt",
+  isLessThan: "lt",
+  isGreaterThanOrEquals: "gte",
+  isLessThanOrEquals: "lte"
+};
+function isAndFilterSpec(spec) {
+  return spec.operator === "and";
+}
+
+
+/***/ }),
+
+/***/ 8083:
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   Be: () => (/* binding */ isObjDataClassProvided),
+/* harmony export */   DP: () => (/* binding */ ObjDataItem),
+/* harmony export */   wS: () => (/* binding */ ObjDataClass)
+/* harmony export */ });
+/* unused harmony exports SUBPAGES_CHILD_ORDER_LIMIT, ObjDataScope */
+/* harmony import */ var scrivito_sdk_client__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(853);
+/* harmony import */ var scrivito_sdk_common__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(5204);
+/* harmony import */ var scrivito_sdk_data_integration_data_class__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(8001);
+/* harmony import */ var scrivito_sdk_data_integration_get_data_class__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(512);
+/* harmony import */ var scrivito_sdk_models__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(4360);
+/* harmony import */ var scrivito_sdk_realm__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(7461);
+
+var __defProp = Object.defineProperty;
+var __getOwnPropSymbols = Object.getOwnPropertySymbols;
+var __hasOwnProp = Object.prototype.hasOwnProperty;
+var __propIsEnum = Object.prototype.propertyIsEnumerable;
+var __defNormalProp = (obj, key, value) => key in obj ? __defProp(obj, key, { enumerable: true, configurable: true, writable: true, value }) : obj[key] = value;
+var __spreadValues = (a, b) => {
+  for (var prop in b || (b = {}))
+    if (__hasOwnProp.call(b, prop))
+      __defNormalProp(a, prop, b[prop]);
+  if (__getOwnPropSymbols)
+    for (var prop of __getOwnPropSymbols(b)) {
+      if (__propIsEnum.call(b, prop))
+        __defNormalProp(a, prop, b[prop]);
+    }
+  return a;
+};
+var __async = (__this, __arguments, generator) => {
+  return new Promise((resolve, reject) => {
+    var fulfilled = (value) => {
+      try {
+        step(generator.next(value));
+      } catch (e) {
+        reject(e);
+      }
+    };
+    var rejected = (value) => {
+      try {
+        step(generator.throw(value));
+      } catch (e) {
+        reject(e);
+      }
+    };
+    var step = (x) => x.done ? resolve(x.value) : Promise.resolve(x.value).then(fulfilled, rejected);
+    step((generator = generator.apply(__this, __arguments)).next());
+  });
+};
+
+
+
+
+
+
+const TYPES_WITH_SCHEMA_SUPPORT = [
+  "boolean",
+  "enum",
+  "float",
+  "integer",
+  "string",
+  "reference"
+];
+const TYPES_WITH_GARBAGE_IN_GARBAGE_OUT_SUPPORT = ["multienum", "stringlist"];
+const SUPPORTED_ATTRIBUTE_TYPES = [
+  ...TYPES_WITH_SCHEMA_SUPPORT,
+  ...TYPES_WITH_GARBAGE_IN_GARBAGE_OUT_SUPPORT
+];
+const SUBPAGES_CHILD_ORDER_LIMIT = 200;
+class ObjDataClass extends scrivito_sdk_data_integration_data_class__WEBPACK_IMPORTED_MODULE_2__/* .DataClass */ .bA {
+  constructor(_name) {
+    super();
+    this._name = _name;
+  }
+  name() {
+    return this._name;
+  }
+  create(attributes) {
+    return __async(this, null, function* () {
+      return this.all().create(attributes);
+    });
+  }
+  all() {
+    return new ObjDataScope(this);
+  }
+  get(id) {
+    const obj = getDataObj(this, id);
+    return obj ? new ObjDataItem(this, id) : null;
+  }
+  getUnchecked(id) {
+    return new ObjDataItem(this, id);
+  }
+  attributeDefinitions() {
+    return attributeDefinitions(this._name);
+  }
+}
+function getDataObj(dataClass, dataId) {
+  return (0,scrivito_sdk_models__WEBPACK_IMPORTED_MODULE_4__/* .getObjFrom */ .ED)(objClassScope(dataClass).and(scrivito_sdk_models__WEBPACK_IMPORTED_MODULE_4__/* .excludeDeletedObjs */ .cb), dataId);
+}
+class ObjDataScope extends scrivito_sdk_data_integration_data_class__WEBPACK_IMPORTED_MODULE_2__/* .DataScope */ .bq {
+  constructor(_dataClass, _attributeName, _params = {}) {
+    super();
+    this._dataClass = _dataClass;
+    this._attributeName = _attributeName;
+    this._params = _params;
+  }
+  dataClass() {
+    return this._dataClass;
+  }
+  dataClassName() {
+    return this._dataClass.name();
+  }
+  create(attributes) {
+    return __async(this, null, function* () {
+      if (this.isBuiltInClass()) {
+        throw new scrivito_sdk_common__WEBPACK_IMPORTED_MODULE_1__/* .ArgumentError */ .c1(
+          "Cannot create data items using the built-in Obj class"
+        );
+      }
+      const obj = (0,scrivito_sdk_models__WEBPACK_IMPORTED_MODULE_4__/* .createObjIn */ .ZU)(
+        this.objClassScope(),
+        prepareAttributes(
+          __spreadValues(__spreadValues({}, attributes), this.attributesFromFilters(this._params.filters)),
+          this._dataClass.name()
+        )
+      );
+      yield obj.finishSaving();
+      return this.wrapInDataItem(obj);
+    });
+  }
+  get(id) {
+    const [obj] = this.getSearch().and("_id", "equals", id).take(1);
+    if (!obj)
+      return null;
+    return this.wrapInDataItem(obj);
+  }
+  take() {
+    var _a;
+    const search = this.getSearch();
+    const parentObj = this.parentObj();
+    const limit = (_a = this._params.limit) != null ? _a : scrivito_sdk_data_integration_data_class__WEBPACK_IMPORTED_MODULE_2__/* .DEFAULT_LIMIT */ .eH;
+    let objs;
+    if (!this._params.search && !this._params.order && (parentObj == null ? void 0 : parentObj.hasChildOrder())) {
+      objs = parentObj.sortByChildOrder(
+        search.take(Math.max(limit, SUBPAGES_CHILD_ORDER_LIMIT))
+      ).slice(0, limit);
+    } else {
+      objs = search.take(limit);
+    }
+    return objs.map((obj) => this.wrapInDataItem(obj));
+  }
+  dataItem() {
+    const id = this.itemIdFromFilters();
+    if (id)
+      return this._dataClass.get(id);
+    return null;
+  }
+  isDataItem() {
+    return !!this.itemIdFromFilters();
+  }
+  attributeName() {
+    return this._attributeName || null;
+  }
+  count() {
+    return this.getSearch().count();
+  }
+  transform({
+    filters,
+    search,
+    order,
+    limit,
+    attributeName
+  }) {
+    return new ObjDataScope(
+      this._dataClass,
+      attributeName || this._attributeName,
+      {
+        filters: (0,scrivito_sdk_data_integration_data_class__WEBPACK_IMPORTED_MODULE_2__/* .combineFilters */ .Zc)(
+          this._params.filters,
+          this.normalizeFilters(filters)
+        ),
+        search: (0,scrivito_sdk_data_integration_data_class__WEBPACK_IMPORTED_MODULE_2__/* .combineSearches */ .IE)(this._params.search, search),
+        order: order || this._params.order,
+        limit: limit != null ? limit : this._params.limit
+      }
+    );
+  }
+  limit() {
+    return this._params.limit;
+  }
+  objSearch() {
+    const search = this.getSearch();
+    if (!(0,scrivito_sdk_client__WEBPACK_IMPORTED_MODULE_0__/* .isEmptySpaceId */ .dQ)(search.objSpaceId())) {
+      return new scrivito_sdk_realm__WEBPACK_IMPORTED_MODULE_5__/* .ObjSearch */ .G5(search);
+    }
+  }
+  /** @internal */
+  toPojo() {
+    return __spreadValues({
+      _class: this.dataClassName(),
+      _attribute: this._attributeName
+    }, this._params);
+  }
+  getSearch() {
+    let initialSearch = this.getInitialSearch();
+    const { filters, search: searchTerm, order: givenOrder } = this._params;
+    if (searchTerm) {
+      initialSearch = initialSearch.and("*", "matches", searchTerm);
+    }
+    if (givenOrder) {
+      const order = givenOrder.filter(([attributeName]) => !!attributeName);
+      if (order.length)
+        initialSearch = initialSearch.order(order);
+    }
+    if (!filters)
+      return initialSearch;
+    return Object.keys(filters).filter((name) => !!name).reduce(
+      (search, name) => this.applyFilter(search, name, filters[name]),
+      initialSearch
+    );
+  }
+  getInitialSearch() {
+    return (this.isBuiltInClass() ? currentObjScope() : this.objClassScope()).and(scrivito_sdk_models__WEBPACK_IMPORTED_MODULE_4__/* .excludeDeletedObjs */ .cb).search();
+  }
+  isBuiltInClass() {
+    return isBuiltInClass(this.dataClassName());
+  }
+  applyFilter(search, attributeName, operatorSpec) {
+    const { operator, value } = operatorSpec;
+    if (operator === "and") {
+      return value.reduce(
+        (currentSearch, spec) => this.applyFilter(currentSearch, attributeName, spec),
+        search
+      );
+    }
+    if (operator === "equals") {
+      if (attributeName === "_obj_parent_id") {
+        return this.applySubpagesFilter(search);
+      }
+      return search.and(attributeName, "equals", value);
+    }
+    if (operator === "notEquals") {
+      return search.andNot(attributeName, "equals", value);
+    }
+    if (operator === "isGreaterThan") {
+      return search.and(attributeName, "isGreaterThan", value);
+    }
+    if (operator === "isLessThan") {
+      return search.and(attributeName, "isLessThan", value);
+    }
+    if (operator === "isGreaterThanOrEquals") {
+      return search.andNot(attributeName, "isLessThan", value);
+    }
+    if (operator === "isLessThanOrEquals") {
+      return search.andNot(attributeName, "isGreaterThan", value);
+    }
+    throw new scrivito_sdk_common__WEBPACK_IMPORTED_MODULE_1__/* .ArgumentError */ .c1(`Unknown filter operator "${operator}"`);
+  }
+  applySubpagesFilter(search) {
+    const parentObj = this.parentObj();
+    const siteId = parentObj == null ? void 0 : parentObj.siteId();
+    const parentPath = parentObj == null ? void 0 : parentObj.path();
+    if (!siteId || !parentPath) {
+      return (0,scrivito_sdk_models__WEBPACK_IMPORTED_MODULE_4__/* .objSpaceScope */ .aG)(scrivito_sdk_client__WEBPACK_IMPORTED_MODULE_0__/* .EMPTY_SPACE */ .HY).search();
+    }
+    return search.and("_siteId", "equals", siteId).and("_parentPath", "equals", parentPath);
+  }
+  objClassScope() {
+    return objClassScope(this._dataClass);
+  }
+  wrapInDataItem(obj) {
+    const item = new ObjDataItem(this._dataClass, obj.id());
+    item.setBasicObj(obj);
+    return item;
+  }
+  itemIdFromFilters() {
+    return (0,scrivito_sdk_data_integration_data_class__WEBPACK_IMPORTED_MODULE_2__/* .itemIdFromFilters */ .mX)(this._params.filters);
+  }
+  parentObj() {
+    var _a, _b;
+    const parentId = (_b = (_a = this._params.filters) == null ? void 0 : _a._obj_parent_id) == null ? void 0 : _b.value;
+    if (typeof parentId === "string") {
+      return (0,scrivito_sdk_models__WEBPACK_IMPORTED_MODULE_4__/* .getObjFrom */ .ED)(currentObjScope().and(scrivito_sdk_models__WEBPACK_IMPORTED_MODULE_4__/* .excludeDeletedObjs */ .cb), parentId);
+    }
+  }
+}
+class ObjDataItem extends scrivito_sdk_data_integration_data_class__WEBPACK_IMPORTED_MODULE_2__/* .DataItem */ .sO {
+  constructor(_dataClass, _dataId) {
+    super();
+    this._dataClass = _dataClass;
+    this._dataId = _dataId;
+  }
+  id() {
+    return this._dataId;
+  }
+  dataClass() {
+    return this._dataClass;
+  }
+  dataClassName() {
+    return this._dataClass.name();
+  }
+  obj() {
+    return (0,scrivito_sdk_realm__WEBPACK_IMPORTED_MODULE_5__/* .wrapInAppClass */ .Dy)(this.getOrThrow());
+  }
+  /** @internal */
+  getBasicObj() {
+    if (this._obj === void 0) {
+      this._obj = getDataObj(this._dataClass, this._dataId);
+    }
+    return this._obj;
+  }
+  /** @internal */
+  setBasicObj(obj) {
+    this._obj = obj;
+  }
+  get(attributeName) {
+    const obj = this.getBasicObj();
+    if (!obj)
+      return null;
+    const typeInfo = getAttributeTypeInfo(obj.objClass(), attributeName);
+    if (!typeInfo)
+      return null;
+    const [attributeType, attributeConfig] = typeInfo;
+    if (SUPPORTED_ATTRIBUTE_TYPES.includes(attributeType)) {
+      return attributeType === "reference" ? getReference(obj, attributeName, attributeConfig) : obj.get(attributeName, typeInfo);
+    }
+    return null;
+  }
+  update(attributes) {
+    const obj = this.getOrThrow();
+    obj.update(prepareAttributes(attributes, this.dataClassName()));
+    return obj.finishSaving();
+  }
+  delete() {
+    return __async(this, null, function* () {
+      const obj = this.getBasicObj();
+      if (obj) {
+        obj.delete();
+        return obj.finishSaving();
+      }
+    });
+  }
+  getOrThrow() {
+    const obj = this.getBasicObj();
+    if (!obj) {
+      throw new scrivito_sdk_common__WEBPACK_IMPORTED_MODULE_1__/* .ArgumentError */ .c1(`Missing obj with ID ${this._dataId}`);
+    }
+    return obj;
+  }
+}
+function getAttributeTypeInfo(className, attributeName) {
+  return getSchema(className).attribute(attributeName);
+}
+function isObjDataClassProvided(className) {
+  return !!(0,scrivito_sdk_realm__WEBPACK_IMPORTED_MODULE_5__/* .getRealmClass */ .an)(className);
+}
+function getSchema(className) {
+  const objClass = (0,scrivito_sdk_realm__WEBPACK_IMPORTED_MODULE_5__/* .getRealmClass */ .an)(className);
+  if (!objClass) {
+    throw new scrivito_sdk_common__WEBPACK_IMPORTED_MODULE_1__/* .ArgumentError */ .c1(`Class ${className} does not exist`);
+  }
+  const schema = scrivito_sdk_realm__WEBPACK_IMPORTED_MODULE_5__/* .Schema */ .Sj.forClass(objClass);
+  if (!schema) {
+    throw new scrivito_sdk_common__WEBPACK_IMPORTED_MODULE_1__/* .ArgumentError */ .c1(`Class ${className} has no schema`);
+  }
+  return schema;
+}
+function objClassScope(dataClass) {
+  return currentObjScope().and((0,scrivito_sdk_models__WEBPACK_IMPORTED_MODULE_4__/* .restrictToObjClass */ .Lw)(dataClass.name()));
+}
+function prepareAttributes(attributes, className) {
+  const preparedAttributes = {};
+  Object.keys(attributes).forEach((attributeName) => {
+    const attributeValue = attributes[attributeName];
+    if ((0,scrivito_sdk_common__WEBPACK_IMPORTED_MODULE_1__/* .isSystemAttribute */ .iI)(attributeName)) {
+      preparedAttributes[attributeName] = attributeValue;
+    } else {
+      const typeInfo = getAttributeTypeInfo(className, attributeName);
+      if (!typeInfo) {
+        throw new scrivito_sdk_common__WEBPACK_IMPORTED_MODULE_1__/* .ArgumentError */ .c1(
+          `Attribute ${attributeName} of class ${className} does not exist`
+        );
+      }
+      const [attributeType, attributeConfig] = typeInfo;
+      if (!SUPPORTED_ATTRIBUTE_TYPES.includes(attributeType)) {
+        throw new scrivito_sdk_common__WEBPACK_IMPORTED_MODULE_1__/* .ArgumentError */ .c1(
+          `Attribute ${attributeName} of class ${className} has unsupported type ${attributeType}`
+        );
+      }
+      preparedAttributes[attributeName] = [
+        attributeType === "reference" ? prepareReferenceValue(attributeValue, attributeConfig) : attributeValue,
+        typeInfo
+      ];
+    }
+  });
+  return preparedAttributes;
+}
+function getReference(obj, attributeName, attributeConfig) {
+  if (!attributeConfig)
+    return null;
+  const referenceObj = obj.get(attributeName, "reference");
+  if (!(referenceObj instanceof scrivito_sdk_models__WEBPACK_IMPORTED_MODULE_4__/* .BasicObj */ .kI))
+    return null;
+  const referenceObjClass = referenceObj.objClass();
+  if (referenceObjClass !== getValidReferenceClass(attributeConfig)) {
+    return null;
+  }
+  const dataClass = (0,scrivito_sdk_data_integration_get_data_class__WEBPACK_IMPORTED_MODULE_3__/* .getObjDataClass */ .Q$)(referenceObjClass);
+  if (!dataClass)
+    return null;
+  return dataClass.get(referenceObj.id());
+}
+function prepareReferenceValue(attributeValue, attributeConfig) {
+  return attributeValue instanceof scrivito_sdk_data_integration_data_class__WEBPACK_IMPORTED_MODULE_2__/* .DataItem */ .sO && attributeValue.dataClassName() === getValidReferenceClass(attributeConfig) ? (0,scrivito_sdk_realm__WEBPACK_IMPORTED_MODULE_5__/* .unwrapAppClass */ .zo)(attributeValue.obj()) : null;
+}
+function getValidReferenceClass(attributeConfig) {
+  if (attributeConfig) {
+    const { validClasses } = attributeConfig;
+    if (validClasses.length === 1)
+      return validClasses[0];
+  }
+}
+function attributeDefinitions(dataClassName) {
+  if (isBuiltInClass(dataClassName))
+    return {};
+  const attributes = {};
+  const normalizedAttributes = getSchema(dataClassName).normalizedAttributes();
+  Object.keys(normalizedAttributes).forEach((attributeName) => {
+    const dataAttributeDefinition = toDataAttributeDefinition(
+      normalizedAttributes[attributeName]
+    );
+    if (dataAttributeDefinition) {
+      attributes[attributeName] = dataAttributeDefinition;
+    }
+  });
+  return attributes;
+}
+function toDataAttributeDefinition([
+  cmsType,
+  cmsTypeInfo
+]) {
+  if (cmsType === "boolean" || cmsType === "string") {
+    return [cmsType, {}];
+  }
+  if (cmsType === "float" || cmsType === "integer") {
+    return ["number", {}];
+  }
+  if (cmsType === "enum") {
+    return [
+      "enum",
+      {
+        values: [
+          ...cmsTypeInfo.values.map((value) => ({ value, title: value }))
+        ]
+      }
+    ];
+  }
+  if (cmsType === "reference") {
+    const { only } = cmsTypeInfo;
+    if (typeof only === "string") {
+      return ["reference", { to: only }];
+    }
+    if (Array.isArray(only) && only.length === 1) {
+      return ["reference", { to: only[0] }];
+    }
+  }
+  return null;
+}
+function currentObjScope() {
+  return (0,scrivito_sdk_models__WEBPACK_IMPORTED_MODULE_4__/* .objSpaceScope */ .aG)((0,scrivito_sdk_models__WEBPACK_IMPORTED_MODULE_4__/* .currentObjSpaceId */ .eb)());
+}
+function isBuiltInClass(dataClassName) {
+  return dataClassName === "Obj";
+}
+
+
+/***/ }),
+
 /***/ 5606:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
@@ -12843,7 +12887,7 @@ function replaceLegacyPlaceholder({
 
 const moduleLoaders = {
   reactEditing: () => __webpack_require__.e(/* import() */ 358).then(__webpack_require__.bind(__webpack_require__, 1358)),
-  editingSupport: () => __webpack_require__.e(/* import() */ 237).then(__webpack_require__.bind(__webpack_require__, 3695))
+  editingSupport: () => __webpack_require__.e(/* import() */ 993).then(__webpack_require__.bind(__webpack_require__, 3695))
 };
 const loadableModules = (0,scrivito_sdk_loadable__WEBPACK_IMPORTED_MODULE_1__/* .createLoadableCollection */ .rL)({
   loadElement: (moduleName) => ({ loader: moduleLoaders[moduleName] })
@@ -12906,8 +12950,8 @@ function parseInternalUrl(internalLinkUrl) {
   };
 }
 
-// EXTERNAL MODULE: ./scrivito_sdk/common/index.ts + 64 modules
-var common = __webpack_require__(2838);
+// EXTERNAL MODULE: ./scrivito_sdk/common/index.ts + 62 modules
+var common = __webpack_require__(5204);
 ;// CONCATENATED MODULE: ./scrivito_sdk/link_resolution/resolve_url.ts
 
 
@@ -13299,8 +13343,8 @@ function loadAllUntil(iterator, size, objs = []) {
   return loadAllUntil(iterator, size - 1, objs.concat([next.value]));
 }
 
-// EXTERNAL MODULE: ./scrivito_sdk/common/index.ts + 64 modules
-var common = __webpack_require__(2838);
+// EXTERNAL MODULE: ./scrivito_sdk/common/index.ts + 62 modules
+var common = __webpack_require__(5204);
 ;// CONCATENATED MODULE: ./scrivito_sdk/loadable/load_handler.ts
 
 
@@ -13459,8 +13503,8 @@ function observeAndLoad(loadableExpression) {
 
 
 
-function load_load(loadableFunction, ...excessArgs) {
-  checkLoad(loadableFunction, ...excessArgs);
+function load_load(loadableFunction) {
+  checkLoad(loadableFunction);
   return observeAndLoad(
     () => (0,state/* withFrozenState */.Ij)(
       {
@@ -13471,13 +13515,15 @@ function load_load(loadableFunction, ...excessArgs) {
     )
   ).filter((observed) => !observed.meta.incomplete && !observed.meta.outdated).waitForFirst().then(getValueOrThrowError);
 }
-const checkLoad = (0,common/* checkArgumentsFor */.eY)(
-  "load",
-  [["loadableFunction", common/* tcomb.Function */.Uw.Function]],
-  {
-    docPermalink: "js-sdk/load"
+function checkLoad(loadableFunction) {
+  if (typeof loadableFunction !== "function") {
+    (0,common/* throwInvalidArgumentsError */.Ht)(
+      "Scrivito.load",
+      "Use an async callback: Scrivito.load(/* ... */).then(/* ... */).",
+      { docPermalink: "js-sdk/load" }
+    );
   }
-);
+}
 
 ;// CONCATENATED MODULE: ./scrivito_sdk/loadable/loader_callback_process.ts
 
@@ -14568,7 +14614,7 @@ function withoutLoading(fn) {
 /* harmony export */ });
 /* unused harmony exports setCurrentWorkspaceId, resetCurrentWorkspaceId */
 /* harmony import */ var scrivito_sdk_client__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(853);
-/* harmony import */ var scrivito_sdk_common__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(2838);
+/* harmony import */ var scrivito_sdk_common__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(5204);
 
 
 
@@ -14593,7 +14639,7 @@ function resetCurrentWorkspaceId() {
 
 /***/ }),
 
-/***/ 3781:
+/***/ 4360:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 
@@ -14605,17 +14651,11 @@ __webpack_require__.d(__webpack_exports__, {
   Ei: () => (/* reexport */ BasicObjSearch),
   $R: () => (/* reexport */ BasicWidget),
   yI: () => (/* reexport */ Binary),
-  ac: () => (/* reexport */ BinaryType),
   HX: () => (/* reexport */ DataLocator),
   Wc: () => (/* reexport */ FULL_TEXT_OPERATORS),
   HI: () => (/* reexport */ FutureBinary),
-  J: () => (/* reexport */ LinkType),
   gT: () => (/* reexport */ MetadataCollection),
-  we: () => (/* reexport */ OPERATORS),
-  iv: () => (/* reexport */ ObjSearchType),
-  aT: () => (/* reexport */ ObjType),
   Wk: () => (/* reexport */ ObjUnavailable),
-  xO: () => (/* reexport */ WidgetType),
   aR: () => (/* reexport */ Workspace),
   uz: () => (/* reexport */ allSitesAndGlobal),
   AR: () => (/* reexport */ assertValidDataIdentifier),
@@ -14637,6 +14677,9 @@ __webpack_require__.d(__webpack_exports__, {
   Mp: () => (/* reexport */ getRootObjFrom),
   gP: () => (/* reexport */ isDataLocatorValueViaFilter),
   Wf: () => (/* reexport */ isValidDataIdentifier),
+  kq: () => (/* reexport */ isWrappingBasicContent),
+  fZ: () => (/* reexport */ isWrappingBasicLink),
+  mD: () => (/* reexport */ isWrappingBasicObj),
   aG: () => (/* reexport */ objSpaceScope),
   Wr: () => (/* reexport */ objSpaceScopeExcludingDeleted),
   Vg: () => (/* reexport */ restrictToContent),
@@ -14650,18 +14693,95 @@ __webpack_require__.d(__webpack_exports__, {
   rF: () => (/* reexport */ wantsAutoAttributeConversion)
 });
 
-// UNUSED EXPORTS: BasicObjFacetValue, CMS_ATTRIBUTE_TYPES, isCurrentWorkspacePublished, isDataLocatorValueOrOperatorFilter, isDataLocatorValueVia, normalizedRestriction, resetCurrentWorkspaceId, restrictToGlobal, serializeAttributes, setBinaryHandler, setCopyObjHandler, setCurrentWorkspaceId
+// UNUSED EXPORTS: BasicObjFacetValue, CMS_ATTRIBUTE_TYPES, OPERATORS, isCurrentWorkspacePublished, isDataLocatorValueOrOperatorFilter, isDataLocatorValueVia, isWrappingBasicWidget, normalizedRestriction, resetCurrentWorkspaceId, restrictToGlobal, serializeAttributes, setBinaryHandler, setCopyObjHandler, setCurrentWorkspaceId
 
 // EXTERNAL MODULE: ../node_modules/lodash-es/mapValues.js
 var mapValues = __webpack_require__(5796);
 // EXTERNAL MODULE: ./scrivito_sdk/client/index.ts + 38 modules
 var client = __webpack_require__(853);
-// EXTERNAL MODULE: ./scrivito_sdk/common/index.ts + 64 modules
-var common = __webpack_require__(2838);
-// EXTERNAL MODULE: ../node_modules/lodash-es/intersection.js + 2 modules
-var intersection = __webpack_require__(8655);
-// EXTERNAL MODULE: ../node_modules/lodash-es/pick.js + 2 modules
-var pick = __webpack_require__(2703);
+// EXTERNAL MODULE: ./scrivito_sdk/common/index.ts + 62 modules
+var common = __webpack_require__(5204);
+// EXTERNAL MODULE: ../node_modules/lodash-es/_arrayMap.js
+var _arrayMap = __webpack_require__(7148);
+// EXTERNAL MODULE: ../node_modules/lodash-es/_SetCache.js + 2 modules
+var _SetCache = __webpack_require__(2764);
+// EXTERNAL MODULE: ../node_modules/lodash-es/_arrayIncludes.js + 4 modules
+var _arrayIncludes = __webpack_require__(3560);
+// EXTERNAL MODULE: ../node_modules/lodash-es/_arrayIncludesWith.js
+var _arrayIncludesWith = __webpack_require__(537);
+// EXTERNAL MODULE: ../node_modules/lodash-es/_baseUnary.js
+var _baseUnary = __webpack_require__(7869);
+// EXTERNAL MODULE: ../node_modules/lodash-es/_cacheHas.js
+var _cacheHas = __webpack_require__(3515);
+;// CONCATENATED MODULE: ../node_modules/lodash-es/_baseIntersection.js
+
+
+
+
+
+
+
+var nativeMin = Math.min;
+function baseIntersection(arrays, iteratee, comparator) {
+  var includes = comparator ? _arrayIncludesWith/* default */.A : _arrayIncludes/* default */.A, length = arrays[0].length, othLength = arrays.length, othIndex = othLength, caches = Array(othLength), maxLength = Infinity, result = [];
+  while (othIndex--) {
+    var array = arrays[othIndex];
+    if (othIndex && iteratee) {
+      array = (0,_arrayMap/* default */.A)(array, (0,_baseUnary/* default */.A)(iteratee));
+    }
+    maxLength = nativeMin(array.length, maxLength);
+    caches[othIndex] = !comparator && (iteratee || length >= 120 && array.length >= 120) ? new _SetCache/* default */.A(othIndex && array) : void 0;
+  }
+  array = arrays[0];
+  var index = -1, seen = caches[0];
+  outer:
+    while (++index < length && result.length < maxLength) {
+      var value = array[index], computed = iteratee ? iteratee(value) : value;
+      value = comparator || value !== 0 ? value : 0;
+      if (!(seen ? (0,_cacheHas/* default */.A)(seen, computed) : includes(result, computed, comparator))) {
+        othIndex = othLength;
+        while (--othIndex) {
+          var cache = caches[othIndex];
+          if (!(cache ? (0,_cacheHas/* default */.A)(cache, computed) : includes(arrays[othIndex], computed, comparator))) {
+            continue outer;
+          }
+        }
+        if (seen) {
+          seen.push(computed);
+        }
+        result.push(value);
+      }
+    }
+  return result;
+}
+/* harmony default export */ const _baseIntersection = (baseIntersection);
+
+// EXTERNAL MODULE: ../node_modules/lodash-es/_baseRest.js
+var _baseRest = __webpack_require__(414);
+// EXTERNAL MODULE: ../node_modules/lodash-es/isArrayLikeObject.js
+var isArrayLikeObject = __webpack_require__(7861);
+;// CONCATENATED MODULE: ../node_modules/lodash-es/_castArrayLikeObject.js
+
+
+function castArrayLikeObject(value) {
+  return (0,isArrayLikeObject/* default */.A)(value) ? value : [];
+}
+/* harmony default export */ const _castArrayLikeObject = (castArrayLikeObject);
+
+;// CONCATENATED MODULE: ../node_modules/lodash-es/intersection.js
+
+
+
+
+
+var intersection = (0,_baseRest/* default */.A)(function(arrays) {
+  var mapped = (0,_arrayMap/* default */.A)(arrays, _castArrayLikeObject);
+  return mapped.length && mapped[0] === arrays[0] ? _baseIntersection(mapped) : [];
+});
+/* harmony default export */ const lodash_es_intersection = (intersection);
+
+// EXTERNAL MODULE: ../node_modules/lodash-es/pick.js + 3 modules
+var pick = __webpack_require__(6913);
 ;// CONCATENATED MODULE: ./scrivito_sdk/models/auto_convert.ts
 
 
@@ -14994,7 +15114,7 @@ function deserializeEnumValue(value, typeInfo) {
 function deserializeMultienumValue(value, typeInfo) {
   if (isBackendValueOfType("stringlist", value)) {
     const [, { values }] = typeInfo;
-    return (0,intersection/* default */.A)(value[1], values);
+    return lodash_es_intersection(value[1], values);
   }
   return [];
 }
@@ -15513,10 +15633,9 @@ function buildSubQuery(fieldInput, operatorInput, valueInput) {
 function assertBoostableOperator(operator) {
   if (!BOOSTABLE_OPERATORS.includes(operator)) {
     throw new common/* ArgumentError */.c1(
-      `Boosting operator "${operator}" is invalid. ${explainValidOperators([
-        "contains",
-        "containsPrefix"
-      ])}`
+      `Boosting operator "${operator}" is invalid. ${explainValidOperators(
+        BOOSTABLE_OPERATORS
+      )}`
     );
   }
 }
@@ -15608,45 +15727,9 @@ function assertValidFacetOptions(options) {
 
 // EXTERNAL MODULE: ./scrivito_sdk/loadable/index.ts + 29 modules
 var loadable = __webpack_require__(5688);
-;// CONCATENATED MODULE: ./scrivito_sdk/models/model_types.ts
-
-
-
-
-
-
-
-const ObjType = common/* tcomb.irreducible */.Uw.irreducible(
-  "Obj",
-  (maybeObj) => isWrapping(maybeObj, BasicObj)
-);
-const WidgetType = common/* tcomb.irreducible */.Uw.irreducible(
-  "Widget",
-  (maybeWidget) => isWrapping(maybeWidget, BasicWidget)
-);
-const LinkType = common/* tcomb.irreducible */.Uw.irreducible(
-  "Link",
-  (maybeLink) => isWrapping(maybeLink, BasicLink)
-);
-const ObjSearchType = common/* tcomb.irreducible */.Uw.irreducible(
-  "ObjSearch",
-  (maybeSearch) => isWrapping(maybeSearch, BasicObjSearch)
-);
-const BinaryType = common/* tcomb.irreducible */.Uw.irreducible(
-  "Binary",
-  (maybeBinary) => maybeBinary instanceof Binary
-);
-function isWrapping(maybeWrapped, basicClass) {
-  if (!maybeWrapped) {
-    return false;
-  }
-  return maybeWrapped._scrivitoPrivateContent instanceof basicClass;
-}
-
 // EXTERNAL MODULE: ./scrivito_sdk/state/index.ts + 13 modules
 var state = __webpack_require__(1946);
 ;// CONCATENATED MODULE: ./scrivito_sdk/models/future_binary.ts
-
 
 
 
@@ -15678,8 +15761,8 @@ class FutureBinary {
     }
   }
   /** @internal */
-  into(target, ...excessArgs) {
-    checkInto(target, ...excessArgs);
+  into(target) {
+    checkInto(target);
     (0,state/* failIfFrozen */.q2)("Changing CMS content");
     return this.intoId(target._scrivitoPrivateContent.id());
   }
@@ -15708,13 +15791,15 @@ class FutureBinary {
     return binaryPromise.then(({ id }) => new Binary(id, (0,current_workspace_id/* currentObjSpaceId */.eb)()));
   }
 }
-const checkInto = (0,common/* checkArgumentsFor */.eY)(
-  "FutureBinary#into",
-  [["target", ObjType]],
-  {
-    docPermalink: "js-sdk/FutureBinary-into"
+function checkInto(target) {
+  if (!isWrappingBasicObj(target)) {
+    (0,common/* throwInvalidArgumentsError */.Ht)(
+      "FutureBinary#into",
+      "'target' must be an instance of 'Obj'.",
+      { docPermalink: "js-sdk/FutureBinary-into" }
+    );
   }
-);
+}
 function isIdToCopySource(toCheck) {
   return !!toCheck.idToCopy;
 }
@@ -15805,7 +15890,7 @@ const loadableCollection = (0,loadable/* createLoadableCollection */.rL)({
 });
 function deserializeMetadata(response) {
   const backendMetadata = response.meta_data;
-  if (!(0,common/* isObject */.n_)(backendMetadata)) {
+  if (!(0,common/* isObject */.Gv)(backendMetadata)) {
     throw new common/* InternalError */.Gd();
   }
   const metadata = {};
@@ -15891,9 +15976,9 @@ class Binary {
     );
   }
   /** @internal */
-  static upload(source, options, ...excessArgs) {
-    checkUpload(source, options, ...excessArgs);
-    if (!common/* FileType */.pt.is(source)) {
+  static upload(source, options) {
+    checkUpload(source, options);
+    if (!(0,common/* isFile */.fo)(source)) {
       if (!(options && options.filename)) {
         throw new common/* ArgumentError */.c1(
           "Expected a filename to be passed with Blob as the source."
@@ -16016,25 +16101,31 @@ class Binary {
     return !!this._transformation;
   }
 }
-const BinaryOptionsType = common/* tcomb.interface */.Uw["interface"]({
-  contentType: common/* tcomb.maybe */.Uw.maybe(common/* tcomb.String */.Uw.String),
-  filename: common/* tcomb.maybe */.Uw.maybe(common/* tcomb.String */.Uw.String)
-});
-const SourceType = common/* tcomb.refinement */.Uw.refinement(
-  common/* tcomb.Object */.Uw.Object,
-  (value) => common/* BlobType */.Gv.is(value) || common/* FileType */.pt.is(value),
-  "Blob or File"
-);
-const checkUpload = (0,common/* checkArgumentsFor */.eY)(
-  "Binary.upload",
-  [
-    ["source", SourceType],
-    ["options", common/* tcomb.maybe */.Uw.maybe(BinaryOptionsType)]
-  ],
-  {
-    docPermalink: "js-sdk/Binary-static-upload"
+function checkUpload(source, options) {
+  if (!((0,common/* isBlob */.qf)(source) || (0,common/* isFile */.fo)(source))) {
+    (0,common/* throwInvalidArgumentsError */.Ht)(
+      "Binary.upload",
+      "'source' must be a 'Blob' or a 'File'.",
+      { docPermalink: "js-sdk/Binary-static-upload" }
+    );
   }
-);
+  if (options) {
+    if ("contentType" in options && typeof options.contentType !== "string") {
+      (0,common/* throwInvalidArgumentsError */.Ht)(
+        "Binary.upload",
+        "'options.contentType' must be a 'String'.",
+        { docPermalink: "js-sdk/Binary-static-upload" }
+      );
+    }
+    if ("filename" in options && typeof options.filename !== "string") {
+      (0,common/* throwInvalidArgumentsError */.Ht)(
+        "Binary.upload",
+        "'options.filename' must be a 'String'.",
+        { docPermalink: "js-sdk/Binary-static-upload" }
+      );
+    }
+  }
+}
 
 ;// CONCATENATED MODULE: ./scrivito_sdk/models/basic_scope_create_methods.ts
 
@@ -16816,10 +16907,10 @@ class DataLocator {
   }
 }
 function isDataLocatorValueViaFilter(filter) {
-  return (0,common/* isObject */.n_)(filter) && typeof filter.field === "string" && isDataLocatorValueVia(filter.value_via);
+  return (0,common/* isObject */.Gv)(filter) && typeof filter.field === "string" && isDataLocatorValueVia(filter.value_via);
 }
 function isDataLocatorValueVia(valueVia) {
-  return (0,common/* isObject */.n_)(valueVia) && typeof valueVia.class === "string" && typeof valueVia.field === "string";
+  return (0,common/* isObject */.Gv)(valueVia) && typeof valueVia.class === "string" && typeof valueVia.field === "string";
 }
 function isDataLocatorValueOrOperatorFilter(filter) {
   return isDataLocatorValueFilter(filter) || isDataLocatorOperatorFilter(filter);
@@ -17068,7 +17159,7 @@ function isStringOrNumberArray(value) {
 function isValidLinkInputValue(value) {
   if (value instanceof BasicLink)
     return !value.isEmpty();
-  if (!(0,common/* isObject */.n_)(value))
+  if (!(0,common/* isObject */.Gv)(value))
     return false;
   if ((0,isEmpty/* default */.A)(Object.values(value).filter(Boolean)))
     return false;
@@ -17967,6 +18058,25 @@ function assertValidDataIdentifier(key) {
   }
 }
 
+;// CONCATENATED MODULE: ./scrivito_sdk/models/is_wrapping_basic_content.ts
+
+
+
+
+
+function isWrappingBasicContent(subject) {
+  return isWrappingBasicObj(subject) || isWrappingBasicWidget(subject);
+}
+function isWrappingBasicObj(subject) {
+  return (0,common/* isWrapping */.zB)(subject, BasicObj);
+}
+function isWrappingBasicWidget(subject) {
+  return (0,common/* isWrapping */.zB)(subject, BasicWidget);
+}
+function isWrappingBasicLink(subject) {
+  return (0,common/* isWrapping */.zB)(subject, BasicLink);
+}
+
 ;// CONCATENATED MODULE: ./scrivito_sdk/models/index.ts
 
 
@@ -18023,7 +18133,7 @@ function assertValidDataIdentifier(key) {
 /* harmony export */   e_: () => (/* binding */ areLayoutComponentsStored),
 /* harmony export */   oC: () => (/* binding */ getLayoutComponentForAppClass)
 /* harmony export */ });
-/* harmony import */ var scrivito_sdk_common__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(2838);
+/* harmony import */ var scrivito_sdk_common__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(5204);
 /* harmony import */ var scrivito_sdk_state__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(1946);
 
 
@@ -18131,12 +18241,12 @@ const AutomaticDataContext = (0,scrivito_sdk_react_connect__WEBPACK_IMPORTED_MOD
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(4924);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var scrivito_sdk_app_support_editing_context__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(1616);
-/* harmony import */ var scrivito_sdk_common__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(2838);
+/* harmony import */ var scrivito_sdk_common__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(5204);
 /* harmony import */ var scrivito_sdk_react_component_registry__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(5649);
 /* harmony import */ var scrivito_sdk_react_components_automatic_data_context__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(843);
 /* harmony import */ var scrivito_sdk_react_components_widget_tag__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(2934);
 /* harmony import */ var scrivito_sdk_react_connect_and_memoize__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(6031);
-/* harmony import */ var scrivito_sdk_realm__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(3340);
+/* harmony import */ var scrivito_sdk_realm__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(7461);
 
 var __defProp = Object.defineProperty;
 var __defProps = Object.defineProperties;
@@ -18343,9 +18453,9 @@ function connectAndMemoize(component) {
 /* harmony export */ });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(4924);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var scrivito_sdk_data_integration__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(9900);
-/* harmony import */ var scrivito_sdk_models__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(3781);
-/* harmony import */ var scrivito_sdk_realm__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(3340);
+/* harmony import */ var scrivito_sdk_data_integration__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(9800);
+/* harmony import */ var scrivito_sdk_models__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(4360);
+/* harmony import */ var scrivito_sdk_realm__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(7461);
 
 var __defProp = Object.defineProperty;
 var __getOwnPropSymbols = Object.getOwnPropertySymbols;
@@ -18489,7 +18599,7 @@ function hasComponent(name) {
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   u: () => (/* binding */ useDataLocator)
 /* harmony export */ });
-/* harmony import */ var scrivito_sdk_data_integration__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(9900);
+/* harmony import */ var scrivito_sdk_data_integration__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(9800);
 /* harmony import */ var scrivito_sdk_react_data_context_container__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(4686);
 
 
@@ -18592,8 +18702,6 @@ var widget_tag = __webpack_require__(2934);
 var memo = __webpack_require__(9576);
 // EXTERNAL MODULE: ./scrivito_sdk/react_connect/index.ts + 7 modules
 var react_connect = __webpack_require__(3602);
-// EXTERNAL MODULE: ./scrivito_sdk/realm/index.ts + 22 modules
-var realm = __webpack_require__(3340);
 ;// CONCATENATED MODULE: ./scrivito_sdk/react/provide_component.ts
 
 
@@ -18602,9 +18710,7 @@ var realm = __webpack_require__(3340);
 
 
 
-
-function provideComponent(classNameOrClass, component, options, ...excessArgs) {
-  (0,realm/* checkProvideComponent */.RJ)(classNameOrClass, component, ...excessArgs);
+function provideComponent(classNameOrClass, component, options) {
   const className = (0,get_class_name/* getClassName */.u)(classNameOrClass);
   if (isComponentMissingName(component)) {
     component.displayName = className;
@@ -18640,10 +18746,12 @@ function isComponentMissingName(component) {
   return !component.displayName && (!component.name || component.name === "_class" || component.name.substring(0, 6) === "class_");
 }
 
-// EXTERNAL MODULE: ./scrivito_sdk/common/index.ts + 64 modules
-var common = __webpack_require__(2838);
+// EXTERNAL MODULE: ./scrivito_sdk/common/index.ts + 62 modules
+var common = __webpack_require__(5204);
 // EXTERNAL MODULE: ./scrivito_sdk/react/connect_and_memoize.ts
 var connect_and_memoize = __webpack_require__(6031);
+// EXTERNAL MODULE: ./scrivito_sdk/realm/index.ts + 21 modules
+var realm = __webpack_require__(7461);
 ;// CONCATENATED MODULE: ./scrivito_sdk/react/provide_layout_component.ts
 
 
@@ -18652,8 +18760,7 @@ var connect_and_memoize = __webpack_require__(6031);
 
 
 
-function provideLayoutComponent(objClass, component, ...excessArgs) {
-  (0,realm/* checkProvideLayoutComponent */.V4)(objClass, component, ...excessArgs);
+function provideLayoutComponent(objClass, component) {
   if (!(0,realm/* isObjClass */.I6)(objClass)) {
     (0,common/* throwInvalidArgumentsError */.Ht)(
       "provideLayoutComponent",
@@ -18671,9 +18778,7 @@ function provideLayoutComponent(objClass, component, ...excessArgs) {
 
 
 
-
-function provideDataErrorComponent(component, ...excessArgs) {
-  (0,realm/* checkProvideDataErrorComponent */.d_)(component, ...excessArgs);
+function provideDataErrorComponent(component) {
   (0,component_registry/* registerDataErrorComponent */.Jo)((0,connect_and_memoize/* connectAndMemoize */.M)(component));
 }
 
@@ -18841,8 +18946,8 @@ class BackgroundImageDecoder {
 
 // EXTERNAL MODULE: ./scrivito_sdk/app_support/scale_down_binary.ts
 var scale_down_binary = __webpack_require__(6409);
-// EXTERNAL MODULE: ./scrivito_sdk/models/index.ts + 41 modules
-var models = __webpack_require__(3781);
+// EXTERNAL MODULE: ./scrivito_sdk/models/index.ts + 44 modules
+var models = __webpack_require__(4360);
 ;// CONCATENATED MODULE: ./scrivito_sdk/react/components/background_image_tag.tsx
 
 var __defProp = Object.defineProperty;
@@ -18883,41 +18988,6 @@ var __objRest = (source, exclude) => {
 
 
 
-const ValidPlainBackground = common/* tcomb.interface */.Uw["interface"]({
-  image: common/* tcomb.String */.Uw.String,
-  attachment: common/* tcomb.maybe */.Uw.maybe(common/* tcomb.String */.Uw.String),
-  clip: common/* tcomb.maybe */.Uw.maybe(common/* tcomb.String */.Uw.String),
-  color: common/* tcomb.maybe */.Uw.maybe(common/* tcomb.String */.Uw.String),
-  origin: common/* tcomb.maybe */.Uw.maybe(common/* tcomb.String */.Uw.String),
-  position: common/* tcomb.maybe */.Uw.maybe(common/* tcomb.String */.Uw.String),
-  repeat: common/* tcomb.maybe */.Uw.maybe(common/* tcomb.String */.Uw.String),
-  size: common/* tcomb.maybe */.Uw.maybe(common/* tcomb.String */.Uw.String)
-});
-const ValidScrivitoBackground = common/* tcomb.interface */.Uw["interface"]({
-  image: common/* tcomb.union */.Uw.union([models/* BinaryType */.ac, models/* ObjType */.aT, common/* tcomb.String */.Uw.String, common/* tcomb.Nil */.Uw.Nil]),
-  attachment: common/* tcomb.maybe */.Uw.maybe(common/* tcomb.enums */.Uw.enums.of(["fixed", "scroll"])),
-  clip: common/* tcomb.maybe */.Uw.maybe(common/* tcomb.enums */.Uw.enums.of(["border-box"])),
-  color: common/* tcomb.maybe */.Uw.maybe(common/* tcomb.enums */.Uw.enums.of(["transparent"])),
-  origin: common/* tcomb.maybe */.Uw.maybe(common/* tcomb.enums */.Uw.enums.of(["padding-box"])),
-  position: common/* tcomb.maybe */.Uw.maybe(common/* tcomb.String */.Uw.String),
-  repeat: common/* tcomb.maybe */.Uw.maybe(common/* tcomb.enums */.Uw.enums.of(["no-repeat"])),
-  size: common/* tcomb.maybe */.Uw.maybe(common/* tcomb.enums */.Uw.enums.of(["contain", "cover"]))
-});
-const ValidBackground = common/* tcomb.union */.Uw.union([
-  ValidPlainBackground,
-  ValidScrivitoBackground
-]);
-ValidBackground.dispatch = (background) => {
-  return isPlainBackground(background) ? ValidPlainBackground : ValidScrivitoBackground;
-};
-const ValidBackgroundList = common/* tcomb.list */.Uw.list(ValidBackground);
-const ValidBackgroundOrBackgroundList = common/* tcomb.union */.Uw.union([
-  ValidBackground,
-  ValidBackgroundList
-]);
-ValidBackgroundOrBackgroundList.dispatch = (background) => {
-  return Array.isArray(background) ? ValidBackgroundList : ValidBackground;
-};
 const BackgroundImageTag = (0,react_connect/* connect */.Ng)(function BackgroundImageTag2(_a) {
   var _b = _a, {
     style,
@@ -18953,7 +19023,7 @@ function createBackgroundImageDecoder(onUpdateCallback) {
   return new BackgroundImageDecoder(onUpdateCallback);
 }
 function calculateCSSProperties(style, binaryToUrl) {
-  if ((0,common/* isObject */.n_)(style)) {
+  if ((0,common/* isObject */.Gv)(style)) {
     const _a = style, { background } = _a, otherStyles = __objRest(_a, ["background"]);
     return __spreadValues(__spreadValues({}, otherStyles), calculateBackgroundCSSProperties(background, binaryToUrl));
   }
@@ -19041,7 +19111,7 @@ function isPlainBackground(background) {
   return typeof background.image === "string";
 }
 function assertNoBackgroundRelatedProperties(style) {
-  if ((0,common/* isObject */.n_)(style)) {
+  if ((0,common/* isObject */.Gv)(style)) {
     for (const key of Object.keys(style)) {
       if (key.match(/^background.+/)) {
         (0,common/* throwNextTick */.JL)(
@@ -19068,8 +19138,8 @@ var get_details_page_url = __webpack_require__(2117);
 var navigate_to = __webpack_require__(3721);
 // EXTERNAL MODULE: ./scrivito_sdk/app_support/ui_adapter.ts
 var ui_adapter = __webpack_require__(5460);
-// EXTERNAL MODULE: ./scrivito_sdk/data_integration/index.ts + 28 modules
-var data_integration = __webpack_require__(9900);
+// EXTERNAL MODULE: ./scrivito_sdk/data_integration/index.ts + 13 modules
+var data_integration = __webpack_require__(9800);
 // EXTERNAL MODULE: ./scrivito_sdk/loadable/index.ts + 29 modules
 var loadable = __webpack_require__(5688);
 // EXTERNAL MODULE: ./scrivito_sdk/react/data_context_container.tsx
@@ -19684,7 +19754,7 @@ const AttributeValue = (0,react_connect/* connect */.Ng)(
   )
 );
 function isCustomInnerHtml(maybeCustomInnerHtml) {
-  return (0,common/* isObject */.n_)(maybeCustomInnerHtml) && typeof maybeCustomInnerHtml.__html === "string";
+  return (0,common/* isObject */.Gv)(maybeCustomInnerHtml) && typeof maybeCustomInnerHtml.__html === "string";
 }
 function renderPropsForField(field, customChildrenFromProps, customInnerHtml, customOnClick, widgetProps, dataContextContainer) {
   const dataStack = dataContextContainer == null ? void 0 : dataContextContainer.dataStack;
@@ -20665,7 +20735,7 @@ const IsInsideLayoutContext = react__WEBPACK_IMPORTED_MODULE_0__.createContext(t
 /* harmony export */ });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(4924);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var scrivito_sdk_common__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(2838);
+/* harmony import */ var scrivito_sdk_common__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(5204);
 
 
 
@@ -20693,8 +20763,8 @@ __webpack_require__.d(__webpack_exports__, {
 
 // EXTERNAL MODULE: external "react"
 var external_react_ = __webpack_require__(4924);
-// EXTERNAL MODULE: ./scrivito_sdk/common/index.ts + 64 modules
-var common = __webpack_require__(2838);
+// EXTERNAL MODULE: ./scrivito_sdk/common/index.ts + 62 modules
+var common = __webpack_require__(5204);
 // EXTERNAL MODULE: ./scrivito_sdk/data/index.ts + 29 modules
 var data = __webpack_require__(1091);
 // EXTERNAL MODULE: ./scrivito_sdk/loadable/index.ts + 29 modules
@@ -21074,7 +21144,7 @@ const Hibernation = ({
 
 /***/ }),
 
-/***/ 3340:
+/***/ 7461:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 
@@ -21088,9 +21158,6 @@ __webpack_require__.d(__webpack_exports__, {
   x0: () => (/* reexport */ Widget),
   Pi: () => (/* reexport */ allObjClasses),
   Yh: () => (/* reexport */ allWidgetClasses),
-  RJ: () => (/* reexport */ checkProvideComponent),
-  d_: () => (/* reexport */ checkProvideDataErrorComponent),
-  V4: () => (/* reexport */ checkProvideLayoutComponent),
   KZ: () => (/* reexport */ createObjClass),
   dl: () => (/* reexport */ createWidgetClass),
   w5: () => (/* reexport */ enableStrictSearchOperators),
@@ -21106,12 +21173,10 @@ __webpack_require__.d(__webpack_exports__, {
   Dy: () => (/* reexport */ wrapInAppClass)
 });
 
-// UNUSED EXPORTS: ObjClassType, WidgetClassType, checkProvideDataItem
-
-// EXTERNAL MODULE: ./scrivito_sdk/common/index.ts + 64 modules
-var common = __webpack_require__(2838);
-// EXTERNAL MODULE: ./scrivito_sdk/models/index.ts + 41 modules
-var models = __webpack_require__(3781);
+// EXTERNAL MODULE: ./scrivito_sdk/models/index.ts + 44 modules
+var models = __webpack_require__(4360);
+// EXTERNAL MODULE: ./scrivito_sdk/common/index.ts + 62 modules
+var common = __webpack_require__(5204);
 // EXTERNAL MODULE: ../node_modules/lodash-es/mapValues.js
 var mapValues = __webpack_require__(5796);
 // EXTERNAL MODULE: ../node_modules/lodash-es/pickBy.js + 5 modules
@@ -21711,8 +21776,7 @@ class ObjSearch {
     return wrapInAppClass(basicObj);
   }
   /** @internal */
-  take(count, ...excessArgs) {
-    checkTakeArguments(count, ...excessArgs);
+  take(count) {
     const basicObjs = count === void 0 ? this._scrivitoPrivateContent.dangerouslyUnboundedTake() : this._scrivitoPrivateContent.take(count);
     return basicObjs.map((obj) => wrapInAppClass(obj));
   }
@@ -21768,36 +21832,28 @@ function unwrapAppClassValue(value) {
     return value.map((v) => unwrapAppClass(v));
   return unwrapAppClass(value);
 }
-const OperatorAllowedInNonFullTextSearch = common/* tcomb.refinement */.Uw.refinement(
-  common/* tcomb.String */.Uw.String,
-  (searchOperator) => models/* FULL_TEXT_OPERATORS */.Wc.indexOf(searchOperator) === -1,
-  'Search operators except "contains" and "containsPrefix"'
-);
 function checkNonFullTextSearchOperator(functionName, operator, docPermalink) {
-  return (0,common/* checkArgumentsFor */.eY)(
-    functionName,
-    [["operator", common/* tcomb.maybe */.Uw.maybe(OperatorAllowedInNonFullTextSearch)]],
-    {
-      docPermalink
-    }
-  )(operator);
+  if (models/* FULL_TEXT_OPERATORS */.Wc.indexOf(operator) !== -1) {
+    (0,common/* throwInvalidArgumentsError */.Ht)(
+      functionName,
+      `operator '${operator}' must be a search operator except: ${models/* FULL_TEXT_OPERATORS */.Wc.join(
+        ", "
+      )}`,
+      { docPermalink }
+    );
+  }
 }
 function checkFullTextSearchOperator(functionName, operator, docPermalink) {
-  return (0,common/* checkArgumentsFor */.eY)(
-    functionName,
-    [["operator", common/* tcomb.maybe */.Uw.maybe(common/* tcomb.enums */.Uw.enums.of(models/* FULL_TEXT_OPERATORS */.Wc))]],
-    {
-      docPermalink
-    }
-  )(operator);
-}
-const checkTakeArguments = (0,common/* checkArgumentsFor */.eY)(
-  "objSearch.take",
-  [["count", common/* tcomb.maybe */.Uw.maybe(common/* NonNegativeInteger */.NV)]],
-  {
-    docPermalink: "js-sdk/ObjSearch-take"
+  if (models/* FULL_TEXT_OPERATORS */.Wc.indexOf(operator) === -1) {
+    (0,common/* throwInvalidArgumentsError */.Ht)(
+      functionName,
+      `operator '${operator}' must be a full text search operator: ${models/* FULL_TEXT_OPERATORS */.Wc.join(
+        ", "
+      )}`,
+      { docPermalink }
+    );
   }
-);
+}
 
 ;// CONCATENATED MODULE: ./scrivito_sdk/realm/basic_site_context.ts
 
@@ -21965,8 +22021,8 @@ function assertValidCreateAttributes(attributes) {
   }
 }
 function assertValidFile(file) {
-  if (!common/* FileType */.pt.is(file)) {
-    if (common/* BlobType */.Gv.is(file)) {
+  if (!(0,common/* isFile */.fo)(file)) {
+    if ((0,common/* isBlob */.qf)(file)) {
       throw new common/* ArgumentError */.c1(
         'Creating CMS objects from file is only available with instances of "File", but an instance of "Blob" is given'
       );
@@ -21988,7 +22044,6 @@ function setCurrentSiteIdHandler(handler) {
 }
 
 ;// CONCATENATED MODULE: ./scrivito_sdk/realm/obj.ts
-
 
 
 
@@ -22062,7 +22117,6 @@ class Obj {
     return getSiteContext(this, models/* allSitesAndGlobal */.uz);
   }
   static onSite(siteId) {
-    checkObjOnSite(siteId);
     return getSiteContext(this, (0,models/* restrictToSiteAndGlobal */.y7)(siteId));
   }
   id() {
@@ -22082,7 +22136,6 @@ class Obj {
     return wrapInAppClass((0,models/* versionsOnAllSites */.GY)(this._scrivitoPrivateContent));
   }
   versionOnSite(siteId) {
-    checkVersionOnSite(siteId);
     return wrapInAppClass((0,models/* versionOnSite */.$9)(this._scrivitoPrivateContent, siteId));
   }
   createdAt() {
@@ -22176,8 +22229,7 @@ class Obj {
     this._scrivitoPrivateContent.unrestrict();
   }
   /** @internal */
-  updateReferences(mapping, ...excessArgs) {
-    checkUpdateReferences(mapping, ...excessArgs);
+  updateReferences(mapping) {
     return (0,models/* updateReferences */.s8)(this._scrivitoPrivateContent, mapping);
   }
   widget(id) {
@@ -22206,23 +22258,6 @@ class Obj {
     return schema.normalizedAttributes();
   }
 }
-const checkObjOnSite = (0,common/* checkArgumentsFor */.eY)("Obj.onSite", [["siteId", common/* tcomb.String */.Uw.String]], {
-  docPermalink: "js-sdk/Obj-static-onSite"
-});
-const checkUpdateReferences = (0,common/* checkArgumentsFor */.eY)(
-  "obj.updateReferences",
-  [["mapping", common/* tcomb.Function */.Uw.Function]],
-  {
-    docPermalink: "js-sdk/Obj-updateReferences"
-  }
-);
-const checkVersionOnSite = (0,common/* checkArgumentsFor */.eY)(
-  "obj.versionOnSite",
-  [["siteId", common/* tcomb.String */.Uw.String]],
-  {
-    docPermalink: "js-sdk/Obj-versionOnSite"
-  }
-);
 
 // EXTERNAL MODULE: ../node_modules/lodash-es/difference.js + 1 modules
 var difference = __webpack_require__(5435);
@@ -22331,104 +22366,17 @@ function objIdFromObjValue(obj) {
   return unwrapAppClass(obj).id();
 }
 
-;// CONCATENATED MODULE: ./scrivito_sdk/realm/tcomb_api_types.ts
-
-
-
-const ObjClassType = common/* tcomb.refinement */.Uw.refinement(
-  common/* tcomb.Function */.Uw.Function,
-  isAppClass,
-  "ObjClass"
-);
-const WidgetClassType = common/* tcomb.refinement */.Uw.refinement(
-  common/* tcomb.Function */.Uw.Function,
-  isAppClass,
-  "WidgetClass"
-);
-
 ;// CONCATENATED MODULE: ./scrivito_sdk/realm/app_class_api_check.ts
 
 
-
-const noop = () => {
-};
-const {
-  checkProvideComponent,
-  checkProvideLayoutComponent,
-  checkProvideDataErrorComponent,
-  checkProvideDataItem
-} = (() => {
-  if (process.env.NODE_ENV !== "development") {
-    return {
-      checkProvideComponent: noop,
-      checkProvideLayoutComponent: noop,
-      checkProvideDataErrorComponent: noop,
-      checkProvideDataItem: noop
-    };
-  }
-  return {
-    checkProvideComponent: (0,common/* checkArgumentsFor */.eY)(
-      "provideComponent",
-      [
-        [
-          "classNameOrClass",
-          common/* tcomb.union */.Uw.union([common/* tcomb.String */.Uw.String, ObjClassType, WidgetClassType])
-        ],
-        ["component", common/* tcomb.irreducible */.Uw.irreducible("React component", isFunction)]
-      ],
-      {
-        docPermalink: "js-sdk/provideComponent"
-      }
-    ),
-    checkProvideLayoutComponent: (0,common/* checkArgumentsFor */.eY)(
-      "provideLayoutComponent",
-      [
-        ["objClass", ObjClassType],
-        ["component", common/* tcomb.irreducible */.Uw.irreducible("React component", isFunction)]
-      ],
-      {
-        docPermalink: "js-sdk/provideLayoutComponent"
-      }
-    ),
-    checkProvideDataErrorComponent: (0,common/* checkArgumentsFor */.eY)(
-      "provideDataErrorComponent",
-      [["component", common/* tcomb.irreducible */.Uw.irreducible("React component", isFunction)]],
-      {
-        docPermalink: "js-sdk/provideDataErrorComponent"
-      }
-    ),
-    checkProvideDataItem: (0,common/* checkArgumentsFor */.eY)(
-      "provideDataItem",
-      [
-        ["name", common/* tcomb.String */.Uw.String],
-        [
-          "connection",
-          common/* tcomb.interface */.Uw["interface"]({
-            get: common/* tcomb.Function */.Uw.Function,
-            update: common/* tcomb.maybe */.Uw.maybe(common/* tcomb.Function */.Uw.Function)
-          })
-        ]
-      ],
-      {
-        docPermalink: "js-sdk/provideDataItem"
-      }
-    )
-  };
-})();
-function isFunction(fn) {
-  return typeof fn === "function";
-}
-function isCustomAttributeName(name) {
-  return /^[a-z](_+[A-Z0-9]|[A-Za-z0-9])*$/.test(name) && (0,common/* underscore */.z9)(name).length <= 50;
-}
-function assertCustomAttributeName(name, target) {
-  if (isCustomAttributeName(name))
-    return;
-  (0,common/* throwInvalidArgumentsError */.Ht)(
-    target,
-    `attribute name "${name}" is invalid. Must be a string (alphanumeric, starting with a lower-case character).`,
-    { docPermalink: `'js-sdk/${target}'` }
-  );
+function validateAttributeDefinitions(attributeDefinitions, target) {
+  Object.entries(attributeDefinitions).forEach(([name, definition]) => {
+    assertCustomAttributeName(name, target);
+    const [attributeType, attributeTypeOptions] = definition;
+    if (attributeType === "widgetlist" && typeof attributeTypeOptions !== "string") {
+      assertWidgetlistDefinition(name, attributeTypeOptions, target);
+    }
+  });
 }
 function assertWidgetlistDefinition(name, options, target) {
   if (options.maximum !== void 0) {
@@ -22442,14 +22390,17 @@ function assertWidgetlistDefinition(name, options, target) {
     );
   }
 }
-function validateAttributeDefinitions(attributeDefinitions, target) {
-  Object.entries(attributeDefinitions).forEach(([name, definition]) => {
-    assertCustomAttributeName(name, target);
-    const [attributeType, attributeTypeOptions] = definition;
-    if (attributeType === "widgetlist" && typeof attributeTypeOptions !== "string") {
-      assertWidgetlistDefinition(name, attributeTypeOptions, target);
-    }
-  });
+function assertCustomAttributeName(name, target) {
+  if (isCustomAttributeName(name))
+    return;
+  (0,common/* throwInvalidArgumentsError */.Ht)(
+    target,
+    `attribute name "${name}" is invalid. Must be a string (alphanumeric, starting with a lower-case character).`,
+    { docPermalink: `'js-sdk/${target}'` }
+  );
+}
+function isCustomAttributeName(name) {
+  return /^[a-z](_+[A-Z0-9]|[A-Za-z0-9])*$/.test(name) && (0,common/* underscore */.z9)(name).length <= 50;
 }
 
 ;// CONCATENATED MODULE: ./scrivito_sdk/realm/assert_valid_extract_text_attributes.ts
@@ -22686,8 +22637,6 @@ function isObjClass(klass) {
 
 
 
-
-
 /***/ }),
 
 /***/ 6830:
@@ -22730,8 +22679,8 @@ __webpack_require__.d(__webpack_exports__, {
 
 // UNUSED EXPORTS: StateChangePreventedError, StateReference, createNotificationCounter, listenerCount, resetGlobalState
 
-// EXTERNAL MODULE: ./scrivito_sdk/common/index.ts + 64 modules
-var common = __webpack_require__(2838);
+// EXTERNAL MODULE: ./scrivito_sdk/common/index.ts + 62 modules
+var common = __webpack_require__(5204);
 ;// CONCATENATED MODULE: ./scrivito_sdk/state/primitive_value.ts
 
 function isPrimitiveObject(value) {
@@ -25922,24 +25871,6 @@ function escape_escape(string) {
 
 /***/ }),
 
-/***/ 8314:
-/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
-
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   A: () => (__WEBPACK_DEFAULT_EXPORT__)
-/* harmony export */ });
-/* harmony import */ var _baseFlatten_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(2574);
-
-
-function flatten(array) {
-  var length = array == null ? 0 : array.length;
-  return length ? (0,_baseFlatten_js__WEBPACK_IMPORTED_MODULE_0__/* ["default"] */ .A)(array, 1) : [];
-}
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (flatten);
-
-
-/***/ }),
-
 /***/ 1085:
 /***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
 
@@ -26017,97 +25948,6 @@ function identity(value) {
   return value;
 }
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (identity);
-
-
-/***/ }),
-
-/***/ 8655:
-/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
-
-
-// EXPORTS
-__webpack_require__.d(__webpack_exports__, {
-  A: () => (/* binding */ lodash_es_intersection)
-});
-
-// EXTERNAL MODULE: ../node_modules/lodash-es/_arrayMap.js
-var _arrayMap = __webpack_require__(7148);
-// EXTERNAL MODULE: ../node_modules/lodash-es/_SetCache.js + 2 modules
-var _SetCache = __webpack_require__(2764);
-// EXTERNAL MODULE: ../node_modules/lodash-es/_arrayIncludes.js + 4 modules
-var _arrayIncludes = __webpack_require__(3560);
-// EXTERNAL MODULE: ../node_modules/lodash-es/_arrayIncludesWith.js
-var _arrayIncludesWith = __webpack_require__(537);
-// EXTERNAL MODULE: ../node_modules/lodash-es/_baseUnary.js
-var _baseUnary = __webpack_require__(7869);
-// EXTERNAL MODULE: ../node_modules/lodash-es/_cacheHas.js
-var _cacheHas = __webpack_require__(3515);
-;// CONCATENATED MODULE: ../node_modules/lodash-es/_baseIntersection.js
-
-
-
-
-
-
-
-var nativeMin = Math.min;
-function baseIntersection(arrays, iteratee, comparator) {
-  var includes = comparator ? _arrayIncludesWith/* default */.A : _arrayIncludes/* default */.A, length = arrays[0].length, othLength = arrays.length, othIndex = othLength, caches = Array(othLength), maxLength = Infinity, result = [];
-  while (othIndex--) {
-    var array = arrays[othIndex];
-    if (othIndex && iteratee) {
-      array = (0,_arrayMap/* default */.A)(array, (0,_baseUnary/* default */.A)(iteratee));
-    }
-    maxLength = nativeMin(array.length, maxLength);
-    caches[othIndex] = !comparator && (iteratee || length >= 120 && array.length >= 120) ? new _SetCache/* default */.A(othIndex && array) : void 0;
-  }
-  array = arrays[0];
-  var index = -1, seen = caches[0];
-  outer:
-    while (++index < length && result.length < maxLength) {
-      var value = array[index], computed = iteratee ? iteratee(value) : value;
-      value = comparator || value !== 0 ? value : 0;
-      if (!(seen ? (0,_cacheHas/* default */.A)(seen, computed) : includes(result, computed, comparator))) {
-        othIndex = othLength;
-        while (--othIndex) {
-          var cache = caches[othIndex];
-          if (!(cache ? (0,_cacheHas/* default */.A)(cache, computed) : includes(arrays[othIndex], computed, comparator))) {
-            continue outer;
-          }
-        }
-        if (seen) {
-          seen.push(computed);
-        }
-        result.push(value);
-      }
-    }
-  return result;
-}
-/* harmony default export */ const _baseIntersection = (baseIntersection);
-
-// EXTERNAL MODULE: ../node_modules/lodash-es/_baseRest.js
-var _baseRest = __webpack_require__(414);
-// EXTERNAL MODULE: ../node_modules/lodash-es/isArrayLikeObject.js
-var isArrayLikeObject = __webpack_require__(7861);
-;// CONCATENATED MODULE: ../node_modules/lodash-es/_castArrayLikeObject.js
-
-
-function castArrayLikeObject(value) {
-  return (0,isArrayLikeObject/* default */.A)(value) ? value : [];
-}
-/* harmony default export */ const _castArrayLikeObject = (castArrayLikeObject);
-
-;// CONCATENATED MODULE: ../node_modules/lodash-es/intersection.js
-
-
-
-
-
-var intersection = (0,_baseRest/* default */.A)(function(arrays) {
-  var mapped = (0,_arrayMap/* default */.A)(arrays, _castArrayLikeObject);
-  return mapped.length && mapped[0] === arrays[0] ? _baseIntersection(mapped) : [];
-});
-/* harmony default export */ const lodash_es_intersection = (intersection);
 
 
 /***/ }),
@@ -26560,7 +26400,7 @@ memoize.Cache = _MapCache_js__WEBPACK_IMPORTED_MODULE_0__/* ["default"] */ .A;
 
 /***/ }),
 
-/***/ 2703:
+/***/ 6913:
 /***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
 
 
@@ -26584,8 +26424,17 @@ function basePick(object, paths) {
 }
 /* harmony default export */ const _basePick = (basePick);
 
-// EXTERNAL MODULE: ../node_modules/lodash-es/flatten.js
-var flatten = __webpack_require__(8314);
+// EXTERNAL MODULE: ../node_modules/lodash-es/_baseFlatten.js + 1 modules
+var _baseFlatten = __webpack_require__(2574);
+;// CONCATENATED MODULE: ../node_modules/lodash-es/flatten.js
+
+
+function flatten(array) {
+  var length = array == null ? 0 : array.length;
+  return length ? (0,_baseFlatten/* default */.A)(array, 1) : [];
+}
+/* harmony default export */ const lodash_es_flatten = (flatten);
+
 // EXTERNAL MODULE: ../node_modules/lodash-es/_overRest.js + 1 modules
 var _overRest = __webpack_require__(3352);
 // EXTERNAL MODULE: ../node_modules/lodash-es/_setToString.js + 3 modules
@@ -26596,7 +26445,7 @@ var _setToString = __webpack_require__(6151);
 
 
 function flatRest(func) {
-  return (0,_setToString/* default */.A)((0,_overRest/* default */.A)(func, void 0, flatten/* default */.A), func + "");
+  return (0,_setToString/* default */.A)((0,_overRest/* default */.A)(func, void 0, lodash_es_flatten), func + "");
 }
 /* harmony default export */ const _flatRest = (flatRest);
 
@@ -27189,6 +27038,7 @@ __webpack_require__.d(__webpack_exports__, {
   extractText: () => (/* reexport */ extractText),
   finishLoading: () => (/* reexport */ react_connect/* finishLoading */.O$),
   getClass: () => (/* reexport */ realm/* getRealmClass */.an),
+  getDataClass: () => (/* reexport */ get_data_class/* getDataClass */.D5),
   getInstanceId: () => (/* reexport */ getInstanceId),
   isComparisonActive: () => (/* reexport */ editing_context/* isComparisonActive */.gY),
   isCurrentPage: () => (/* reexport */ current_page/* isCurrentPage */.P$),
@@ -27240,8 +27090,25 @@ __webpack_require__.d(__webpack_exports__, {
 
 // EXTERNAL MODULE: ./scrivito_sdk/app_support/current_page.ts
 var current_page = __webpack_require__(7639);
-// EXTERNAL MODULE: ./scrivito_sdk/common/index.ts + 64 modules
-var common = __webpack_require__(2838);
+// EXTERNAL MODULE: ./scrivito_sdk/models/index.ts + 44 modules
+var models = __webpack_require__(4360);
+// EXTERNAL MODULE: ./scrivito_sdk/app_support/current_app_space.ts
+var current_app_space = __webpack_require__(1048);
+;// CONCATENATED MODULE: ./scrivito_sdk/app_support/current_language.ts
+
+
+
+
+function currentLanguage() {
+  var _a, _b;
+  const siteId = (0,current_page/* currentSiteId */.OI)();
+  if (!siteId)
+    return null;
+  return (_b = (_a = (0,models/* getRootObjFrom */.Mp)((0,current_app_space/* currentAppSpace */.p)().and((0,models/* restrictToSite */.rs)(siteId)))) == null ? void 0 : _a.language()) != null ? _b : null;
+}
+
+// EXTERNAL MODULE: ./scrivito_sdk/common/index.ts + 62 modules
+var common = __webpack_require__(5204);
 ;// CONCATENATED MODULE: ./scrivito_sdk/app_support/extract_text/remove_html_tags.ts
 
 
@@ -27278,6 +27145,8 @@ function node_adapter_isRunningInBrowser() {
 var client = __webpack_require__(853);
 // EXTERNAL MODULE: ./scrivito_sdk/data/index.ts + 29 modules
 var data = __webpack_require__(1091);
+// EXTERNAL MODULE: ./scrivito_sdk/data_integration/index.ts + 13 modules
+var data_integration = __webpack_require__(9800);
 ;// CONCATENATED MODULE: external "html-to-text"
 const external_html_to_text_namespaceObject = require("html-to-text");
 ;// CONCATENATED MODULE: ./scrivito_sdk/node_support/html_to_text_for_node.ts
@@ -27458,8 +27327,6 @@ function resetAssetUrlBase() {
 
 // EXTERNAL MODULE: ./scrivito_sdk/app_support/content_tags_for_empty_attributes.ts
 var content_tags_for_empty_attributes = __webpack_require__(5015);
-// EXTERNAL MODULE: ./scrivito_sdk/app_support/current_app_space.ts
-var current_app_space = __webpack_require__(1048);
 // EXTERNAL MODULE: ./scrivito_sdk/app_support/ui_adapter.ts
 var ui_adapter = __webpack_require__(5460);
 ;// CONCATENATED MODULE: ./scrivito_sdk/app_support/logged_in_state.ts
@@ -27998,10 +27865,9 @@ function enableVisitorAuthentication() {
   cancelMissingTokenNotification = () => clearTimeout(timeoutId);
   return provider;
 }
-function setVisitorIdToken(token, ...args) {
+function setVisitorIdToken(token) {
   if (ui_adapter/* uiAdapter */.B)
     return;
-  checkSetVisitorIdToken(token, ...args);
   if (!provider) {
     throw new common/* ScrivitoError */.aS(
       `Scrivito needs to be configured to use visitor authentication before Scrivito.setVisitorIdToken can be called. Visit ${(0,common/* docUrl */.yJ)("js-sdk/configure")} and ${(0,common/* docUrl */.yJ)(DOC_LINK)} for more information.`
@@ -28013,13 +27879,6 @@ function setVisitorIdToken(token, ...args) {
 function isVisitorAuthenticationEnabled() {
   return !!provider;
 }
-const checkSetVisitorIdToken = (0,common/* checkArgumentsFor */.eY)(
-  "setVisitorIdToken",
-  [["idToken", common/* tcomb.String */.Uw.String]],
-  {
-    docPermalink: DOC_LINK
-  }
-);
 function cancelAndForgetMissingTokenNotification() {
   if (cancelMissingTokenNotification) {
     cancelMissingTokenNotification();
@@ -28034,12 +27893,8 @@ function resetVisitorAuthentication() {
 
 // EXTERNAL MODULE: ./scrivito_sdk/bridge/index.ts + 14 modules
 var bridge = __webpack_require__(2577);
-// EXTERNAL MODULE: ./scrivito_sdk/data_integration/index.ts + 28 modules
-var data_integration = __webpack_require__(9900);
-// EXTERNAL MODULE: ./scrivito_sdk/models/index.ts + 41 modules
-var models = __webpack_require__(3781);
-// EXTERNAL MODULE: ./scrivito_sdk/realm/index.ts + 22 modules
-var realm = __webpack_require__(3340);
+// EXTERNAL MODULE: ./scrivito_sdk/realm/index.ts + 21 modules
+var realm = __webpack_require__(7461);
 // EXTERNAL MODULE: ./scrivito_sdk/app_support/constraints_validation_callback.ts
 var constraints_validation_callback = __webpack_require__(1728);
 ;// CONCATENATED MODULE: ./scrivito_sdk/app_support/configure.ts
@@ -28071,64 +27926,10 @@ var constraints_validation_callback = __webpack_require__(1728);
 
 
 
-const OriginValue = common/* tcomb.refinement */.Uw.refinement(common/* tcomb.String */.Uw.String, isOrigin, "Origin String");
-function isOrigin(origin) {
-  try {
-    return new URL(origin).origin === origin;
-  } catch (e) {
-    return false;
-  }
-}
-const AllowedConfiguration = common/* tcomb.interface */.Uw["interface"]({
-  tenant: common/* tcomb.String */.Uw.String,
-  adoptUi: common/* tcomb.maybe */.Uw.maybe(common/* tcomb.union */.Uw.union([common/* tcomb.Boolean */.Uw.Boolean, OriginValue])),
-  autoConvertAttributes: common/* tcomb.maybe */.Uw.maybe(common/* tcomb.Boolean */.Uw.Boolean),
-  baseUrlForSite: common/* tcomb.maybe */.Uw.maybe(common/* tcomb.Function */.Uw.Function),
-  constraintsValidation: common/* tcomb.maybe */.Uw.maybe(common/* tcomb.Function */.Uw.Function),
-  endpoint: common/* tcomb.maybe */.Uw.maybe(common/* tcomb.String */.Uw.String),
-  extensionsUrl: common/* tcomb.maybe */.Uw.maybe(common/* tcomb.String */.Uw.String),
-  homepage: common/* tcomb.maybe */.Uw.maybe(common/* tcomb.Function */.Uw.Function),
-  origin: common/* tcomb.maybe */.Uw.maybe(OriginValue),
-  routingBasePath: common/* tcomb.maybe */.Uw.maybe(common/* tcomb.String */.Uw.String),
-  siteForUrl: common/* tcomb.maybe */.Uw.maybe(common/* tcomb.Function */.Uw.Function),
-  visitorAuthentication: common/* tcomb.maybe */.Uw.maybe(common/* tcomb.Boolean */.Uw.Boolean),
-  apiKey: common/* tcomb.maybe */.Uw.maybe(
-    common/* tcomb.union */.Uw.union([
-      common/* tcomb.String */.Uw.String,
-      common/* tcomb.interface */.Uw["interface"]({
-        clientId: common/* tcomb.String */.Uw.String,
-        clientSecret: common/* tcomb.String */.Uw.String
-      })
-    ])
-  ),
-  unstable: common/* tcomb.maybe */.Uw.maybe(common/* tcomb.Object */.Uw.Object),
-  priority: common/* tcomb.maybe */.Uw.maybe(common/* tcomb.enums */.Uw.enums.of(["foreground", "background"])),
-  editorLanguage: common/* tcomb.maybe */.Uw.maybe(common/* tcomb.enums */.Uw.enums.of(["en", "de", "fr"])),
-  strictSearchOperators: common/* tcomb.maybe */.Uw.maybe(common/* tcomb.Boolean */.Uw.Boolean),
-  optimizedWidgetLoading: common/* tcomb.maybe */.Uw.maybe(common/* tcomb.Boolean */.Uw.Boolean),
-  contentTagsForEmptyAttributes: common/* tcomb.maybe */.Uw.maybe(common/* tcomb.Boolean */.Uw.Boolean),
-  iamAuthLocation: common/* tcomb.maybe */.Uw.maybe(common/* tcomb.String */.Uw.String),
-  treatLocalhostLike: common/* tcomb.maybe */.Uw.maybe(common/* tcomb.String */.Uw.String),
-  activateDataIntegration: common/* tcomb.maybe */.Uw.maybe(common/* tcomb.Boolean */.Uw.Boolean)
-});
-const PUBLIC_FUNCTION_NAME = "configure";
-const CHECK_ARGUMENTS_OPTIONS = { docPermalink: "js-sdk/configure" };
-const checkConfigure = (0,common/* checkArgumentsFor */.eY)(
-  PUBLIC_FUNCTION_NAME,
-  [["configuration", AllowedConfiguration]],
-  CHECK_ARGUMENTS_OPTIONS
-);
 let configDeferred = new common/* Deferred */.cY();
-function configure(configuration, ...excessArgs) {
+function configure(configuration) {
   var _a;
-  checkConfigure(configuration, ...excessArgs);
-  if (configuration.apiKey && node_adapter_isRunningInBrowser()) {
-    (0,common/* throwInvalidArgumentsError */.Ht)(
-      PUBLIC_FUNCTION_NAME,
-      'The option "apiKey" is only available under Node.js.',
-      CHECK_ARGUMENTS_OPTIONS
-    );
-  }
+  checkConfigure(configuration);
   const routingConfiguration = getCheckedRoutingConfiguration(configuration);
   setConfiguration(configuration);
   const unofficialConfiguration = configuration.unstable;
@@ -28193,6 +27994,38 @@ function resetConfiguration() {
   configDeferred = new common/* Deferred */.cY();
   client/* clientConfig */.yO.reset();
 }
+function checkConfigure(configuration) {
+  if (!configuration.tenant) {
+    throwInvalidConfigurationError("The param 'tenant' is required.");
+  }
+  if (configuration.apiKey && node_adapter_isRunningInBrowser()) {
+    throwInvalidConfigurationError(
+      "The option 'apiKey' is only available under Node.js."
+    );
+  }
+  if (configuration.origin && !isOrigin(configuration.origin)) {
+    throwInvalidConfigurationError(
+      "The option 'origin' is must be a valid origin string."
+    );
+  }
+  if (configuration.adoptUi && !(typeof configuration.adoptUi === "boolean" || isOrigin(configuration.adoptUi))) {
+    throwInvalidConfigurationError(
+      "The option 'adoptUi' is must be an origin string."
+    );
+  }
+}
+function throwInvalidConfigurationError(message) {
+  (0,common/* throwInvalidArgumentsError */.Ht)("configure", message, {
+    docPermalink: "js-sdk/configure"
+  });
+}
+function isOrigin(origin) {
+  try {
+    return new URL(origin).origin === origin;
+  } catch (e) {
+    return false;
+  }
+}
 function configureWithUi(tenant, uiAdapterClient) {
   uiAdapterClient.configureTenant({
     tenant
@@ -28255,10 +28088,8 @@ function getCheckedRoutingConfiguration({
   if (baseUrlForSite && siteForUrl) {
     if (routingBasePath || origin) {
       const presentKey = routingBasePath ? "routingBasePath" : "origin";
-      (0,common/* throwInvalidArgumentsError */.Ht)(
-        PUBLIC_FUNCTION_NAME,
-        `The '${presentKey}' cannot be combined with the "baseUrlForSite" option`,
-        CHECK_ARGUMENTS_OPTIONS
+      throwInvalidConfigurationError(
+        `The '${presentKey}' cannot be combined with the "baseUrlForSite" option`
       );
     }
     return {
@@ -28270,17 +28101,13 @@ function getCheckedRoutingConfiguration({
   if (baseUrlForSite || siteForUrl) {
     const presentKey = siteForUrl ? "siteForUrl" : "baseUrlForSite";
     const missingKey = siteForUrl ? "baseUrlForSite" : "siteForUrl";
-    (0,common/* throwInvalidArgumentsError */.Ht)(
-      PUBLIC_FUNCTION_NAME,
-      `Unexpected value for argument 'configuration': a value for '${missingKey}' is required if '${presentKey}' is present.`,
-      CHECK_ARGUMENTS_OPTIONS
+    throwInvalidConfigurationError(
+      `Unexpected value for argument 'configuration': a value for '${missingKey}' is required if '${presentKey}' is present.`
     );
   }
   if (origin !== void 0 && !isOrigin(origin)) {
-    (0,common/* throwInvalidArgumentsError */.Ht)(
-      PUBLIC_FUNCTION_NAME,
-      `Unexpected value: '${origin}' is not a valid origin.`,
-      CHECK_ARGUMENTS_OPTIONS
+    throwInvalidConfigurationError(
+      `Unexpected value: '${origin}' is not a valid origin.`
     );
   }
   return { homepageCallback, origin, routingBasePath };
@@ -28299,7 +28126,7 @@ function setAppAdapter(uiAdapterClient) {
   });
 }
 function importUiInterface() {
-  return __webpack_require__.e(/* import() */ 237).then(__webpack_require__.bind(__webpack_require__, 4147));
+  return __webpack_require__.e(/* import() */ 993).then(__webpack_require__.bind(__webpack_require__, 1107));
 }
 function warnIfNoSiteIdSelection() {
   const timeout = (0,common/* setTimeout */.wg)(
@@ -28400,6 +28227,8 @@ var initial_content_registry = __webpack_require__(6830);
 
 
 
+
+
 function initializeSdk() {
   (0,common/* setOriginProvider */.cN)(() => void 0);
   (0,realm/* setCurrentSiteIdHandler */.kI)(current_page/* currentSiteId */.OI);
@@ -28409,6 +28238,7 @@ function initializeSdk() {
   (0,initial_content_registry/* setInitialContentFor */.l)(initialize_content/* initialContentFor */.hF);
   setNodeAdapter(node_adapter_nodeAdapter);
   (0,has_component/* setHasComponentHandler */.A)(react_has_component/* hasComponent */.I);
+  (0,data_integration/* setCurrentLanguageHandler */._L)(currentLanguage);
 }
 
 // EXTERNAL MODULE: ./scrivito_sdk/react/index.ts + 39 modules
@@ -28472,21 +28302,12 @@ var menu_registry = __webpack_require__(1121);
 
 
 
-
-function extendMenu(menuCallback, ...excessArgs) {
-  checkExtendMenuArguments(menuCallback, ...excessArgs);
+function extendMenu(menuCallback) {
   if (!ui_adapter/* uiAdapter */.B)
     return;
   (0,menu_registry/* registerMenuCallback */.m)(menuCallback);
   (0,menu/* updateMenuExtensions */.xi)();
 }
-const checkExtendMenuArguments = (0,common/* checkArgumentsFor */.eY)(
-  "extendMenu",
-  [["menuCallback", common/* tcomb.Function */.Uw.Function]],
-  {
-    docPermalink: "js-sdk/extendMenu"
-  }
-);
 
 ;// CONCATENATED MODULE: ./scrivito_sdk/app_support/extract_text/extract_collector.ts
 
@@ -28602,19 +28423,27 @@ function extractTextFromBasicObj(obj, maxLength) {
 
 
 function extractText(obj, options) {
-  checkExtractText(obj, options);
+  checkExtractText(obj);
   const basicObj = (0,realm/* unwrapAppClass */.zo)(obj);
   const maxLength = options && options.length ? options.length : 1e9;
   return extractTextFromBasicObj(basicObj, maxLength);
 }
-const checkExtractText = (0,common/* checkArgumentsFor */.eY)(
-  "extractText",
-  [
-    ["obj", models/* ObjType */.aT],
-    ["options", common/* tcomb.maybe */.Uw.maybe(common/* tcomb.interface */.Uw["interface"]({ length: common/* tcomb.maybe */.Uw.maybe(common/* PositiveInteger */.ee) }))]
-  ],
-  { docPermalink: "js-sdk/extractText" }
-);
+function checkExtractText(obj, options) {
+  if (!(0,models/* isWrappingBasicObj */.mD)(obj)) {
+    (0,common/* throwInvalidArgumentsError */.Ht)(
+      "extractText",
+      "'obj' must be an instance of 'Obj'.",
+      { docPermalink: "js-sdk/extractText" }
+    );
+  }
+  if ((options == null ? void 0 : options.length) && !(Number.isInteger(options.length) || options.length > 0)) {
+    (0,common/* throwInvalidArgumentsError */.Ht)(
+      "extractText",
+      "'length' must be a positive integer.",
+      { docPermalink: "js-sdk/extractText" }
+    );
+  }
+}
 
 // EXTERNAL MODULE: ./scrivito_sdk/app_support/editing_context.ts
 var editing_context = __webpack_require__(1616);
@@ -28630,20 +28459,10 @@ var navigate_to = __webpack_require__(3721);
 ;// CONCATENATED MODULE: ./scrivito_sdk/app_support/open_dialog.ts
 
 
-
-function openDialog(name, ...excessArgs) {
-  checkOpenDialogArguments(name, ...excessArgs);
-  if (ui_adapter/* uiAdapter */.B) {
+function openDialog(name) {
+  if (ui_adapter/* uiAdapter */.B)
     ui_adapter/* uiAdapter */.B.openCustomDialog(name);
-  }
 }
-const checkOpenDialogArguments = (0,common/* checkArgumentsFor */.eY)(
-  "openDialog",
-  [["name", common/* tcomb.String */.Uw.String]],
-  {
-    docPermalink: "js-sdk/openDialog"
-  }
-);
 
 // EXTERNAL MODULE: ./scrivito_sdk/state/index.ts + 13 modules
 var state = __webpack_require__(1946);
@@ -28763,9 +28582,9 @@ var site_mapping = __webpack_require__(648);
 
 
 
-function renderPage(obj, render, ...excessArgs) {
+function renderPage(obj, render) {
   (0,data/* assertNotUsingInMemoryTenant */.C_)("Scrivito.renderPage");
-  checkRenderPage(obj, render, ...excessArgs);
+  checkRenderPage(obj, render);
   const objSpaceId = (0,models/* currentObjSpaceId */.eb)();
   const page = (0,realm/* unwrapAppClass */.zo)(obj);
   const workspaceId = (0,client/* getWorkspaceId */.LD)(objSpaceId);
@@ -28808,16 +28627,20 @@ function ensureSiteIsPresent(page, errorClass = common/* ScrivitoError */.aS) {
     `The obj "${page.id()}" cannot be rendered because it does not have a site ID.`
   );
 }
-const checkRenderPage = (0,common/* checkArgumentsFor */.eY)(
-  "renderPage",
-  [
-    ["page", models/* ObjType */.aT],
-    ["render", common/* tcomb.Function */.Uw.Function]
-  ],
-  {
-    docPermalink: "js-sdk/renderPage"
+function checkRenderPage(obj, render) {
+  if (!(0,models/* isWrappingBasicObj */.mD)(obj)) {
+    (0,common/* throwInvalidArgumentsError */.Ht)(
+      "renderPage",
+      "'obj' must be an instance of 'Obj'.",
+      { docPermalink: "js-sdk/renderPage" }
+    );
   }
-);
+  if (typeof render !== "function") {
+    (0,common/* throwInvalidArgumentsError */.Ht)("renderPage", "'render' must be a function.", {
+      docPermalink: "js-sdk/renderPage"
+    });
+  }
+}
 
 ;// CONCATENATED MODULE: ./scrivito_sdk/app_support/update_content.ts
 
@@ -28861,20 +28684,9 @@ function editorLanguage() {
 var replace_internal_links = __webpack_require__(7440);
 // EXTERNAL MODULE: ../node_modules/lodash-es/memoize.js
 var memoize = __webpack_require__(3920);
-;// CONCATENATED MODULE: ./scrivito_sdk/app_support/current_language.ts
-
-
-
-
-function currentLanguage() {
-  var _a, _b;
-  const siteId = (0,current_page/* currentSiteId */.OI)();
-  if (!siteId)
-    return null;
-  return (_b = (_a = (0,models/* getRootObjFrom */.Mp)((0,current_app_space/* currentAppSpace */.p)().and((0,models/* restrictToSite */.rs)(siteId)))) == null ? void 0 : _a.language()) != null ? _b : null;
-}
-
-;// CONCATENATED MODULE: ./scrivito_sdk/app_support/fetch_schema.ts
+// EXTERNAL MODULE: ./scrivito_sdk/data_integration/current_language.ts
+var current_language = __webpack_require__(1514);
+;// CONCATENATED MODULE: ./scrivito_sdk/data_integration/fetch_schema.ts
 
 var fetch_schema_async = (__this, __arguments, generator) => {
   return new Promise((resolve, reject) => {
@@ -28904,7 +28716,7 @@ var fetch_schema_async = (__this, __arguments, generator) => {
 
 const fetchSchema = (0,memoize/* default */.A)(function(apiClient) {
   return fetch_schema_async(this, null, function* () {
-    const siteLanguage = yield (0,loadable/* load */.Hh)(currentLanguage);
+    const siteLanguage = yield (0,loadable/* load */.Hh)(current_language/* currentLanguage */.a);
     let response;
     try {
       response = yield apiClient.fetch("schema", {
@@ -28925,7 +28737,7 @@ const fetchSchema = (0,memoize/* default */.A)(function(apiClient) {
   });
 });
 
-;// CONCATENATED MODULE: ./scrivito_sdk/app_support/create_rest_api_schema.ts
+;// CONCATENATED MODULE: ./scrivito_sdk/data_integration/create_rest_api_schema.ts
 
 var create_rest_api_schema_async = (__this, __arguments, generator) => {
   return new Promise((resolve, reject) => {
@@ -28955,16 +28767,16 @@ function createRestApiSchema({
   return {
     schema: {
       attributes: attributes || (() => create_rest_api_schema_async(this, null, function* () {
-        return (yield fetchSchema(yield apiClient)).attributes;
+        return (yield fetchSchema(apiClient)).attributes;
       })),
       title: title || (() => create_rest_api_schema_async(this, null, function* () {
-        return (yield fetchSchema(yield apiClient)).title;
+        return (yield fetchSchema(apiClient)).title;
       }))
     }
   };
 }
 
-;// CONCATENATED MODULE: ./scrivito_sdk/app_support/provide_data_class.ts
+;// CONCATENATED MODULE: ./scrivito_sdk/data_integration/provide_data_class.ts
 
 var provide_data_class_defProp = Object.defineProperty;
 var provide_data_class_getOwnPropSymbols = Object.getOwnPropertySymbols;
@@ -29025,22 +28837,22 @@ function provideDataClass(name, params) {
   return new data_integration/* ExternalDataClass */.Gf(name);
 }
 function desugar(params) {
-  var _a;
-  if ("restApi" in params) {
-    const apiClient = createApiClient(Promise.resolve(params.restApi));
-    return provide_data_class_spreadValues({
-      connection: (() => provide_data_class_async(this, null, function* () {
-        return (0,data_integration/* createRestApiConnectionForClass */.En)(yield apiClient);
-      }))()
-    }, createRestApiSchema(
-      { attributes: params.attributes, title: params.title },
-      apiClient
-    ));
-  }
-  return {
-    connection: Promise.resolve(params.connection),
-    schema: { attributes: (_a = params.attributes) != null ? _a : {}, title: params.title }
-  };
+  return provide_data_class_async(this, null, function* () {
+    var _a;
+    if ("restApi" in params) {
+      const apiClient = yield createApiClient(Promise.resolve(params.restApi));
+      return provide_data_class_spreadValues({
+        connection: Promise.resolve((0,data_integration/* createRestApiConnectionForClass */.En)(apiClient))
+      }, createRestApiSchema(
+        { attributes: params.attributes, title: params.title },
+        apiClient
+      ));
+    }
+    return {
+      connection: Promise.resolve(params.connection),
+      schema: { attributes: (_a = params.attributes) != null ? _a : {}, title: params.title }
+    };
+  });
 }
 function createApiClient(restApiPromise) {
   return provide_data_class_async(this, null, function* () {
@@ -29049,7 +28861,7 @@ function createApiClient(restApiPromise) {
   });
 }
 
-;// CONCATENATED MODULE: ./scrivito_sdk/app_support/provide_data_item.ts
+;// CONCATENATED MODULE: ./scrivito_sdk/data_integration/provide_data_item.ts
 
 var provide_data_item_defProp = Object.defineProperty;
 var provide_data_item_getOwnPropSymbols = Object.getOwnPropertySymbols;
@@ -29104,34 +28916,34 @@ function provideDataItem(name, params) {
   return dataClass.getUnchecked(data_integration/* SINGLETON_DATA_ID */.zv);
 }
 function provide_data_item_desugar(params) {
-  var _a;
-  if (typeof params === "function") {
+  return provide_data_item_async(this, null, function* () {
+    var _a;
+    if (typeof params === "function") {
+      return {
+        connection: Promise.resolve({ get: params }),
+        schema: { attributes: {} }
+      };
+    }
+    if ("restApi" in params) {
+      const apiClient = yield provide_data_item_createApiClient(Promise.resolve(params.restApi));
+      return provide_data_item_spreadValues({
+        connection: Promise.resolve(createRestApiConnectionForItem(apiClient))
+      }, createRestApiSchema(
+        { attributes: params.attributes, title: params.title },
+        apiClient
+      ));
+    }
+    if ("connection" in params) {
+      return {
+        connection: Promise.resolve(params.connection),
+        schema: { attributes: (_a = params.attributes) != null ? _a : {}, title: params.title }
+      };
+    }
     return {
-      connection: Promise.resolve({ get: params }),
+      connection: Promise.resolve(params),
       schema: { attributes: {} }
     };
-  }
-  if ("restApi" in params) {
-    const apiClient = provide_data_item_createApiClient(Promise.resolve(params.restApi));
-    return provide_data_item_spreadValues({
-      connection: (() => provide_data_item_async(this, null, function* () {
-        return createRestApiConnectionForItem(yield apiClient);
-      }))()
-    }, createRestApiSchema(
-      { attributes: params.attributes, title: params.title },
-      apiClient
-    ));
-  }
-  if ("connection" in params) {
-    return {
-      connection: Promise.resolve(params.connection),
-      schema: { attributes: (_a = params.attributes) != null ? _a : {}, title: params.title }
-    };
-  }
-  return {
-    connection: Promise.resolve(params),
-    schema: { attributes: {} }
-  };
+  });
 }
 function provide_data_item_createApiClient(restApiPromise) {
   return provide_data_item_async(this, null, function* () {
@@ -29150,6 +28962,8 @@ function createRestApiConnectionForItem(apiClient) {
   };
 }
 
+// EXTERNAL MODULE: ./scrivito_sdk/data_integration/get_data_class.ts
+var get_data_class = __webpack_require__(512);
 ;// CONCATENATED MODULE: ./scrivito_sdk/app_support/provide_content_class.ts
 
 
@@ -29179,9 +28993,7 @@ var provide_editing_config = __webpack_require__(1303);
 function isOnCurrentPath(page) {
   var _a;
   (0,data/* assertNotUsingInMemoryTenant */.C_)("Scrivito.isOnCurrentPath");
-  (0,common/* checkArgumentsFor */.eY)("isOnCurrentPath", [["page", models/* ObjType */.aT]], {
-    docPermalink: "js-sdk/isOnCurrentPath"
-  })(page);
+  checkIsOnCurrentPath(page);
   const currentPath = (_a = (0,current_page/* currentPage */.F2)()) == null ? void 0 : _a.path();
   const path = page.path();
   if (!currentPath || !path || !currentPath.startsWith(path))
@@ -29189,6 +29001,15 @@ function isOnCurrentPath(page) {
   if (currentPath === path || path === "/")
     return true;
   return currentPath.charAt(path.length) === "/";
+}
+function checkIsOnCurrentPath(page) {
+  if (!(0,models/* isWrappingBasicObj */.mD)(page)) {
+    (0,common/* throwInvalidArgumentsError */.Ht)(
+      "isOnCurrentPath",
+      "'obj' must be an instance of 'Obj'.",
+      { docPermalink: "js-sdk/isOnCurrentPath" }
+    );
+  }
 }
 
 ;// CONCATENATED MODULE: ./scrivito_sdk/app_support/get_instance_id.ts
@@ -29204,6 +29025,7 @@ function getInstanceId() {
 }
 
 ;// CONCATENATED MODULE: ./scrivito_sdk/public_api.ts
+
 
 
 
@@ -29310,6 +29132,7 @@ exports.extendMenu = __webpack_exports__.extendMenu;
 exports.extractText = __webpack_exports__.extractText;
 exports.finishLoading = __webpack_exports__.finishLoading;
 exports.getClass = __webpack_exports__.getClass;
+exports.getDataClass = __webpack_exports__.getDataClass;
 exports.getInstanceId = __webpack_exports__.getInstanceId;
 exports.isComparisonActive = __webpack_exports__.isComparisonActive;
 exports.isCurrentPage = __webpack_exports__.isCurrentPage;

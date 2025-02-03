@@ -141,16 +141,6 @@ OTHER TORTIOUS ACTION, ARISING OUT OF OR IN CONNECTION WITH THE USE OR
 PERFORMANCE OF THIS SOFTWARE.
 ***************************************************************************** */
 
-/*! @preserve
- *
- * tcomb.js - Type checking and DDD for JavaScript
- *
- * The MIT License (MIT)
- *
- * Copyright (c) 2014-2016 Giulio Canti
- *
- */
-
 /*! Copyright (c) 2025 JustRelate Group GmbH (https://www.justrelate.com) */
 
 /*! https://mths.be/punycode v1.4.0 by @mathias */
