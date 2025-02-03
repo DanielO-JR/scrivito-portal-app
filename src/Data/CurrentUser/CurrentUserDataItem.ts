@@ -11,6 +11,8 @@ import { isOptionalString } from '../../utils/isOptionalString'
 import { neoletterClient } from '../neoletterClient'
 import { pisaClient } from '../pisaClient'
 import { errorToast } from './errorToast'
+import { isJwtTokenProvided } from '../pisaClientJwt'
+import { CurrentUserDataItemJwt } from './CurrentUserDataItemJwt'
 
 async function attributes(): Promise<DataAttributeDefinitions> {
   const lang = await load(currentLanguage)
@@ -55,70 +57,74 @@ async function attributes(): Promise<DataAttributeDefinitions> {
   }
 }
 
-export const CurrentUser = provideDataItem('CurrentUser', {
-  attributes,
-  connection: {
-    async get() {
-      const user = await load(currentUser)
-      if (!user) return null
+export const CurrentUser = isJwtTokenProvided()
+  ? CurrentUserDataItemJwt
+  : provideDataItem('CurrentUser', {
+      attributes,
+      connection: {
+        async get() {
+          const user = await load(currentUser)
+          if (!user) return null
 
-      let neoletterProfile
-      try {
-        neoletterProfile = await neoletterClient().get('my/profile')
-        if (!isNeoletterData(neoletterProfile)) {
-          throw new Error('Invalid user profile')
-        }
-      } catch (error) {
-        errorToast('Unable to connect to Neoletter', error)
-        throw error
-      }
+          let neoletterProfile
+          try {
+            neoletterProfile = await neoletterClient().get('my/profile')
+            if (!isNeoletterData(neoletterProfile)) {
+              throw new Error('Invalid user profile')
+            }
+          } catch (error) {
+            errorToast('Unable to connect to Neoletter', error)
+            throw error
+          }
 
-      const { pisaUserId, salesUserId, serviceUserId } = await pisaIds()
+          const { pisaUserId, salesUserId, serviceUserId } = await pisaIds()
 
-      return {
-        email: user.email(),
-        picture: user.picture() || personCircle,
-        jrUserId: user.id(),
+          return {
+            email: user.email(),
+            picture: user.picture() || personCircle,
+            jrUserId: user.id(),
 
-        pisaUserId,
-        salesUserId,
-        serviceUserId,
+            pisaUserId,
+            salesUserId,
+            serviceUserId,
 
-        name: ensureString(neoletterProfile.name),
-        company: ensureString(neoletterProfile.company),
-        familyName: ensureString(neoletterProfile.family_name),
-        givenName: ensureString(neoletterProfile.given_name),
-        phoneNumber: ensureString(neoletterProfile.phone_number),
-        salutation: ensureString(neoletterProfile.salutation),
-      }
-    },
-    async update(params) {
-      const {
-        company,
-        familyName,
-        givenName,
-        name,
-        phoneNumber,
-        salutation,
-        ...otherArgs
-      } = params
-      if (Object.keys(otherArgs).length > 0) {
-        throw new Error(`Unknown keys - ${Object.keys(otherArgs).join(', ')}`)
-      }
-
-      await neoletterClient().put('my/profile', {
-        data: {
-          company,
-          family_name: familyName,
-          given_name: givenName,
-          name,
-          phone_number: phoneNumber,
-          salutation,
+            name: ensureString(neoletterProfile.name),
+            company: ensureString(neoletterProfile.company),
+            familyName: ensureString(neoletterProfile.family_name),
+            givenName: ensureString(neoletterProfile.given_name),
+            phoneNumber: ensureString(neoletterProfile.phone_number),
+            salutation: ensureString(neoletterProfile.salutation),
+          }
         },
-      })
-    },
-  },
-})
+        async update(params) {
+          const {
+            company,
+            familyName,
+            givenName,
+            name,
+            phoneNumber,
+            salutation,
+            ...otherArgs
+          } = params
+          if (Object.keys(otherArgs).length > 0) {
+            throw new Error(
+              `Unknown keys - ${Object.keys(otherArgs).join(', ')}`,
+            )
+          }
+
+          await neoletterClient().put('my/profile', {
+            data: {
+              company,
+              family_name: familyName,
+              given_name: givenName,
+              name,
+              phone_number: phoneNumber,
+              salutation,
+            },
+          })
+        },
+      },
+    })
 
 async function pisaIds() {
   const whoamiClient = await pisaClient('whoami')

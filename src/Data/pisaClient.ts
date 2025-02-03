@@ -1,6 +1,11 @@
 import { Obj, createRestApiClient, currentLanguage, load } from 'scrivito'
 import { isHomepage } from '../Objs/Homepage/HomepageObjClass'
 
+type PisaReqHeaders = {
+  'Accept-Language': string
+  Authorization?: string
+}
+
 export async function pisaUrl(): Promise<string | null> {
   if (import.meta.env.FORCE_LOCAL_STORAGE) return null
 
@@ -29,7 +34,7 @@ export async function pisaConfig(subPath: string) {
     url: `${baseUrl}/${subPath}`,
     headers: {
       'Accept-Language': await load(() => currentLanguage() ?? 'en'),
-    },
+    } as PisaReqHeaders,
   }
 }
 
