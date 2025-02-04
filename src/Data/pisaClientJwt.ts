@@ -100,10 +100,13 @@ async function handleJwtError(response: Response | null | Error) {
 
   replaceContent(
     '.card-body',
-    '<h1 style="color:red!important">Something went wrong!</h1><div class=\'error-details\'>Please follow instructions in the email.</div>',
+    '<h1 class="error-head" >Something went wrong!</h1><div class="error-details">Please follow instructions in the email.</div>',
   )
 
   const styles = {
+    '.error-head' : {
+      color: 'red!important',
+    },
     'body main .container > :not(.card) *, body main .container > :not(.card) a':
       {
         color: 'transparent',
