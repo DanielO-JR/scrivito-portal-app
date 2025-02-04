@@ -26,13 +26,13 @@ async function indexGdpr() {
   return jsonData
 }
 
-async function updateGdpr(id: string, data: unknown) {
+async function updateGdpr(id: string, data: Record<string, unknown>) {
   const jsonData =
     (await fetchData(
       'gdpr/' + id,
       'PATCH',
       { 'Content-Type': 'application/json' },
-      data as Record<string, unknown>,
+      data,
     )) || {}
   return jsonData
 }
