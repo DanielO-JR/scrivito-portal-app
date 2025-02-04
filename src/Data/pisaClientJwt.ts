@@ -104,10 +104,12 @@ async function handleJwtError(response: Response | null | Error) {
   )
 
   const styles = {
-    'body .container > :not(.card) *, body .container > :not(.card) a': {
-      color: 'transparent',
-      'text-shadow': '0 0 5px rgba(0,0,0,0.5)',
-    },
+    'body main .container > :not(.card) *, body main .container > :not(.card) a':
+      {
+        color: 'transparent',
+        'text-shadow': '0 0 5px rgba(0,0,0,0.5)',
+        'user-select': 'none',
+      },
   }
 
   addCssToHead(styles)
