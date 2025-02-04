@@ -1,4 +1,9 @@
 import { Obj } from 'scrivito'
+import {
+  assistPropertiesGroup,
+  languageToolsPropertiesGroup,
+  // @ts-expect-error scrivito-sam
+} from 'scrivito-sam'
 import { SocialCardsTab } from '../Components/ScrivitoExtensions/SocialCardsTab'
 import { ScrivitoBootstrapIconEditor } from 'scrivito-icon-editor'
 import { ensureString } from '../utils/ensureString'
@@ -105,6 +110,8 @@ export const defaultPagePropertiesGroups = [
     ],
     key: 'social-cards-group',
   },
+  assistPropertiesGroup,
+  languageToolsPropertiesGroup,
 ] as const
 
 export const defaultPageProperties = ['title']
