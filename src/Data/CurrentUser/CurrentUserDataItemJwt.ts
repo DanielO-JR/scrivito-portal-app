@@ -1,5 +1,5 @@
 import { provideDataItem } from 'scrivito'
-import { handleJwtError, pisaConfigJwt } from '../pisaClientJwt'
+import { fetchData } from '../pisaClientJwt'
 
 /**
  * The default user data object.
@@ -42,17 +42,6 @@ export const CurrentUserDataItemJwt = provideDataItem('CurrentUser', {
 })
 
 async function getUser() {
-  const config = await pisaConfigJwt('whoami')
-  if (!config) {
-    return defaultUserData
-  }
-  const response = await fetch(config.url, { headers: config.headers })
-
-  if (!response.ok) {
-    handleJwtError(response)
-    return defaultUserData
-  }
-
-  const jsonData = await response.json()
+  const jsonData = await fetchData('whoami') || {}
   return { ...defaultUserData, ...jsonData }
 }
