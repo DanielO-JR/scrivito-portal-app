@@ -42,6 +42,6 @@ export const CurrentUserDataItemJwt = provideDataItem('CurrentUser', {
 })
 
 async function getUser() {
-  const jsonData = await fetchData('whoami') || {}
+  const jsonData = (await fetchData('whoami')) || {}
   return { ...defaultUserData, ...jsonData }
 }

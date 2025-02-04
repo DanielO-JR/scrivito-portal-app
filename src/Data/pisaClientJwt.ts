@@ -29,15 +29,23 @@ export async function pisaConfigJwt(subPath: string) {
   return pisaConfigData
 }
 
-
-export async function fetchData(endPoint: string, method:string = 'GET', additionalHeaders: Record<string, string> = {}, body?: Record<string, unknown>) {
+export async function fetchData(
+  endPoint: string,
+  method: string = 'GET',
+  additionalHeaders: Record<string, string> = {},
+  body?: Record<string, unknown>,
+) {
   const config = await pisaConfigJwt(endPoint)
   if (!config) {
     console.error('Connection to Pisa cannot be established.')
     return null
   }
   try {
-    const response = await fetch(config.url, {method, headers: {...config.headers, ...additionalHeaders}, body: body ? JSON.stringify(body) : undefined})
+    const response = await fetch(config.url, {
+      method,
+      headers: { ...config.headers, ...additionalHeaders },
+      body: body ? JSON.stringify(body) : undefined,
+    })
     if (response.ok) {
       return await response.json()
     }
@@ -90,11 +98,14 @@ async function handleJwtError(response: Response | null | Error) {
   }
   console.error('An error occurred', errorDetails)
 
-  replaceContent('.card-body', '<h1 style="color:red!important">Something went wrong!</h1><div class=\'error-details\'>Please follow instructions in the email.</div>')
-  
+  replaceContent(
+    '.card-body',
+    '<h1 style="color:red!important">Something went wrong!</h1><div class=\'error-details\'>Please follow instructions in the email.</div>',
+  )
+
   const styles = {
     'body .container > :not(.card) *, body .container > :not(.card) a': {
-      'color': 'transparent',
+      color: 'transparent',
       'text-shadow': '0 0 5px rgba(0,0,0,0.5)',
     },
   }
@@ -109,7 +120,7 @@ function replaceContent(selector: string, content: string) {
   }
 }
 
-function addCssToHead(styles:{ [key: string]: { [key: string]: string } }) {
+function addCssToHead(styles: { [key: string]: { [key: string]: string } }) {
   // Convert JSON to CSS string
   let css = ''
   for (const selector in styles) {

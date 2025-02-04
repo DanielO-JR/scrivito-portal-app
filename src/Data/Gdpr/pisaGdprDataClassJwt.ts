@@ -20,13 +20,19 @@ export const pisaGdprDataClassJwt = provideDataClass('Gdpr', {
 })
 
 async function indexGdpr() {
-  const jsonData = await fetchData('gdpr') || {
+  const jsonData = (await fetchData('gdpr')) || {
     results: [],
   }
   return jsonData
 }
 
 async function updateGdpr(id: string, data: unknown) {
-  const jsonData =await fetchData('gdpr/' + id, 'PATCH', {'Content-Type': 'application/json' }, data as Record<string, unknown>) || {}
+  const jsonData =
+    (await fetchData(
+      'gdpr/' + id,
+      'PATCH',
+      { 'Content-Type': 'application/json' },
+      data as Record<string, unknown>,
+    )) || {}
   return jsonData
 }
