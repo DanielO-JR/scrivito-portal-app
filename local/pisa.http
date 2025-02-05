@@ -1,0 +1,32 @@
+
+
+@token=s_d38faf084cad4c2889df7b9a1b66dd05
+@jwtToken=eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJQaXNhU2FsZXMiLCJzdWIiOiJHRFBSIiwiYXVkIjoiUkVTVCBBUEkiLCJqdGkiOiJCQjVFNEJDMEZCRkY0NzNDODkyOTcxNzE2N0I1NTE0NCIsImlhdCI6MTczODIyODMxNCwiZXhwIjoxNzM5OTU2MzE0LCJjb250YWN0IjoiQjZGMjVDRkMyOEYwNDBFMzhDNEJDM0E2NTcxODM1Q0UifQ.ZhA6eB5hBIw1n2EgUqWl65cRU_UcKHc4RS5xK-tSaBXafT7ntO6hCcRdHKlUVCtH4J1gUig1KIqQOjWs3x0mumlpddgQUrDalbIlx0_rEr4spz0Z5EGF0RuLVOmUBCYZVpTFYFzZUkcKWq7nDOizVeANQszl3iI_atoJ_S0ezq1cQzIcrdQkgqPpHVlLe9wPxDSrV99i2AIbreu9DqjaZvrpO0nQ7X2gVn0jYY3u_MAnFoxYjdHGjhCskVEecmmg1wIKnQz7IgPk1HI47bLGMDcnkSxM3NlvZDQne9Ip-OoGUvpMDpohGMk69ON3H6el2aY21gjdmr-naz-4uzhnYg
+@jwtToken=eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJQaXNhU2FsZXMiLCJzdWIiOiJHRFBSIiwiYXVkIjoiUkVTVCBBUEkiLCJqdGkiOiI5MTJCODM0Q0U0MkI0QjJEQjEwRkVDQzA2RkYyNjE3NyIsImlhdCI6MTczODU5NzA1MywiZXhwIjoxNzM4NjAwNjUzLCJjb250YWN0IjoiREEyNDNDNERFN0U0MjZEMUUwMzBBOEMwMkEwMTE2NTQifQ.l8GXRDRzCWbuvQE6KsrZohTaWWID5CMn2s6tNLPOF4_A0jIfNzR5_K246y_IdrptapsSE6pPYd4E8S_mKyIqspcmICikuZ53PDZl_GpCljHb7P1IBJyPpH1wtx8btFHToMl2s6snf1dXYWcFKfkKHZc-iZ4CbCyinP47Kpgjk7-V5rCEur5VlLbc9NkTAnTm8S4i1G_qKrcqWdpWMu31HzEf7t-P9VXTpZPTPx_9BqP2g9Lv3QNDZ0BriDminDXuxrMU4rV-zeXnTi174WZSp928P2a8CBd6l-7yg7kPIECRTdxio6AnyIbcMrErigk_cznkJ2bOuMAOXoWKFfAaGQ
+
+
+
+@host=https://web173.crm.pisasales.de/portal-sales
+@host=https://service.justrelate.com/api-salesportal
+@hostPortal=https://web159.crm.pisasales.de/portal
+
+###
+GET {{hostPortal}}/whoami
+Authorization: JWT {{jwtToken}}
+Accept-Language: en
+
+###
+GET {{hostPortal}}/gdpr
+Authorization: JWT {{jwtToken}}
+Accept-Language: en
+
+###
+@id=1F065A3F381C4DA2ABA0F982F9193BDB
+PATCH {{hostPortal}}/gdpr/{{id}}
+Authorization: JWT {{jwtToken}}
+Content-Type: application/json
+
+{
+   "active": true
+}
+

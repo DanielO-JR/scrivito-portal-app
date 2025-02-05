@@ -98,13 +98,8 @@ async function handleJwtError(response: Response | null | Error) {
   }
   console.error('An error occurred', errorDetails)
 
-  replaceContent(
-    '.card-body',
-    '<h1 class="error-head" >Something went wrong!</h1><div class="error-details">Please follow instructions in the email.</div>',
-  )
-
   const styles = {
-    '.error-head' : {
+    '.error-head': {
       color: 'red!important',
     },
     'body main .container > :not(.card) *, body main .container > :not(.card) a':
@@ -116,13 +111,24 @@ async function handleJwtError(response: Response | null | Error) {
   }
 
   addCssToHead(styles)
+
+  if (
+    !replaceContent(
+      '.card-body',
+      '<h1 class="error-head" >Something went wrong!</h1><div class="error-details">Please follow instructions in the email.</div>',
+    )
+  ) {
+    toast.error('An error occurred. Please follow instructions in the email.')
+  }
 }
 
 function replaceContent(selector: string, content: string) {
   const element = document.querySelector(selector)
   if (element) {
     element.innerHTML = content
+    return true
   }
+  return false
 }
 
 function addCssToHead(styles: { [key: string]: { [key: string]: string } }) {
