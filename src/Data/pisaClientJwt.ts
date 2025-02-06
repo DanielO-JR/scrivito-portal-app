@@ -68,20 +68,13 @@ export function isJwtTokenProvided() {
 /**
  * Retrieves the JWT token from the URL's query parameter.
  *
- * @returns the JWT token if it's valid, otherwise null
+ * @returns the JWT token if it's not empty, otherwise null
  */
 function getJwtToken() {
   const urlParams = new URLSearchParams(window.location.search)
   const token = urlParams.get(JwtTokenName)
 
-  const regEx = new RegExp('[0-9a-zA-Z]+\\.[0-9a-zA-Z]+\\.[0-9a-zA-Z-_]+')
-
-  /// write message to console if there is token but it is invalid
-  if (token && !regEx.test(token)) {
-    console.error('Invalid page parameters')
-  }
-
-  return token && regEx.test(token) ? token : null
+  return token ? token : null
 }
 
 async function handleJwtError(response: Response | null | Error) {
@@ -115,7 +108,7 @@ async function handleJwtError(response: Response | null | Error) {
   if (
     !replaceContent(
       '.card-body',
-      '<h1 class="error-head" >Something went wrong!</h1><div class="error-details">Please follow instructions in the email.</div>',
+      '<h1 class="error-head" >Something went wrong!</h1><div class="error-details">Please follow the instructions in the email.</div>',
     )
   ) {
     toast.error('An error occurred. Please follow instructions in the email.')
